@@ -5,12 +5,12 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>Python voor Klinische Technologie</title>
+<title>Python voor KT</title>
 <link>https://python-voor-kt.github.io/articles.html</link>
 <atom:link href="https://python-voor-kt.github.io/articles.xml" rel="self" type="application/rss+xml"/>
 <description>Python voor KT</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Mon, 03 Aug 2026 12:40:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 03 Aug 2026 13:03:32 GMT</lastBuildDate>
 <item>
   <title>Een nieuw project starten in Positron</title>
   <dc:creator>Marjon van Wees, Menno Bloembergen en Peter Somhorst</dc:creator>
@@ -129,7 +129,7 @@
 </ol>
 </section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/new-project-in-positron/</guid>
-  <pubDate>Mon, 03 Aug 2026 12:40:00 GMT</pubDate>
+  <pubDate>Mon, 03 Aug 2026 13:03:32 GMT</pubDate>
 </item>
 <item>
   <title>uv gebruiken als project-manager</title>
@@ -310,7 +310,7 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 </ol>
 </section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/using-uv/</guid>
-  <pubDate>Mon, 03 Aug 2026 12:40:00 GMT</pubDate>
+  <pubDate>Mon, 03 Aug 2026 13:03:32 GMT</pubDate>
 </item>
 <item>
   <title>Positron installeren</title>
@@ -356,7 +356,7 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 </ol>
 </section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/positron-installeren/</guid>
-  <pubDate>Mon, 03 Aug 2026 12:40:00 GMT</pubDate>
+  <pubDate>Mon, 03 Aug 2026 13:03:32 GMT</pubDate>
 </item>
 </channel>
 </rss>
