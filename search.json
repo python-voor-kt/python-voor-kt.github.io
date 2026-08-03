@@ -9,9 +9,16 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Over deze pagina",
     "section": "",
-    "text": "Over deze blog."
+    "text": "Deze pagina dient als instructiedocument en naslagwerk voor studenten en docenten van de opleiding Klinische Technologie van het LUMC, de TU Delft en het Erasmus MC. Redactie wordt gevoerd door"
+  },
+  {
+    "objectID": "about.html#iets-gevonden-dat-niet-klopt",
+    "href": "about.html#iets-gevonden-dat-niet-klopt",
+    "title": "Over deze pagina",
+    "section": "Iets gevonden dat niet klopt?",
+    "text": "Iets gevonden dat niet klopt?\nKlopt er iets niet, is een uitleg onduidelijk of mis je een onderwerp? Meld het op de issues-pagina op GitHub. Er staan sjablonen klaar, dus je hoeft alleen een paar vragen te beantwoorden.\nHeb je geen GitHub-account, of gaat je vraag niet over de inhoud van deze site? Mail dan naar:\n\n  \n  \n    Zet JavaScript aan om het mailadres te zien, of gebruik de issues-pagina hierboven."
   },
   {
     "objectID": "posts/positron-installeren/index.html",

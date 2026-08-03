@@ -1,0 +1,38 @@
+name: Nieuw onderwerp voorstellen
+description: Er ontbreekt uitleg over iets dat je nodig hebt.
+title: "[Onderwerp] "
+labels: ["verzoek"]
+body:
+  - type: textarea
+    id: onderwerp
+    attributes:
+      label: Welk onderwerp mis je?
+      description: Beschrijf zo concreet mogelijk waar je uitleg over zou willen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: aanleiding
+    attributes:
+      label: Waarvoor heb je het nodig?
+      description: >-
+        Voor welk vak, welke opdracht of welk onderzoek liep je hier tegenaan?
+        Zo kunnen we inschatten voor hoeveel mensen dit speelt.
+    validations:
+      required: true
+
+  - type: textarea
+    id: bronnen
+    attributes:
+      label: Ken je al bruikbare bronnen?
+      description: Links naar documentatie, tutorials of voorbeelden zijn welkom.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: bijdragen
+    attributes:
+      label: Wil je zelf meeschrijven?
+      options:
+        - label: Ja, ik wil hier zelf een stuk voor schrijven of meelezen.
+          required: false

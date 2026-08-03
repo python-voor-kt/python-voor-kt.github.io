@@ -1,1 +1,10 @@
 /* css styles */
+
+/* Mailadres wordt door JavaScript ingevuld; zie about.qmd. */
+.contact-mail {
+  overflow-wrap: anywhere;
+}
+
+.contact-mail noscript {
+  font-style: italic;
+}
