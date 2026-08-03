@@ -1,6 +1,6 @@
 ---
 title: "Over deze pagina"
-image: profile.jpg
+image: https://logos-world.net/wp-content/uploads/2021/10/Python-Emblem.png
 about:
   template: jolla
   links:
