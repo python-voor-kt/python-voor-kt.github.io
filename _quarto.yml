@@ -5,15 +5,15 @@ lang: nl
 website:
   description: "Python voor KT"
   site-url: https://python-voor-kt.github.io
-  title: "Python voor Klinische Technologie"
+  title: "Python voor KT"
   navbar:
     left:
-      - handleidingen.qmd
+      - manuals.qmd
       - links.qmd
       - articles.qmd
       - about.qmd
       - icon: github
-        href: https://github.com/python-voor-kt
+        href: https://github.com/python-voor-kt/python-voor-kt.github.io
 format:
   html:
     theme:
