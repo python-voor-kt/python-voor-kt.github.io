@@ -20,7 +20,7 @@ dir = "_site"
 target = "build"
 
 # Remote used by `git build-commit push`.
-remote = "origin"
+remote = "pages"
 
 # Record the source commit as a second parent of the build commit.
 # link = true
