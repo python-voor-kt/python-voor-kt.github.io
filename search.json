@@ -4,7 +4,7 @@
     "href": "articles.html",
     "title": "Posts",
     "section": "",
-    "text": "Een nieuw project starten in Positron\n\n\n\n\n\n\n\n\nMarjon van Wees, Menno Bloembergen en Peter Somhorst\n\n\n\n\n\n\n\n\n\n\n\n\nuv gebruiken als project-manager\n\n\n\n\n\n\n\n\nPeter Somhorst\n\n\n\n\n\n\n\n\n\n\n\n\nPositron installeren\n\n\n\n\n\n\n\n\nPeter Somhorst\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n28 mrt 2026\n\n\nTristan O’Malley\n\n\n\n\n\nGeen overeenkomsten"
+    "text": "Een nieuw project starten in Positron\n\n\n\n\n\n\n\n\nMarjon van Wees, Menno Bloembergen en Peter Somhorst\n\n\n\n\n\n\n\n\n\n\n\n\nuv gebruiken als project-manager\n\n\n\n\n\n\n\n\nPeter Somhorst\n\n\n\n\n\n\n\n\n\n\n\n\nPositron installeren\n\n\n\n\n\n\n\n\nPeter Somhorst\n\n\n\n\n\nGeen overeenkomsten"
   },
   {
     "objectID": "about.html",
@@ -75,13 +75,6 @@
     "title": "Een nieuw project starten in Positron",
     "section": "Voetnoten",
     "text": "Voetnoten\n\n\nWe gaan er hier vanuit dat het pyproject.toml-bestand compleet is. Soms is bijvoorbeeld de project-naam niet gegeven, omdat het repository voor verschillende projecten gebruikt kan worden. Maak pyproject.toml dan eerst compleet.↩︎"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
     "objectID": "posts/using-uv/index.html",

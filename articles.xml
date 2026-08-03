@@ -10,28 +10,7 @@
 <atom:link href="https://python-voor-kt.github.io/articles.xml" rel="self" type="application/rss+xml"/>
 <description>Python voor Klinische Technologie</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Fri, 27 Mar 2026 23:00:00 GMT</lastBuildDate>
-<item>
-  <title>Welcome To My Blog</title>
-  <dc:creator>Tristan O&#39;Malley</dc:creator>
-  <link>https://python-voor-kt.github.io/posts/welcome/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="https://python-voor-kt.github.io/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
-
-
-
- ]]></description>
-  <category>news</category>
-  <guid>https://python-voor-kt.github.io/posts/welcome/</guid>
-  <pubDate>Fri, 27 Mar 2026 23:00:00 GMT</pubDate>
-</item>
+<lastBuildDate>Mon, 03 Aug 2026 09:05:34 GMT</lastBuildDate>
 <item>
   <title>Een nieuw project starten in Positron</title>
   <dc:creator>Marjon van Wees, Menno Bloembergen en Peter Somhorst</dc:creator>
@@ -150,7 +129,7 @@
 </ol>
 </section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/new-project-in-positron/</guid>
-  <pubDate>Mon, 03 Aug 2026 08:59:43 GMT</pubDate>
+  <pubDate>Mon, 03 Aug 2026 09:05:34 GMT</pubDate>
 </item>
 <item>
   <title>uv gebruiken als project-manager</title>
@@ -331,7 +310,7 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 </ol>
 </section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/using-uv/</guid>
-  <pubDate>Mon, 03 Aug 2026 08:59:43 GMT</pubDate>
+  <pubDate>Mon, 03 Aug 2026 09:05:34 GMT</pubDate>
 </item>
 <item>
   <title>Positron installeren</title>
@@ -377,7 +356,7 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 </ol>
 </section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/positron-installeren/</guid>
-  <pubDate>Mon, 03 Aug 2026 08:59:43 GMT</pubDate>
+  <pubDate>Mon, 03 Aug 2026 09:05:34 GMT</pubDate>
 </item>
 </channel>
 </rss>
