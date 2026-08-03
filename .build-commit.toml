@@ -17,9 +17,5 @@ target = "build"
 # Remote used by `git build-commit push`.
 remote = "origin"
 
-# Commit message template. Placeholders: {sha}, {short_sha}, {source},
-# {target}, {subject}, {date}, {time}, {datetime}.
-message = "Build {short_sha}"
-
 # Record the source commit as a second parent of the build commit.
 # link = true
