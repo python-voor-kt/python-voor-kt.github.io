@@ -10,29 +10,7 @@
 <atom:link href="https://python-voor-kt.github.io/articles.xml" rel="self" type="application/rss+xml"/>
 <description>Python voor Klinische Technologie</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Mon, 30 Mar 2026 22:00:00 GMT</lastBuildDate>
-<item>
-  <title>Post With Code</title>
-  <dc:creator>Harlow Malloc</dc:creator>
-  <link>https://python-voor-kt.github.io/posts/post-with-code/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>This is a post with executable code.</p>
-
-
-
- ]]></description>
-  <category>news</category>
-  <category>code</category>
-  <category>analysis</category>
-  <guid>https://python-voor-kt.github.io/posts/post-with-code/</guid>
-  <pubDate>Mon, 30 Mar 2026 22:00:00 GMT</pubDate>
-  <media:content url="https://python-voor-kt.github.io/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
-</item>
+<lastBuildDate>Fri, 27 Mar 2026 23:00:00 GMT</lastBuildDate>
 <item>
   <title>Welcome To My Blog</title>
   <dc:creator>Tristan O&#39;Malley</dc:creator>
@@ -172,7 +150,7 @@
 </ol>
 </section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/new-project-in-positron/</guid>
-  <pubDate>Mon, 03 Aug 2026 08:57:18 GMT</pubDate>
+  <pubDate>Mon, 03 Aug 2026 08:59:43 GMT</pubDate>
 </item>
 <item>
   <title>uv gebruiken als project-manager</title>
@@ -353,7 +331,7 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 </ol>
 </section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/using-uv/</guid>
-  <pubDate>Mon, 03 Aug 2026 08:57:18 GMT</pubDate>
+  <pubDate>Mon, 03 Aug 2026 08:59:43 GMT</pubDate>
 </item>
 <item>
   <title>Positron installeren</title>
@@ -399,7 +377,7 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 </ol>
 </section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/positron-installeren/</guid>
-  <pubDate>Mon, 03 Aug 2026 08:57:18 GMT</pubDate>
+  <pubDate>Mon, 03 Aug 2026 08:59:43 GMT</pubDate>
 </item>
 </channel>
 </rss>
