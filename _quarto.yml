@@ -3,7 +3,7 @@ project:
 lang: nl
 
 website:
-  description: "Python voor Klinische Technologie"
+  description: "Python voor KT"
   site-url: https://python-voor-kt.github.io
   title: "Python voor Klinische Technologie"
   navbar:
