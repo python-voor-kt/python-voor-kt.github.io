@@ -10,7 +10,7 @@
 <atom:link href="https://python-voor-kt.github.io/manuals.xml" rel="self" type="application/rss+xml"/>
 <description>Python voor KT</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Mon, 03 Aug 2026 13:05:21 GMT</lastBuildDate>
+<lastBuildDate>Mon, 03 Aug 2026 13:12:59 GMT</lastBuildDate>
 <item>
   <title>Een nieuw project starten in Positron</title>
   <dc:creator>Marjon van Wees, Menno Bloembergen en Peter Somhorst</dc:creator>
@@ -129,7 +129,7 @@
 </ol>
 </section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/nieuw-project-in-positron/</guid>
-  <pubDate>Mon, 03 Aug 2026 13:05:21 GMT</pubDate>
+  <pubDate>Mon, 03 Aug 2026 13:12:59 GMT</pubDate>
 </item>
 <item>
   <title>Positron installeren</title>
@@ -175,7 +175,7 @@
 </ol>
 </section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/positron-installeren/</guid>
-  <pubDate>Mon, 03 Aug 2026 13:05:21 GMT</pubDate>
+  <pubDate>Mon, 03 Aug 2026 13:12:59 GMT</pubDate>
 </item>
 <item>
   <title>uv installeren</title>
@@ -225,7 +225,7 @@ font-style: inherit;">"irm https://astral.sh/uv/install.ps1 | iex"</span></span>
 
  ]]></description>
   <guid>https://python-voor-kt.github.io/posts/uv-installeren/</guid>
-  <pubDate>Mon, 03 Aug 2026 13:05:21 GMT</pubDate>
+  <pubDate>Mon, 03 Aug 2026 13:12:59 GMT</pubDate>
 </item>
 <item>
   <title>uv gebruiken als project-manager</title>
@@ -390,7 +390,7 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 </ol>
 </section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/uv-gebruiken/</guid>
-  <pubDate>Mon, 03 Aug 2026 13:05:21 GMT</pubDate>
+  <pubDate>Mon, 03 Aug 2026 13:12:59 GMT</pubDate>
 </item>
 </channel>
 </rss>
