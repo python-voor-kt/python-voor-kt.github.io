@@ -11,13 +11,16 @@ Het is een goede gewoonte voor elk onderzoek, vak, opdracht of stage een nieuw p
 
 ::: {.callout-warning}
 ## OneDrive (Windows) en andere *cloud*opslag
-Zet een `uv`-project **nooit** in OneDrive. Windows gebruikt OneDrive tegenwoordig als standaard locatie voor documenten. OneDrive werkt met *cloud*-bestanden, die niet altijd daadwerkelijk op je computer staan. Zels als de bestanden wel op je computer staan, worden ze niet als normale bestanden behandeld.
+Windows gebruikt tegenwoordig OneDrive als standaard locatie voor documenten. 
+`uv` werkt niet goed als je je bestanden in OneDrive zet. 
+OneDrive werkt namelijk met *cloud*-bestanden, die niet altijd daadwerkelijk op je computer staan. 
+Zelfs als de bestanden wel op je computer staan, worden ze niet als normale bestanden behandeld.
 
-Dit kan ook gelden voor bestanden op bijvoorbeeld Dropbox. 
+Dit kan ook gelden voor bestanden op bijvoorbeeld Dropbox.
 
-Een goede locatie is een map in `C:\Users\<gebruikersnaam>\` (maar niet `C:\Users\<gebruikersnaam>\Documenten`).
+Zet je projectmap dus **nooit** in OneDrive. Een goede locatie is een map in `C:\Users\<gebruikersnaam>\` (maar **niet** `C:\Users\<gebruikersnaam>\Documenten`).
 
-Heb je wel eerder een project in OneDrive gezet, draai dan `uv cache clean` in je Terminal/PowerShell. Dit vertelt `uv` dat hij bestanden op OneDrive voor *nieuwe* projecten moet negeren.
+Heb je wel eerder een project in OneDrive gezet, draai dan `uv cache clean` in je Terminal/PowerShell. `uv` deelt bestanden tussen projecten, waardoor een project in OneDrive ook problemen kan veroorzaken in je *andere* projecten. `uv cache clean` ruimt dat op.
 :::
 
 Er zijn verschillende opties om in Positron aan de slag te gaan met een project nieuw project:
