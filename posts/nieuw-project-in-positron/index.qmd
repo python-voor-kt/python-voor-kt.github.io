@@ -1,6 +1,7 @@
 ---
 title: "Een nieuw project starten in Positron"
 author: "Marjon van Wees, Menno Bloembergen en Peter Somhorst"
+category: manual
 ---
 
 Om te zorgen dat je bestanden goed georganiseerd blijven, is het belangrijk voor elk project een nieuwe map aan te maken. Dit voorkomt (later) veel problemen.
@@ -34,7 +35,7 @@ Er zijn verschillende opties om in Positron aan de slag te gaan met een project 
 
 --installatiehandleiding--
 
-Daarna kan je pakketten installeren. Dit doe je door in de terminal `uv add <naam>` te draaien, waarbij je `<naam>` vervangt door de naam van het pakket. Zie ook [deze post](../using-uv/index.qmd#pakketten-installeren).
+Daarna kan je pakketten installeren. Dit doe je door in de terminal `uv add <naam>` te draaien, waarbij je `<naam>` vervangt door de naam van het pakket. Zie ook [deze post](../uv-gebruiken/index.qmd#pakketten-installeren).
 
 ## Een `pyproject.toml`-bestand downloaden
 

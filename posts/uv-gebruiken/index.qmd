@@ -1,6 +1,7 @@
 ---
 title: "`uv` gebruiken als project-manager"
 author: "Peter Somhorst"
+category: manual
 ---
 
 `uv` is een project-manager voor Python projecten. Het zorgt voor 
@@ -12,29 +13,17 @@ author: "Peter Somhorst"
 - reproduceerbare installaties via een _lockfile_.
 
 ## Installatie
-Installatie van `uv` is heel eenvoudig. Onderstaande instructies zijn gekopieerd uit de officiële documentatie van `uv`: <https://docs.astral.sh/uv/>. 
 
-### macOS
-Open een Terminal, en voer onderstaand command uit:
-
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-
-Open daarna een nieuwe sessie in Terminal (of herstart de Terminal app).
-
-### Windows
-Open een PowerShell, en voer onderstaand commando uit:
-
-```bash
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-```
-
-Open daarna een nieuwe sessie in PowerShell (of herstart de PowerShell app).
+Een korte installatie-handleiding is [hier](../uv-installeren/index.qmd) te vinden.
 
 ## Project aanmaken
 
-Het is aangeraden voor elk project (onderzoek, stage, vak, opdracht, spontaan idee) een nieuw `uv`-project aan te maken. Hier beschrijven we de methode die alleen gebruik maakt van de Terminal/PowerShell. Sommige programma's, waaronder Positron, hebben ook een eigen (eenvoudigere) manier om projecten aan te maken. 
+Het is aangeraden voor elk project (onderzoek, stage, vak, opdracht, spontaan idee) een nieuw `uv`-project aan te maken. Hier beschrijven we de methode die alleen gebruik maakt van de Terminal/PowerShell. 
+
+::: {.callout-tip}
+Veel programmeer-programma's, waaronder Positron, hebben ook een eigen (eenvoudigere) manier om projecten aan te maken. 
+We hebben een [handleiding voor projecte in Positron](../nieuw-project-in-positron/index.qmd) geschreven. 
+:::
 
 ::: {.callout-warning}
 ## OneDrive (Windows) en andere cloud-tools
