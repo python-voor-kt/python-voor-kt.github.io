@@ -10,6 +10,387 @@
 <atom:link href="https://python-voor-kt.github.io/manuals.xml" rel="self" type="application/rss+xml"/>
 <description>Python voor KT</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Mon, 03 Aug 2026 13:03:59 GMT</lastBuildDate>
+<lastBuildDate>Mon, 03 Aug 2026 13:05:21 GMT</lastBuildDate>
+<item>
+  <title>Een nieuw project starten in Positron</title>
+  <dc:creator>Marjon van Wees, Menno Bloembergen en Peter Somhorst</dc:creator>
+  <link>https://python-voor-kt.github.io/posts/nieuw-project-in-positron/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Om te zorgen dat je bestanden goed georganiseerd blijven, is het belangrijk voor elk project een nieuwe map aan te maken. Dit voorkomt (later) veel problemen.</p>
+<section id="mappenstructuur" class="level3">
+<h3 class="anchored" data-anchor-id="mappenstructuur">Mappenstructuur</h3>
+<p>Het is een goede gewoonte voor elk onderzoek, vak, opdracht of stage een nieuw project aan te maken. Je project komt in een projectmap te staan. Zet deze op een logische locatie.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Waarschuwing</span>OneDrive (Windows) en andere <em>cloud</em>opslag
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Windows 11 gebruikt tegenwoordig OneDrive als standaard locatie voor documenten. <code>uv</code> werkt niet goed als je je bestanden in OneDrive zet. OneDrive werkt namelijk met <em>cloud</em>-bestanden, die niet altijd daadwerkelijk op je computer staan. Zelfs als de bestanden wel op je computer staan, worden ze niet als normale bestanden behandeld.</p>
+<p>Dit kan ook gelden voor bestanden op bijvoorbeeld Dropbox.</p>
+<p>Zet je projectmap dus <strong>nooit</strong> in OneDrive. Een goede locatie is een map in <code>C:\Users\&lt;gebruikersnaam&gt;\</code> (maar <strong>niet</strong> <code>C:\Users\&lt;gebruikersnaam&gt;\Documenten</code>).</p>
+<p>Heb je wel eerder een project in OneDrive gezet, draai dan <code>uv cache clean</code> in je Terminal/PowerShell. <code>uv</code> deelt bestanden tussen projecten, waardoor een project in OneDrive ook problemen kan veroorzaken in je <em>andere</em> projecten. <code>uv cache clean</code> ruimt dat op.</p>
+</div>
+</div>
+<p>Er zijn verschillende opties om in Positron aan de slag te gaan met een project nieuw project:</p>
+<ul>
+<li>met een leeg project starten</li>
+<li>een <code>pyproject.toml</code>-bestand downloaden</li>
+<li>een <code>git</code> <em>repository</em> <em>clonen</em></li>
+<li>bestanden downloaden in een <code>*.zip</code>-bestand</li>
+</ul>
+</section>
+<section id="met-een-leeg-project-starten" class="level2">
+<h2 class="anchored" data-anchor-id="met-een-leeg-project-starten">Met een leeg project starten</h2>
+<p>–installatiehandleiding–</p>
+<p>Daarna kan je pakketten installeren. Dit doe je door in de terminal <code>uv add &lt;naam&gt;</code> te draaien, waarbij je <code>&lt;naam&gt;</code> vervangt door de naam van het pakket. Zie ook <a href="../../posts/uv-gebruiken/index.html#pakketten-installeren">deze post</a>.</p>
+</section>
+<section id="een-pyproject.toml-bestand-downloaden" class="level2">
+<h2 class="anchored" data-anchor-id="een-pyproject.toml-bestand-downloaden">Een <code>pyproject.toml</code>-bestand downloaden</h2>
+<p>–Zoals hierboven, maar Empty Project</p>
+<ul>
+<li>Sleep het <code>pyproject.toml</code>-bestand naar de <span class="smallcaps">explorer</span> (balk aan de linkerkant) in Positron.</li>
+<li>Open een Terminal (klik in het menu op Terminal → New Terminal).</li>
+<li>Draai <code>uv sync</code>. Dit maakt een nieuwe <em>virtual environment</em> voor je project en installeert de juist pakketten.</li>
+</ul>
+<p>Het kan zijn dat je hierna Positron opnieuw moet opstarten, omdat Positron niet altijd de nieuwe <em>virtual environment</em> direct herkent.</p>
+</section>
+<section id="een-git-repository-clonen" class="level2">
+<h2 class="anchored" data-anchor-id="een-git-repository-clonen">Een <code>git</code> <em>repository</em> <em>clonen</em></h2>
+<p>Je kunt een project starten door een <em>repository</em> te <em>clonen</em> vanaf GitHub of GitLab.</p>
+<p>Om een bestanden uit een <em>repository</em> te kunnen downloaden, moet je een URL (link) hebben. Bruikbare URLs zien er als volgt uit:</p>
+<ul>
+<li>https://&lt;server&gt;/&lt;organisatie&gt;/&lt;repository&gt;</li>
+<li>git@&lt;server&gt;:&lt;organisatie&gt;/&lt;repository&gt;.git</li>
+</ul>
+<p>Hierbij is &lt;server&gt; een van <u>github.com</u>, <u>gitlab.com</u> of <u>gitlab.tudelft.nl</u>. &lt;organisatie&gt; is de organisatie die de repository beheert. &lt;repository&gt; is de naam van de repository.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Waarschuwing</span><em>Clonen</em> vs.&nbsp;<em>downloaden</em>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Deze instructie is voor het <em>clonen</em> van een <em>repository</em>. Dit betekent dat je een connectie behoud met de <em>repository</em>, en bijvoorbeeld de geschiedenis van de bestanden kunt inzien, en kunt bijdragen aan wijzigingen aan de <em>repository</em>.</p>
+<p>Het kan zijn dat je slechts de bestanden wil downloaden die in de repository staan. Download dan de bestanden uit de *repository:</p>
+<ul>
+<li>Open de https://-link</li>
+<li>Klik op de ‘Code’-knop (groen in GitHub, blauw in GitLab)</li>
+<li>Klik op ‘Download ZIP’ (GitHub) of ‘zip’ onder ‘Download source dode’ (GitLab)</li>
+<li>Vervolg de instructies hier</li>
+</ul>
+</div>
+</div>
+<ul>
+<li>Klik op <i class="fa-solid fa-circle-plus" aria-label="circle-plus"></i> New → New Folder from Git…</li>
+<li>Plak de URL in het bovenste veld.</li>
+<li>Selecteer de juiste locatie voor de projectmap.</li>
+<li>Klik OK. Wacht tot de <em>repository</em> gecloned is en opent.</li>
+<li>Er kan je gevraagd worden of je de auteurs van de <em>repository</em> vertrouwd. Klik alleen op ‘Yes, I trust the authors’ als je erop vertrouwd dat het veilig is de code veilig op je eigen computer te draaien.</li>
+<li>Open een Terminal (klik in het menu op Terminal → New Terminal).</li>
+<li>Draai <code>uv sync</code><sup>1</sup>. Dit maakt een nieuwe <em>virtual environment</em> voor je project en installeert de juist pakketten.</li>
+<li>Het kan zijn dat Positron (rechts onderin) vraagt of je “We noticed a new environment has been created. Do you want to select it for the workspace folder?”. Klik op ‘Yes’.</li>
+<li>Als dit niet gevraagd wordt, kan het zijn dat je Positron opnieuw moet opstarten. Positron herkent niet altijd de nieuwe <em>virtual environment</em> direct.</li>
+</ul>
+</section>
+<section id="bestanden-uit-een-.zip-bestand" class="level2">
+<h2 class="anchored" data-anchor-id="bestanden-uit-een-.zip-bestand">Bestanden uit een *.zip-bestand</h2>
+<p>Het kan zijn dat je bestanden als <code>*.zip</code>-bestand krijgt aangeleverd.</p>
+<p>Als het <code>*.zip</code>-bestand een <code>pyproject.toml</code>-bestand bevat, voer dan de instructies voor het starten met een <code>pyproject.toml</code>-bestand uit. Vervang de stap “Sleep het <code>pyproject.toml</code>-bestand …” door onderstaande instructie.</p>
+<p>Als het <code>*.zip</code>-bestand geen <code>pyproject.toml</code>-bestand bevat, maar slechts bestanden die nodig zijn voor het project, voer dan de instructies voor het starten van een leeg project uit. Voer daarna onderstaande instructie uit.</p>
+<ul>
+<li>Pak het <code>*.zip</code>-bestand uit:
+<ul>
+<li>Windows: Klik met je rechtermuisknop op het bestand en klik op ‘Alles uitpakken’. Kies de projectmap om de bestanden in uit te pakken.</li>
+<li>macOS: Dubbelklik op het bestand. Deze wordt automatisch uitgepakt in een map. Verplaats de bestanden uit de map naar de projectmap.</li>
+</ul></li>
+</ul>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Voetnoten</h2>
+
+<ol>
+<li id="fn1"><p>We gaan er hier vanuit dat het <code>pyproject.toml</code>-bestand compleet is. Soms is bijvoorbeeld de project-naam niet gegeven, omdat het <em>repository</em> voor verschillende projecten gebruikt kan worden. Maak <code>pyproject.toml</code> dan eerst compleet.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://python-voor-kt.github.io/posts/nieuw-project-in-positron/</guid>
+  <pubDate>Mon, 03 Aug 2026 13:05:21 GMT</pubDate>
+</item>
+<item>
+  <title>Positron installeren</title>
+  <dc:creator>Peter Somhorst</dc:creator>
+  <link>https://python-voor-kt.github.io/posts/positron-installeren/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="positron-installeren" class="level1">
+<h1>Positron installeren</h1>
+<section id="windows" class="level2">
+<h2 class="anchored" data-anchor-id="windows">Windows</h2>
+<ul>
+<li>Zorg dat je weet wat voor type processor je hebt<sup>1</sup>: een x64-processor (Intel of AMD) of een ARM-processor (onder andere in sommige Microsoft Surface-computers)</li>
+<li>Download en installeer ‘Visual C++ Redistributable’:
+<ul>
+<li>Ga naar <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version" class="uri">https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version</a></li>
+<li>Klik op de juiste versie (X64 voor x64-processoren, ARM64 voor ARM-processoren)</li>
+<li>Open het gedownloade bestand</li>
+<li>Vink ‘I agree to the license terms and conditions’ aan en klik ‘Install’</li>
+<li>Klik na installatie op ‘Restart’</li>
+</ul></li>
+<li>Download en installeer ‘Positron’:
+<ul>
+<li>Ga naar <a href="https://positron.posit.co/download.html" class="uri">https://positron.posit.co/download.html</a></li>
+<li>Vink ‘I agree to the Positron license agreement and Posit Privacy Policy.’ aan</li>
+<li>Klik op de juiste versie (x64 of ARM64). Kies voor system level install</li>
+</ul></li>
+</ul>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Voetnoten</h2>
+
+<ol>
+<li id="fn1"><p>Je kunt dit vinden door via het Start-menu ‘Instellingen’ te openen. Klik op ‘Systeem’ en dan ‘Info’. Onder ‘Apparaatspecificaties’ staat ‘Type systeem’. Hier staat of je een x64 or ARM processor hebt.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://python-voor-kt.github.io/posts/positron-installeren/</guid>
+  <pubDate>Mon, 03 Aug 2026 13:05:21 GMT</pubDate>
+</item>
+<item>
+  <title>uv installeren</title>
+  <dc:creator>Peter Somhorst</dc:creator>
+  <link>https://python-voor-kt.github.io/posts/uv-installeren/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="installatie" class="level2">
+<h2 class="anchored" data-anchor-id="installatie">Installatie</h2>
+<p>Installatie van <code>uv</code> is heel eenvoudig. Onderstaande instructies zijn gekopieerd uit de officiële documentatie van <code>uv</code>: <a href="https://docs.astral.sh/uv/" class="uri">https://docs.astral.sh/uv/</a>.</p>
+<section id="macos" class="level3">
+<h3 class="anchored" data-anchor-id="macos">macOS</h3>
+<p>Open een Terminal, en voer onderstaand command uit:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">curl</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-LsSf</span> https://astral.sh/uv/install.sh <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">|</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sh</span></span></code></pre></div></div>
+<p>Open daarna een nieuwe sessie in Terminal (of herstart de Terminal app).</p>
+</section>
+<section id="windows" class="level3">
+<h3 class="anchored" data-anchor-id="windows">Windows</h3>
+<p>Open een PowerShell, en voer onderstaand commando uit:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">powershell</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-ExecutionPolicy</span> ByPass <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-c</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"irm https://astral.sh/uv/install.ps1 | iex"</span></span></code></pre></div></div>
+<p>Open daarna een nieuwe sessie in PowerShell (of herstart de PowerShell app).</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <guid>https://python-voor-kt.github.io/posts/uv-installeren/</guid>
+  <pubDate>Mon, 03 Aug 2026 13:05:21 GMT</pubDate>
+</item>
+<item>
+  <title>uv gebruiken als project-manager</title>
+  <dc:creator>Peter Somhorst</dc:creator>
+  <link>https://python-voor-kt.github.io/posts/uv-gebruiken/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><code>uv</code> is een project-manager voor Python projecten. Het zorgt voor</p>
+<ul>
+<li>eenvoudige aanmaak en management van <em>virtual environments</em>;</li>
+<li>installatie van verschillende versies van Python;</li>
+<li>snelle installatie van Python-pakketten;</li>
+<li>aftemming van versies van <em>dependencies</em>;</li>
+<li>reproduceerbare installaties via een <em>lockfile</em>.</li>
+</ul>
+<section id="installatie" class="level2">
+<h2 class="anchored" data-anchor-id="installatie">Installatie</h2>
+<p>Een korte installatie-handleiding is <a href="../../posts/uv-installeren/index.html">hier</a> te vinden.</p>
+</section>
+<section id="project-aanmaken" class="level2">
+<h2 class="anchored" data-anchor-id="project-aanmaken">Project aanmaken</h2>
+<p>Het is aangeraden voor elk project (onderzoek, stage, vak, opdracht, spontaan idee) een nieuw <code>uv</code>-project aan te maken. Hier beschrijven we de methode die alleen gebruik maakt van de Terminal/PowerShell.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Veel programmeer-programma’s, waaronder Positron, hebben ook een eigen (eenvoudigere) manier om projecten aan te maken. We hebben een <a href="../../posts/nieuw-project-in-positron/index.html">handleiding voor projecte in Positron</a> geschreven.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Waarschuwing</span>OneDrive (Windows) en andere cloud-tools
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Zet een <code>uv</code>-project <strong>nooit</strong> in OneDrive. Windows gebruikt OneDrive tegenwoordig als standaard locatie voor documenten. OneDrive werkt met ‘cloudbestanden’, die niet altijd daadwerkelijk op je computer staan. Zels als de bestanden wel op je computer staan, worden ze niet als normale bestanden behandeld.</p>
+<p>Dit kan ook gelden voor bijvoorbeeld Dropbox.</p>
+<p>Een goede locatie is <code>C:\Users\&lt;gebruikersnaam&gt;\</code> (maar niet <code>C:\Users\&lt;gebruikersnaam&gt;\Documenten</code>).</p>
+<p>Heb je wel eerder een project in OneDrive gezet, draai dan <code>uv cache clean</code> in je Terminal/PowerShell.</p>
+</div>
+</div>
+<section id="nieuw-project" class="level3">
+<h3 class="anchored" data-anchor-id="nieuw-project">Nieuw project</h3>
+<p>Open een Terminal/PowerShell, en ga naar de bovenliggende map waarin je je project wil maken. Als de project-map <code>C:\Users\voorbeeld\Studie\programmeren\project-1</code> moet worden, ga je dus naar <code>C:\Users\voorbeeld\Studie\programmeren</code>.</p>
+<p>Draai daarna onderstaande code, waarbij je <code>&lt;projectnaam&gt;</code> vervangt met de naam van je project, in het voorbeeld hierboven dus <code>uv init project-1</code>. Dit maakt een nieuwe map, en zet daar de benodigde bestanden in.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">uv</span> init <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>projectnaam<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span>  </span></code></pre></div></div>
+<p>De naam van een projectmap moet starten met een letter, en mag alleen letters, cijfers, <code>-</code>, <code>_</code> en <code>.</code> (geen spaties) bevatten.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Opmerking</span>Python-versie
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Standaard gebruikt <code>uv</code> de meest recente Python-versie voor het nieuwe project. Dit is meestal wenselijk. Soms, vooral als er net een nieuwe versie is vrijgegeven, is het wenselijk om een oudere (meer stabiele) versie te gebruiken. Je kunt een Python-versie kiezen door <code>--python &lt;versie&gt;</code> achter het <code>uv init</code>-commando te zetten, waarbij je <code>&lt;versie&gt;</code> vervangt door bijvoorbeeld <code>3.12</code> of <code>3.13.9</code>.</p>
+</div>
+</div>
+</section>
+<section id="bestaand-project-zonder-pyproject.toml-bestand" class="level3">
+<h3 class="anchored" data-anchor-id="bestaand-project-zonder-pyproject.toml-bestand">Bestaand project zonder <code>pyproject.toml</code>-bestand</h3>
+<p>Als je een bestaande projectmap hebt, maar nog geen <code>pyproject.toml</code>-bestand, volg dan deze instructies.</p>
+<p>Open een Terminal/PowerShell, en ga naar de projectmap. Draai daarna onderstaande code. Dit maakt in deze map de benodigde bestanden aan.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">uv</span> init</span></code></pre></div></div>
+<p>Let op dat de naam van een projectmap moet starten met een letter, en alleen letters, cijfers, <code>-</code>, <code>_</code> en <code>.</code> (geen spaties) mag bevatten.</p>
+</section>
+<section id="bestaand-project-dat-al-een-pyproject.toml-bestand-heeft" class="level3">
+<h3 class="anchored" data-anchor-id="bestaand-project-dat-al-een-pyproject.toml-bestand-heeft">Bestaand project dat al een <code>pyproject.toml</code>-bestand heeft</h3>
+<p>Als je al een projectmap met een <code>pyproject.toml</code>-bestand hebt, volg dan deze instructies.</p>
+<p>Open een Terminal/PowerShell, en ga naar de projectmap. Draai daarna onderstaande code. Dit vertelt <code>uv</code> dat je al een project hebt, en om een <em>virtual environment</em> aan te maken op basis van het <code>pyproject.toml</code>-bestand.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">uv</span> sync</span></code></pre></div></div>
+<p>Let op dat de naam van een projectmap moet starten met een letter, en alleen letters, cijfers, <code>-</code>, <code>_</code> en <code>.</code> (geen spaties) mag bevatten.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Opmerking</span><em>Virtual environments</em>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Een virtuele omgeving (<em>virtual environment</em>, vaak afgekort met <em>venv</em>) is een arparte ‘virtuele’ installatie van een specifieke versie van Python. Hierin installeer je alle Python-pakketten die je voor een project nodig hebt. Dit zorgt ervoor dat je de juiste versies van alle <em>dependencies</em> installeert voor het juiste project. Als je voor Project A bijvoorbeeld een pakket nodig hebt die een ‘oudere’ versie van NumPy (&lt;2.0) gebruikt, en Project B juist gebruik wil maken van de nieuwste mogelijkheden van Numpy (2.0 of nieuwer), kunnen deze projecten niet gebruik maken van dezelfde installaties. Door ze beiden in een eigen <em>virtual environment</em> te draaien, heb je dit probleem niet.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="pakketten-installeren" class="level2">
+<h2 class="anchored" data-anchor-id="pakketten-installeren">Pakketten installeren</h2>
+<p>Je kunt paketten aan je installatie toevoegen met onderstaand commando, waarbij je <code>&lt;naam&gt;</code> vervangt door de naam van het pakket. Je kunt meerdere paketten toevoegen door meerdere namen achter elkaar te plaatsen, bijvoorbeeld <code>uv add numpy scipy matplotlib pandas</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">uv</span> add <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>naam<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span></span></code></pre></div></div>
+<p><code>uv</code> voegt het pakket toe aan de lijst met <em>dependencies</em> in <code>pyproject.toml</code>, en installeert het pakket en al zijn <em>dependencies</em>.</p>
+<p>Je kunt ook pakketten installeren met <code>uv pip add &lt;naam&gt;</code>. Dit installeert een pakket wel, maar voegt het niet toe aan de <em>dependencies</em> van het project. Daarmee is de installatie niet reproduceerbaar. Dit kan nuttig zijn om bijvoorbeeld een pakket uit te proberen, of tijdelijk te installeren en daarna weer te verwijderen.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Opmerking</span><em>Dependencies</em>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Python-projecten maken meestal gebruik van andere Python-pakketten. Dit heet een <em>dependency</em>. Als je bijvoorbeeld <code>matplotlib</code> installeert, worden er ook negen <em>dependencies</em>, pakketten waar matplotlib gebruik van maakt, geïnstalleerd. Eén van deze pakketten heeft weer een eigen <em>dependency</em>, die ook wordt geïnstalleerd. Dit heet samen een <em>dependency tree</em>. Met het terminal-commando <code>uv tree</code> kan je deze voor je eigen project weergeven.</p>
+<p>Bij installatie van pakketten is het belangrijk dat alle pakketten in de <em>dependecy tree</em> goed met elkaar samenwerken. Het kan bijvoorbeeld zijn dat pakket A en pakket B beiden pakket C als <em>dependency</em> hebben, waarbij pakket A kan werken met pakket C versie 1.2 tot 2.7, terwijl pakket B werkt met pakket C versie 2.0 tot 3.1. Een goede project-manager zorgt voor goede afstemming tussen versies, en stopt de installatie als er geen afstemming mogelijk is.<sup>1</sup></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Opmerking</span><em>lockfile</em>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>uv</code> maakt voor geïnstalleerde projecten altijd een <em>lockfile</em> aan. Hierin staat nauwkeurig beschreven welke versie van elk pakket in het project gebruikt is. Hierdoor kan de <em>virtual environment</em> exact gereproduceerd worden op dezelfde én andere computers.</p>
+</div>
+</div>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Voetnoten</h2>
+
+<ol>
+<li id="fn1"><p>De standaard manier om Python-pakketten te installeren, <code>pip</code>, zorgt niet voor afstemming tussen versies, maar installeert een versie die werkt voor het meest recent geïnstalleerde pakket. Dit kan soms tot problemen leiden.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://python-voor-kt.github.io/posts/uv-gebruiken/</guid>
+  <pubDate>Mon, 03 Aug 2026 13:05:21 GMT</pubDate>
+</item>
 </channel>
 </rss>

@@ -2,14 +2,20 @@
   {
     "listing": "/articles.html",
     "items": [
-      "/posts/new-project-in-positron/index.html",
-      "/posts/using-uv/index.html",
-      "/posts/positron-installeren/index.html"
+      "/posts/nieuw-project-in-positron/index.html",
+      "/posts/positron-installeren/index.html",
+      "/posts/uv-installeren/index.html",
+      "/posts/uv-gebruiken/index.html"
     ]
   },
   {
     "listing": "/manuals.html",
-    "items": []
+    "items": [
+      "/posts/nieuw-project-in-positron/index.html",
+      "/posts/positron-installeren/index.html",
+      "/posts/uv-installeren/index.html",
+      "/posts/uv-gebruiken/index.html"
+    ]
   },
   {
     "listing": "/links.html",

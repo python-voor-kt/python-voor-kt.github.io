@@ -10,11 +10,11 @@
 <atom:link href="https://python-voor-kt.github.io/articles.xml" rel="self" type="application/rss+xml"/>
 <description>Python voor KT</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Mon, 03 Aug 2026 13:04:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 03 Aug 2026 13:05:21 GMT</lastBuildDate>
 <item>
   <title>Een nieuw project starten in Positron</title>
   <dc:creator>Marjon van Wees, Menno Bloembergen en Peter Somhorst</dc:creator>
-  <link>https://python-voor-kt.github.io/posts/new-project-in-positron/</link>
+  <link>https://python-voor-kt.github.io/posts/nieuw-project-in-positron/</link>
   <description><![CDATA[ 
 
 
@@ -52,7 +52,7 @@
 <section id="met-een-leeg-project-starten" class="level2">
 <h2 class="anchored" data-anchor-id="met-een-leeg-project-starten">Met een leeg project starten</h2>
 <p>–installatiehandleiding–</p>
-<p>Daarna kan je pakketten installeren. Dit doe je door in de terminal <code>uv add &lt;naam&gt;</code> te draaien, waarbij je <code>&lt;naam&gt;</code> vervangt door de naam van het pakket. Zie ook <a href="../../posts/using-uv/index.html#pakketten-installeren">deze post</a>.</p>
+<p>Daarna kan je pakketten installeren. Dit doe je door in de terminal <code>uv add &lt;naam&gt;</code> te draaien, waarbij je <code>&lt;naam&gt;</code> vervangt door de naam van het pakket. Zie ook <a href="../../posts/uv-gebruiken/index.html#pakketten-installeren">deze post</a>.</p>
 </section>
 <section id="een-pyproject.toml-bestand-downloaden" class="level2">
 <h2 class="anchored" data-anchor-id="een-pyproject.toml-bestand-downloaden">Een <code>pyproject.toml</code>-bestand downloaden</h2>
@@ -128,27 +128,65 @@
 <li id="fn1"><p>We gaan er hier vanuit dat het <code>pyproject.toml</code>-bestand compleet is. Soms is bijvoorbeeld de project-naam niet gegeven, omdat het <em>repository</em> voor verschillende projecten gebruikt kan worden. Maak <code>pyproject.toml</code> dan eerst compleet.↩︎</p></li>
 </ol>
 </section></div> ]]></description>
-  <guid>https://python-voor-kt.github.io/posts/new-project-in-positron/</guid>
-  <pubDate>Mon, 03 Aug 2026 13:04:00 GMT</pubDate>
+  <guid>https://python-voor-kt.github.io/posts/nieuw-project-in-positron/</guid>
+  <pubDate>Mon, 03 Aug 2026 13:05:21 GMT</pubDate>
 </item>
 <item>
-  <title>uv gebruiken als project-manager</title>
+  <title>Positron installeren</title>
   <dc:creator>Peter Somhorst</dc:creator>
-  <link>https://python-voor-kt.github.io/posts/using-uv/</link>
+  <link>https://python-voor-kt.github.io/posts/positron-installeren/</link>
   <description><![CDATA[ 
 
 
 
 
 
-<p><code>uv</code> is een project-manager voor Python projecten. Het zorgt voor</p>
+<section id="positron-installeren" class="level1">
+<h1>Positron installeren</h1>
+<section id="windows" class="level2">
+<h2 class="anchored" data-anchor-id="windows">Windows</h2>
 <ul>
-<li>eenvoudige aanmaak en management van <em>virtual environments</em>;</li>
-<li>installatie van verschillende versies van Python;</li>
-<li>snelle installatie van Python-pakketten;</li>
-<li>aftemming van versies van <em>dependencies</em>;</li>
-<li>reproduceerbare installaties via een <em>lockfile</em>.</li>
+<li>Zorg dat je weet wat voor type processor je hebt<sup>1</sup>: een x64-processor (Intel of AMD) of een ARM-processor (onder andere in sommige Microsoft Surface-computers)</li>
+<li>Download en installeer ‘Visual C++ Redistributable’:
+<ul>
+<li>Ga naar <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version" class="uri">https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version</a></li>
+<li>Klik op de juiste versie (X64 voor x64-processoren, ARM64 voor ARM-processoren)</li>
+<li>Open het gedownloade bestand</li>
+<li>Vink ‘I agree to the license terms and conditions’ aan en klik ‘Install’</li>
+<li>Klik na installatie op ‘Restart’</li>
+</ul></li>
+<li>Download en installeer ‘Positron’:
+<ul>
+<li>Ga naar <a href="https://positron.posit.co/download.html" class="uri">https://positron.posit.co/download.html</a></li>
+<li>Vink ‘I agree to the Positron license agreement and Posit Privacy Policy.’ aan</li>
+<li>Klik op de juiste versie (x64 of ARM64). Kies voor system level install</li>
+</ul></li>
 </ul>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Voetnoten</h2>
+
+<ol>
+<li id="fn1"><p>Je kunt dit vinden door via het Start-menu ‘Instellingen’ te openen. Klik op ‘Systeem’ en dan ‘Info’. Onder ‘Apparaatspecificaties’ staat ‘Type systeem’. Hier staat of je een x64 or ARM processor hebt.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://python-voor-kt.github.io/posts/positron-installeren/</guid>
+  <pubDate>Mon, 03 Aug 2026 13:05:21 GMT</pubDate>
+</item>
+<item>
+  <title>uv installeren</title>
+  <dc:creator>Peter Somhorst</dc:creator>
+  <link>https://python-voor-kt.github.io/posts/uv-installeren/</link>
+  <description><![CDATA[ 
+
+
+
+
+
 <section id="installatie" class="level2">
 <h2 class="anchored" data-anchor-id="installatie">Installatie</h2>
 <p>Installatie van <code>uv</code> is heel eenvoudig. Onderstaande instructies zijn gekopieerd uit de officiële documentatie van <code>uv</code>: <a href="https://docs.astral.sh/uv/" class="uri">https://docs.astral.sh/uv/</a>.</p>
@@ -180,11 +218,53 @@ font-style: inherit;">-c</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"irm https://astral.sh/uv/install.ps1 | iex"</span></span></code></pre></div></div>
 <p>Open daarna een nieuwe sessie in PowerShell (of herstart de PowerShell app).</p>
+
+
 </section>
+</section>
+
+ ]]></description>
+  <guid>https://python-voor-kt.github.io/posts/uv-installeren/</guid>
+  <pubDate>Mon, 03 Aug 2026 13:05:21 GMT</pubDate>
+</item>
+<item>
+  <title>uv gebruiken als project-manager</title>
+  <dc:creator>Peter Somhorst</dc:creator>
+  <link>https://python-voor-kt.github.io/posts/uv-gebruiken/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><code>uv</code> is een project-manager voor Python projecten. Het zorgt voor</p>
+<ul>
+<li>eenvoudige aanmaak en management van <em>virtual environments</em>;</li>
+<li>installatie van verschillende versies van Python;</li>
+<li>snelle installatie van Python-pakketten;</li>
+<li>aftemming van versies van <em>dependencies</em>;</li>
+<li>reproduceerbare installaties via een <em>lockfile</em>.</li>
+</ul>
+<section id="installatie" class="level2">
+<h2 class="anchored" data-anchor-id="installatie">Installatie</h2>
+<p>Een korte installatie-handleiding is <a href="../../posts/uv-installeren/index.html">hier</a> te vinden.</p>
 </section>
 <section id="project-aanmaken" class="level2">
 <h2 class="anchored" data-anchor-id="project-aanmaken">Project aanmaken</h2>
-<p>Het is aangeraden voor elk project (onderzoek, stage, vak, opdracht, spontaan idee) een nieuw <code>uv</code>-project aan te maken. Hier beschrijven we de methode die alleen gebruik maakt van de Terminal/PowerShell. Sommige programma’s, waaronder Positron, hebben ook een eigen (eenvoudigere) manier om projecten aan te maken.</p>
+<p>Het is aangeraden voor elk project (onderzoek, stage, vak, opdracht, spontaan idee) een nieuw <code>uv</code>-project aan te maken. Hier beschrijven we de methode die alleen gebruik maakt van de Terminal/PowerShell.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Veel programmeer-programma’s, waaronder Positron, hebben ook een eigen (eenvoudigere) manier om projecten aan te maken. We hebben een <a href="../../posts/nieuw-project-in-positron/index.html">handleiding voor projecte in Positron</a> geschreven.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -205,7 +285,7 @@ font-style: inherit;">"irm https://astral.sh/uv/install.ps1 | iex"</span></span>
 <h3 class="anchored" data-anchor-id="nieuw-project">Nieuw project</h3>
 <p>Open een Terminal/PowerShell, en ga naar de bovenliggende map waarin je je project wil maken. Als de project-map <code>C:\Users\voorbeeld\Studie\programmeren\project-1</code> moet worden, ga je dus naar <code>C:\Users\voorbeeld\Studie\programmeren</code>.</p>
 <p>Draai daarna onderstaande code, waarbij je <code>&lt;projectnaam&gt;</code> vervangt met de naam van je project, in het voorbeeld hierboven dus <code>uv init project-1</code>. Dit maakt een nieuwe map, en zet daar de benodigde bestanden in.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">uv</span> init <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -231,7 +311,7 @@ font-style: inherit;">&gt;</span>  </span></code></pre></div></div>
 <h3 class="anchored" data-anchor-id="bestaand-project-zonder-pyproject.toml-bestand">Bestaand project zonder <code>pyproject.toml</code>-bestand</h3>
 <p>Als je een bestaande projectmap hebt, maar nog geen <code>pyproject.toml</code>-bestand, volg dan deze instructies.</p>
 <p>Open een Terminal/PowerShell, en ga naar de projectmap. Draai daarna onderstaande code. Dit maakt in deze map de benodigde bestanden aan.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">uv</span> init</span></code></pre></div></div>
 <p>Let op dat de naam van een projectmap moet starten met een letter, en alleen letters, cijfers, <code>-</code>, <code>_</code> en <code>.</code> (geen spaties) mag bevatten.</p>
@@ -240,7 +320,7 @@ font-style: inherit;">uv</span> init</span></code></pre></div></div>
 <h3 class="anchored" data-anchor-id="bestaand-project-dat-al-een-pyproject.toml-bestand-heeft">Bestaand project dat al een <code>pyproject.toml</code>-bestand heeft</h3>
 <p>Als je al een projectmap met een <code>pyproject.toml</code>-bestand hebt, volg dan deze instructies.</p>
 <p>Open een Terminal/PowerShell, en ga naar de projectmap. Draai daarna onderstaande code. Dit vertelt <code>uv</code> dat je al een project hebt, en om een <em>virtual environment</em> aan te maken op basis van het <code>pyproject.toml</code>-bestand.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><span class="ex" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">uv</span> sync</span></code></pre></div></div>
 <p>Let op dat de naam van een projectmap moet starten met een letter, en alleen letters, cijfers, <code>-</code>, <code>_</code> en <code>.</code> (geen spaties) mag bevatten.</p>
@@ -262,7 +342,7 @@ font-style: inherit;">uv</span> sync</span></code></pre></div></div>
 <section id="pakketten-installeren" class="level2">
 <h2 class="anchored" data-anchor-id="pakketten-installeren">Pakketten installeren</h2>
 <p>Je kunt paketten aan je installatie toevoegen met onderstaand commando, waarbij je <code>&lt;naam&gt;</code> vervangt door de naam van het pakket. Je kunt meerdere paketten toevoegen door meerdere namen achter elkaar te plaatsen, bijvoorbeeld <code>uv add numpy scipy matplotlib pandas</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><span class="ex" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">uv</span> add <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -309,54 +389,8 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 <li id="fn1"><p>De standaard manier om Python-pakketten te installeren, <code>pip</code>, zorgt niet voor afstemming tussen versies, maar installeert een versie die werkt voor het meest recent geïnstalleerde pakket. Dit kan soms tot problemen leiden.↩︎</p></li>
 </ol>
 </section></div> ]]></description>
-  <guid>https://python-voor-kt.github.io/posts/using-uv/</guid>
-  <pubDate>Mon, 03 Aug 2026 13:04:00 GMT</pubDate>
-</item>
-<item>
-  <title>Positron installeren</title>
-  <dc:creator>Peter Somhorst</dc:creator>
-  <link>https://python-voor-kt.github.io/posts/positron-installeren/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="positron-installeren" class="level1">
-<h1>Positron installeren</h1>
-<section id="windows" class="level2">
-<h2 class="anchored" data-anchor-id="windows">Windows</h2>
-<ul>
-<li>Zorg dat je weet wat voor type processor je hebt<sup>1</sup>: een x64-processor (Intel of AMD) of een ARM-processor (onder andere in sommige Microsoft Surface-computers)</li>
-<li>Download en installeer ‘Visual C++ Redistributable’:
-<ul>
-<li>Ga naar <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version" class="uri">https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version</a></li>
-<li>Klik op de juiste versie (X64 voor x64-processoren, ARM64 voor ARM-processoren)</li>
-<li>Open het gedownloade bestand</li>
-<li>Vink ‘I agree to the license terms and conditions’ aan en klik ‘Install’</li>
-<li>Klik na installatie op ‘Restart’</li>
-</ul></li>
-<li>Download en installeer ‘Positron’:
-<ul>
-<li>Ga naar <a href="https://positron.posit.co/download.html" class="uri">https://positron.posit.co/download.html</a></li>
-<li>Vink ‘I agree to the Positron license agreement and Posit Privacy Policy.’ aan</li>
-<li>Klik op de juiste versie (x64 of ARM64). Kies voor system level install</li>
-</ul></li>
-</ul>
-
-
-</section>
-</section>
-
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Voetnoten</h2>
-
-<ol>
-<li id="fn1"><p>Je kunt dit vinden door via het Start-menu ‘Instellingen’ te openen. Klik op ‘Systeem’ en dan ‘Info’. Onder ‘Apparaatspecificaties’ staat ‘Type systeem’. Hier staat of je een x64 or ARM processor hebt.↩︎</p></li>
-</ol>
-</section></div> ]]></description>
-  <guid>https://python-voor-kt.github.io/posts/positron-installeren/</guid>
-  <pubDate>Mon, 03 Aug 2026 13:04:00 GMT</pubDate>
+  <guid>https://python-voor-kt.github.io/posts/uv-gebruiken/</guid>
+  <pubDate>Mon, 03 Aug 2026 13:05:21 GMT</pubDate>
 </item>
 </channel>
 </rss>

@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://python-voor-kt.github.io/articles.html</loc>
-    <lastmod>2026-08-03T13:03:58.036Z</lastmod>
+    <lastmod>2026-08-03T13:05:18.965Z</lastmod>
   </url>
   <url>
     <loc>https://python-voor-kt.github.io/about.html</loc>
-    <lastmod>2026-08-03T13:03:58.036Z</lastmod>
+    <lastmod>2026-08-03T13:05:18.965Z</lastmod>
   </url>
   <url>
     <loc>https://python-voor-kt.github.io/manuals.html</loc>
-    <lastmod>2026-08-03T13:03:58.036Z</lastmod>
+    <lastmod>2026-08-03T13:05:18.965Z</lastmod>
   </url>
   <url>
-    <loc>https://python-voor-kt.github.io/posts/using-uv/index.html</loc>
-    <lastmod>2026-08-03T13:03:58.037Z</lastmod>
+    <loc>https://python-voor-kt.github.io/posts/uv-installeren/index.html</loc>
+    <lastmod>2026-08-03T13:05:18.966Z</lastmod>
   </url>
   <url>
-    <loc>https://python-voor-kt.github.io/posts/new-project-in-positron/index.html</loc>
-    <lastmod>2026-08-03T13:03:58.036Z</lastmod>
+    <loc>https://python-voor-kt.github.io/posts/nieuw-project-in-positron/index.html</loc>
+    <lastmod>2026-08-03T13:05:18.965Z</lastmod>
   </url>
   <url>
     <loc>https://python-voor-kt.github.io/posts/positron-installeren/index.html</loc>
-    <lastmod>2026-08-03T13:03:58.036Z</lastmod>
+    <lastmod>2026-08-03T13:05:18.965Z</lastmod>
+  </url>
+  <url>
+    <loc>https://python-voor-kt.github.io/posts/uv-gebruiken/index.html</loc>
+    <lastmod>2026-08-03T13:05:18.966Z</lastmod>
   </url>
   <url>
     <loc>https://python-voor-kt.github.io/links.html</loc>
-    <lastmod>2026-08-03T13:03:58.036Z</lastmod>
+    <lastmod>2026-08-03T13:05:18.965Z</lastmod>
   </url>
 </urlset>
