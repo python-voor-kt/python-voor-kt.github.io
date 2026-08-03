@@ -1,0 +1,36 @@
+- title: Matplotlib
+  path: https://matplotlib.org
+  description: >
+    Pakket voor het plotten en visualiseren van data.
+  image: https://matplotlib.org/_static/logo_light.svg
+  categories: [pakketten]
+- title: NumPy
+  path: https://numpy.org
+  description: >
+    Pakket voor fundamenteel wetenschappelijk rekenen
+  image: https://github.com/numpy/numpy/blob/main/branding/logo/logomark/numpylogoicon.png?raw=true
+  categories: [pakketten]
+- title: SciPy
+  path: https://scipy.org
+  description: >
+    Pakket met algoritmes voor wetenschappelijk rekenen
+  image: https://raw.githubusercontent.com/scipy/scipy.org/refs/heads/main/static/images/logo.svg
+  categories: [pakketten]
+- title: Python voor ME
+  path: https://python-voor-me.gitlab.io
+  image: https://python-voor-me.gitlab.io/_static/logo.png
+  description: >
+    Reader van het programmeren-deel van het vak KT1005 - Wiskunde 1 & 2 en programmeren.
+  categories: [bronnen]
+- title: pandas
+  path: https://pandas.pydata.org
+  description: >
+    Pakket voor voor data-analyse en -manipulatie.
+  image: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/960px-Pandas_logo.svg.png
+  categories: [pakketten]
+- title: uv
+  path: https://docs.astral.sh/uv/
+  description: >
+    Project-manager voor Python-projecten.
+  image: https://astral.sh/static/SVG/UV.svg
+  categories: [pakketten]

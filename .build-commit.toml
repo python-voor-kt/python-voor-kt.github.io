@@ -1,0 +1,25 @@
+# git build-commit — https://github.com/psomhorst/git-build-commit
+
+# Shell command(s) run in a temporary checkout of the source branch.
+# A list runs the commands in order; the first failure aborts the build.
+build = "quarto render"
+
+# Directory holding the build output, relative to the worktree root.
+# Its contents become the entire tree of the commit on `target`.
+dir = "_site"
+
+# Branch to build from. Omit to use whatever branch you are on.
+# source = "main"
+
+# Branch the output is committed onto.
+target = "build"
+
+# Remote used by `git build-commit push`.
+remote = "origin"
+
+# Commit message template. Placeholders: {sha}, {short_sha}, {source},
+# {target}, {subject}, {date}, {time}, {datetime}.
+message = "Build {short_sha}"
+
+# Record the source commit as a second parent of the build commit.
+# link = true

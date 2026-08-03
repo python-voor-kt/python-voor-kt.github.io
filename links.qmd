@@ -1,0 +1,21 @@
+---
+title: "Links"
+listing:
+  id: links
+  contents: links.yml
+  feed: false
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: true
+page-layout: full
+title-block-banner: true
+---
+
+Hier staat een collectie met links naar nuttige pagina's, bijvoorbeeld de documentatie van verschillen Python-pakketten, readers van vakken, of externe pagina's die handig kunnen zijn. 
+
+::: {#links}
+:::
+
+
