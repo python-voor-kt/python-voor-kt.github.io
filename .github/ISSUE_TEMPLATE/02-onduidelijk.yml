@@ -1,0 +1,45 @@
+name: Uitleg is onduidelijk
+description: De tekst klopt misschien wel, maar je snapt er niet uit wat je moet doen.
+title: "[Onduidelijk] "
+labels: ["onduidelijk"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Als jij iets niet snapt, snappen anderen het waarschijnlijk ook niet.
+        Dit soort meldingen zijn juist heel nuttig, dus wees niet bang dat je vraag "dom" is.
+
+  - type: input
+    id: pagina
+    attributes:
+      label: Op welke pagina staat het?
+      description: Plak de link uit je browser, of noem de titel van de pagina.
+      placeholder: https://python-voor-kt.github.io/posts/using-uv/
+    validations:
+      required: true
+
+  - type: textarea
+    id: onduidelijk
+    attributes:
+      label: Welk stuk is onduidelijk?
+      description: Citeer de zin of de stap waar je vastliep.
+    validations:
+      required: true
+
+  - type: textarea
+    id: doel
+    attributes:
+      label: Wat probeerde je te bereiken?
+      description: >-
+        Bijvoorbeeld: "ik wilde een pakket installeren voor mijn opdracht van
+        Beeldverwerking". Dit helpt ons te begrijpen wat er ontbreekt.
+    validations:
+      required: true
+
+  - type: textarea
+    id: geprobeerd
+    attributes:
+      label: Wat heb je al geprobeerd?
+      description: Ook als het niet werkte. Laat leeg als je niet wist waar te beginnen.
+    validations:
+      required: false

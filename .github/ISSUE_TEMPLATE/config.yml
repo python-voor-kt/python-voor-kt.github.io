@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Eerst zelf zoeken
+    url: https://python-voor-kt.github.io
+    about: Veel vragen worden al beantwoord in de handleiding. Kijk daar eerst even.
+  - name: Vraag over een opdracht of vak
+    url: https://python-voor-kt.github.io/about.html
+    about: Gaat je vraag niet over deze site maar over je opdracht? Neem contact op met je docent.

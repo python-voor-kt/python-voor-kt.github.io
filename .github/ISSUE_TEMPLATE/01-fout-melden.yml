@@ -1,0 +1,57 @@
+name: Fout melden
+description: Er staat iets verkeerds op de site, of een instructie werkt niet.
+title: "[Fout] "
+labels: ["fout"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bedankt dat je de moeite neemt. Hoe preciezer je bent, hoe sneller we het kunnen oplossen.
+
+  - type: input
+    id: pagina
+    attributes:
+      label: Op welke pagina staat het?
+      description: Plak de link uit je browser, of noem de titel van de pagina.
+      placeholder: https://python-voor-kt.github.io/posts/new-project-in-positron/
+    validations:
+      required: true
+
+  - type: textarea
+    id: probleem
+    attributes:
+      label: Wat klopt er niet?
+      description: Beschrijf wat er staat en waarom dat niet klopt. Citeer gerust de zin.
+    validations:
+      required: true
+
+  - type: textarea
+    id: verwacht
+    attributes:
+      label: Wat zou er volgens jou moeten staan?
+      description: Weet je het niet zeker? Laat dit veld dan leeg.
+    validations:
+      required: false
+
+  - type: textarea
+    id: foutmelding
+    attributes:
+      label: Foutmelding
+      description: >-
+        Kreeg je een foutmelding in de Terminal of in Positron? Plak hier de
+        volledige tekst. Dit wordt automatisch als code opgemaakt.
+      render: text
+    validations:
+      required: false
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Welk besturingssysteem gebruik je?
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Niet van toepassing
+    validations:
+      required: true
