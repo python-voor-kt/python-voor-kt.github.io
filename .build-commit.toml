@@ -2,7 +2,12 @@
 
 # Shell command(s) run in a temporary checkout of the source branch.
 # A list runs the commands in order; the first failure aborts the build.
-build = "quarto render"
+build = [
+    "quarto render",
+    # Issue-templates horen in de default branch van de repo waar de issues
+    # staan. Dat is de publieke Pages-repo, niet deze (verborgen) bron-repo.
+    "cp -r .github _site/",
+]
 
 # Directory holding the build output, relative to the worktree root.
 # Its contents become the entire tree of the commit on `target`.
