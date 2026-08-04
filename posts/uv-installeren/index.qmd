@@ -17,7 +17,7 @@ Installatie van `uv` is heel eenvoudig. Onderstaande instructies zijn gekopiëer
 {{< video media/uv-install-windows-web.mp4 >}}
 
 1. Open Windows PowerShell: klik op het Windows-menu, type `PowerShell`, en klik op 'Windows PowerShell' of druk op de Enter-toets.
-2. Kopiëer[^copy] dit commando naar de PowerShell en druk op Enter.
+2. Kopiëer dit commando naar de PowerShell en druk op Enter.
    ```bash
    powershell -ExecutionPolicy ByPass `
      -c "irm https://astral.sh/uv/install.ps1 | iex"
