@@ -1,0 +1,5 @@
+- input: 2026-08-04 16-58-54.mp4
+- output: uv-install-mac.mp4
+  editlist: 
+  - start: 0:08.2
+  - stop: 0:29

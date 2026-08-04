@@ -1,0 +1,8 @@
+- output: uv-install-windows.mp4
+  editlist: 
+  - input: 2026-08-04 11-22-01.mov
+  - start: 0:16
+  - stop: 0:39.4
+  - input: 2026-08-04 11-28-56.mov
+  - start: 0:06.5
+  - stop: 0:17
