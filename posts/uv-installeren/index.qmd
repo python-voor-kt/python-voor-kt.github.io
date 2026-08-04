@@ -9,7 +9,9 @@ category: manual
 Installatie van `uv` is heel eenvoudig. Onderstaande instructies zijn gekopieerd uit de officiële documentatie van `uv`: <https://docs.astral.sh/uv/>. 
 
 ### macOS
-Open een Terminal, en voer onderstaand command uit:
+Open een Terminal[^Terminal], en voer onderstaand command uit:
+
+[^Terminal]: Open Spotlight met Cmd+Spatie, en type `Terminal`. Druk op Enter.
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -18,7 +20,9 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 Open daarna een nieuwe sessie in Terminal (of herstart de Terminal app).
 
 ### Windows
-Open een PowerShell, en voer onderstaand commando uit:
+Open Windows PowerShell[^PS], en voer onderstaand commando uit:
+
+[^PS]: Klik op het Windows-menu en type `PowerShell`. Klik op 'Windows PowerShell'.
 
 ```bash
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
