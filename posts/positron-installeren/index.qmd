@@ -21,3 +21,15 @@ category: manual
     - Klik op de juiste versie (x64 of ARM64). Kies voor system level install 
 
 [^platform]: Je kunt dit vinden door via het Start-menu 'Instellingen' te openen. Klik op 'Systeem' en dan 'Info'. Onder 'Apparaatspecificaties' staat 'Type systeem'. Hier staat of je een x64 or ARM processor hebt.
+
+## macOS
+
+- Zorg dat je weet wat voor type processor je hebt. MacBooks uitgebracht sinds november 2020 hebben allemaal een Apple Silicon-processor. MacBooks van van voor half 2020 hebben allemaal een Intel-processor.[^platformapple] 
+- Download en installeer 'Positron':
+    - Ga naar <https://positron.posit.co/download.html>
+    - Klik op 'Download for Apple Silicon' of 'Download for Intel', afhankelijk van het type processor dat je hebt.
+    - Open het gedownloadde DMG-bestand.
+    - Er opent een venster met 'Positron.app' en 'Applications'. Klik en sleep Positron bovenop Applications om Positron te installeren. Sluit daarna venster. 
+    - Je kunt Positron nu openen via de Apps launcher, zoeken in Spotlight, of door Applicaties te openen in Finder.
+
+[^platformapple]: Je kunt dit controleren door op het Apple-logo in de menubalk en dan op 'Over deze Mac' te klikken. Achter 'Processor' staat ofwel "Apple M..." ofwel "... Intel Core ...".
