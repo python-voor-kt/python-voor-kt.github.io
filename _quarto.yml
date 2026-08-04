@@ -8,10 +8,11 @@ website:
   title: "Python voor KT"
   navbar:
     left:
-      - manuals.qmd
+      - href: index.qmd
+        text: Handleidingen
       - links.qmd
-      - articles.qmd
       - about.qmd
+    right:
       - icon: github
         href: https://github.com/python-voor-kt/python-voor-kt.github.io
 format:

@@ -2,6 +2,8 @@
 title: "Positron installeren"
 author: "Peter Somhorst"
 category: manual
+phase: install
+order: 2
 ---
 
 # Positron installeren

@@ -1,5 +1,46 @@
 ---
 title: "Python voor KT"
+listing:
+  - id: install
+    contents: posts
+    include:
+      phase: install
+    sort: "order"
+    type: default
+    fields: [title, description]
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
+  - id: projects
+    contents: posts
+    include:
+      phase: projects
+    sort: "order"
+    type: default
+    fields: [title, description]
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
 ---
 
+Instructiemateriaal over Python en `uv` voor studenten en docenten Klinische
+Technologie. Begin je net? Werk de handleidingen hieronder in volgorde af.
 
+Bij de meeste staat een filmpje bovenaan de pagina. Alle commando's staan ook
+in de tekst, zodat je ze kunt kopiëren.
+
+## 1. Installeren
+
+Dit doe je één keer, aan het begin.
+
+::: {#install}
+:::
+
+## 2. Werken met projecten
+
+Dit gebruik je bij elk vak, elke opdracht en elke stage opnieuw.
+
+::: {#projects}
+:::

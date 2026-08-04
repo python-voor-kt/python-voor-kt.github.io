@@ -2,6 +2,8 @@
 title: "Een nieuw project starten in Positron"
 author: "Marjon van Wees, Menno Bloembergen en Peter Somhorst"
 category: manual
+phase: projects
+order: 1
 ---
 
 Om te zorgen dat je bestanden goed georganiseerd blijven, is het belangrijk voor elk project een nieuwe map aan te maken. Dit voorkomt (later) veel problemen.

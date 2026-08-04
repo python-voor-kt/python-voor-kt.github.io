@@ -2,6 +2,8 @@
 title: "`uv` installeren"
 author: "Peter Somhorst"
 category: manual
+phase: install
+order: 1
 ---
 
 

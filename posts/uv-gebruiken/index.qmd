@@ -2,6 +2,8 @@
 title: "`uv` gebruiken als project-manager"
 author: "Peter Somhorst"
 category: manual
+phase: projects
+order: 2
 ---
 
 `uv` is een project-manager voor Python projecten. Het zorgt voor 
