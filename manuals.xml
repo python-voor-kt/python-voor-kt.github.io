@@ -10,7 +10,7 @@
 <atom:link href="https://python-voor-kt.github.io/manuals.xml" rel="self" type="application/rss+xml"/>
 <description>Python voor KT</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Mon, 03 Aug 2026 13:12:59 GMT</lastBuildDate>
+<lastBuildDate>Tue, 04 Aug 2026 09:18:06 GMT</lastBuildDate>
 <item>
   <title>Een nieuw project starten in Positron</title>
   <dc:creator>Marjon van Wees, Menno Bloembergen en Peter Somhorst</dc:creator>
@@ -129,7 +129,7 @@
 </ol>
 </section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/nieuw-project-in-positron/</guid>
-  <pubDate>Mon, 03 Aug 2026 13:12:59 GMT</pubDate>
+  <pubDate>Tue, 04 Aug 2026 09:18:06 GMT</pubDate>
 </item>
 <item>
   <title>Positron installeren</title>
@@ -162,6 +162,20 @@
 <li>Klik op de juiste versie (x64 of ARM64). Kies voor system level install</li>
 </ul></li>
 </ul>
+</section>
+<section id="macos" class="level2">
+<h2 class="anchored" data-anchor-id="macos">macOS</h2>
+<ul>
+<li>Zorg dat je weet wat voor type processor je hebt. MacBooks uitgebracht sinds november 2020 hebben allemaal een Apple Silicon-processor. MacBooks van van voor half 2020 hebben allemaal een Intel-processor.<sup>2</sup></li>
+<li>Download en installeer ‘Positron’:
+<ul>
+<li>Ga naar <a href="https://positron.posit.co/download.html" class="uri">https://positron.posit.co/download.html</a></li>
+<li>Klik op ‘Download for Apple Silicon’ of ‘Download for Intel’, afhankelijk van het type processor dat je hebt.</li>
+<li>Open het gedownloadde DMG-bestand.</li>
+<li>Er opent een venster met ‘Positron.app’ en ‘Applications’. Klik en sleep Positron bovenop Applications om Positron te installeren. Sluit daarna venster.</li>
+<li>Je kunt Positron nu openen via de Apps launcher, zoeken in Spotlight, of door Applicaties te openen in Finder.</li>
+</ul></li>
+</ul>
 
 
 </section>
@@ -172,10 +186,11 @@
 
 <ol>
 <li id="fn1"><p>Je kunt dit vinden door via het Start-menu ‘Instellingen’ te openen. Klik op ‘Systeem’ en dan ‘Info’. Onder ‘Apparaatspecificaties’ staat ‘Type systeem’. Hier staat of je een x64 or ARM processor hebt.↩︎</p></li>
+<li id="fn2"><p>Je kunt dit controleren door op het Apple-logo in de menubalk en dan op ‘Over deze Mac’ te klikken. Achter ‘Processor’ staat ofwel “Apple M…” ofwel “… Intel Core …”.↩︎</p></li>
 </ol>
 </section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/positron-installeren/</guid>
-  <pubDate>Mon, 03 Aug 2026 13:12:59 GMT</pubDate>
+  <pubDate>Tue, 04 Aug 2026 09:18:06 GMT</pubDate>
 </item>
 <item>
   <title>uv installeren</title>
@@ -192,7 +207,7 @@
 <p>Installatie van <code>uv</code> is heel eenvoudig. Onderstaande instructies zijn gekopieerd uit de officiële documentatie van <code>uv</code>: <a href="https://docs.astral.sh/uv/" class="uri">https://docs.astral.sh/uv/</a>.</p>
 <section id="macos" class="level3">
 <h3 class="anchored" data-anchor-id="macos">macOS</h3>
-<p>Open een Terminal, en voer onderstaand command uit:</p>
+<p>Open een Terminal<sup>1</sup>, en voer onderstaand command uit:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">curl</span> <span class="at" style="color: #657422;
@@ -207,7 +222,7 @@ font-style: inherit;">sh</span></span></code></pre></div></div>
 </section>
 <section id="windows" class="level3">
 <h3 class="anchored" data-anchor-id="windows">Windows</h3>
-<p>Open een PowerShell, en voer onderstaand commando uit:</p>
+<p>Open Windows PowerShell<sup>2</sup>, en voer onderstaand commando uit:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">powershell</span> <span class="at" style="color: #657422;
@@ -223,9 +238,16 @@ font-style: inherit;">"irm https://astral.sh/uv/install.ps1 | iex"</span></span>
 </section>
 </section>
 
- ]]></description>
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Voetnoten</h2>
+
+<ol>
+<li id="fn1"><p>Open Spotlight met Cmd+Spatie, en type <code>Terminal</code>. Druk op Enter.↩︎</p></li>
+<li id="fn2"><p>Klik op het Windows-menu en type <code>PowerShell</code>. Klik op ‘Windows PowerShell’.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/uv-installeren/</guid>
-  <pubDate>Mon, 03 Aug 2026 13:12:59 GMT</pubDate>
+  <pubDate>Tue, 04 Aug 2026 09:18:06 GMT</pubDate>
 </item>
 <item>
   <title>uv gebruiken als project-manager</title>
@@ -390,7 +412,7 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 </ol>
 </section></div> ]]></description>
   <guid>https://python-voor-kt.github.io/posts/uv-gebruiken/</guid>
-  <pubDate>Mon, 03 Aug 2026 13:12:59 GMT</pubDate>
+  <pubDate>Tue, 04 Aug 2026 09:18:06 GMT</pubDate>
 </item>
 </channel>
 </rss>

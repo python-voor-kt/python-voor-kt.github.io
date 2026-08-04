@@ -32,14 +32,21 @@
     "href": "posts/uv-installeren/index.html",
     "title": "uv installeren",
     "section": "",
-    "text": "Installatie van uv is heel eenvoudig. Onderstaande instructies zijn gekopieerd uit de officiële documentatie van uv: https://docs.astral.sh/uv/.\n\n\nOpen een Terminal, en voer onderstaand command uit:\ncurl -LsSf https://astral.sh/uv/install.sh | sh\nOpen daarna een nieuwe sessie in Terminal (of herstart de Terminal app).\n\n\n\nOpen een PowerShell, en voer onderstaand commando uit:\npowershell -ExecutionPolicy ByPass -c \"irm https://astral.sh/uv/install.ps1 | iex\"\nOpen daarna een nieuwe sessie in PowerShell (of herstart de PowerShell app)."
+    "text": "Installatie van uv is heel eenvoudig. Onderstaande instructies zijn gekopieerd uit de officiële documentatie van uv: https://docs.astral.sh/uv/.\n\n\nOpen een Terminal1, en voer onderstaand command uit:\ncurl -LsSf https://astral.sh/uv/install.sh | sh\nOpen daarna een nieuwe sessie in Terminal (of herstart de Terminal app).\n\n\n\nOpen Windows PowerShell2, en voer onderstaand commando uit:\npowershell -ExecutionPolicy ByPass -c \"irm https://astral.sh/uv/install.ps1 | iex\"\nOpen daarna een nieuwe sessie in PowerShell (of herstart de PowerShell app)."
   },
   {
     "objectID": "posts/uv-installeren/index.html#installatie",
     "href": "posts/uv-installeren/index.html#installatie",
     "title": "uv installeren",
     "section": "",
-    "text": "Installatie van uv is heel eenvoudig. Onderstaande instructies zijn gekopieerd uit de officiële documentatie van uv: https://docs.astral.sh/uv/.\n\n\nOpen een Terminal, en voer onderstaand command uit:\ncurl -LsSf https://astral.sh/uv/install.sh | sh\nOpen daarna een nieuwe sessie in Terminal (of herstart de Terminal app).\n\n\n\nOpen een PowerShell, en voer onderstaand commando uit:\npowershell -ExecutionPolicy ByPass -c \"irm https://astral.sh/uv/install.ps1 | iex\"\nOpen daarna een nieuwe sessie in PowerShell (of herstart de PowerShell app)."
+    "text": "Installatie van uv is heel eenvoudig. Onderstaande instructies zijn gekopieerd uit de officiële documentatie van uv: https://docs.astral.sh/uv/.\n\n\nOpen een Terminal1, en voer onderstaand command uit:\ncurl -LsSf https://astral.sh/uv/install.sh | sh\nOpen daarna een nieuwe sessie in Terminal (of herstart de Terminal app).\n\n\n\nOpen Windows PowerShell2, en voer onderstaand commando uit:\npowershell -ExecutionPolicy ByPass -c \"irm https://astral.sh/uv/install.ps1 | iex\"\nOpen daarna een nieuwe sessie in PowerShell (of herstart de PowerShell app)."
+  },
+  {
+    "objectID": "posts/uv-installeren/index.html#footnotes",
+    "href": "posts/uv-installeren/index.html#footnotes",
+    "title": "uv installeren",
+    "section": "Voetnoten",
+    "text": "Voetnoten\n\n\nOpen Spotlight met Cmd+Spatie, en type Terminal. Druk op Enter.↩︎\nKlik op het Windows-menu en type PowerShell. Klik op ‘Windows PowerShell’.↩︎"
   },
   {
     "objectID": "posts/nieuw-project-in-positron/index.html",
@@ -88,7 +95,7 @@
     "href": "posts/positron-installeren/index.html",
     "title": "Positron installeren",
     "section": "",
-    "text": "Zorg dat je weet wat voor type processor je hebt1: een x64-processor (Intel of AMD) of een ARM-processor (onder andere in sommige Microsoft Surface-computers)\nDownload en installeer ‘Visual C++ Redistributable’:\n\nGa naar https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version\nKlik op de juiste versie (X64 voor x64-processoren, ARM64 voor ARM-processoren)\nOpen het gedownloade bestand\nVink ‘I agree to the license terms and conditions’ aan en klik ‘Install’\nKlik na installatie op ‘Restart’\n\nDownload en installeer ‘Positron’:\n\nGa naar https://positron.posit.co/download.html\nVink ‘I agree to the Positron license agreement and Posit Privacy Policy.’ aan\nKlik op de juiste versie (x64 of ARM64). Kies voor system level install"
+    "text": "Zorg dat je weet wat voor type processor je hebt1: een x64-processor (Intel of AMD) of een ARM-processor (onder andere in sommige Microsoft Surface-computers)\nDownload en installeer ‘Visual C++ Redistributable’:\n\nGa naar https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version\nKlik op de juiste versie (X64 voor x64-processoren, ARM64 voor ARM-processoren)\nOpen het gedownloade bestand\nVink ‘I agree to the license terms and conditions’ aan en klik ‘Install’\nKlik na installatie op ‘Restart’\n\nDownload en installeer ‘Positron’:\n\nGa naar https://positron.posit.co/download.html\nVink ‘I agree to the Positron license agreement and Posit Privacy Policy.’ aan\nKlik op de juiste versie (x64 of ARM64). Kies voor system level install\n\n\n\n\n\n\nZorg dat je weet wat voor type processor je hebt. MacBooks uitgebracht sinds november 2020 hebben allemaal een Apple Silicon-processor. MacBooks van van voor half 2020 hebben allemaal een Intel-processor.2\nDownload en installeer ‘Positron’:\n\nGa naar https://positron.posit.co/download.html\nKlik op ‘Download for Apple Silicon’ of ‘Download for Intel’, afhankelijk van het type processor dat je hebt.\nOpen het gedownloadde DMG-bestand.\nEr opent een venster met ‘Positron.app’ en ‘Applications’. Klik en sleep Positron bovenop Applications om Positron te installeren. Sluit daarna venster.\nJe kunt Positron nu openen via de Apps launcher, zoeken in Spotlight, of door Applicaties te openen in Finder."
   },
   {
     "objectID": "posts/positron-installeren/index.html#windows",
@@ -98,11 +105,18 @@
     "text": "Zorg dat je weet wat voor type processor je hebt1: een x64-processor (Intel of AMD) of een ARM-processor (onder andere in sommige Microsoft Surface-computers)\nDownload en installeer ‘Visual C++ Redistributable’:\n\nGa naar https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version\nKlik op de juiste versie (X64 voor x64-processoren, ARM64 voor ARM-processoren)\nOpen het gedownloade bestand\nVink ‘I agree to the license terms and conditions’ aan en klik ‘Install’\nKlik na installatie op ‘Restart’\n\nDownload en installeer ‘Positron’:\n\nGa naar https://positron.posit.co/download.html\nVink ‘I agree to the Positron license agreement and Posit Privacy Policy.’ aan\nKlik op de juiste versie (x64 of ARM64). Kies voor system level install"
   },
   {
+    "objectID": "posts/positron-installeren/index.html#macos",
+    "href": "posts/positron-installeren/index.html#macos",
+    "title": "Positron installeren",
+    "section": "",
+    "text": "Zorg dat je weet wat voor type processor je hebt. MacBooks uitgebracht sinds november 2020 hebben allemaal een Apple Silicon-processor. MacBooks van van voor half 2020 hebben allemaal een Intel-processor.2\nDownload en installeer ‘Positron’:\n\nGa naar https://positron.posit.co/download.html\nKlik op ‘Download for Apple Silicon’ of ‘Download for Intel’, afhankelijk van het type processor dat je hebt.\nOpen het gedownloadde DMG-bestand.\nEr opent een venster met ‘Positron.app’ en ‘Applications’. Klik en sleep Positron bovenop Applications om Positron te installeren. Sluit daarna venster.\nJe kunt Positron nu openen via de Apps launcher, zoeken in Spotlight, of door Applicaties te openen in Finder."
+  },
+  {
     "objectID": "posts/positron-installeren/index.html#footnotes",
     "href": "posts/positron-installeren/index.html#footnotes",
     "title": "Positron installeren",
     "section": "Voetnoten",
-    "text": "Voetnoten\n\n\nJe kunt dit vinden door via het Start-menu ‘Instellingen’ te openen. Klik op ‘Systeem’ en dan ‘Info’. Onder ‘Apparaatspecificaties’ staat ‘Type systeem’. Hier staat of je een x64 or ARM processor hebt.↩︎"
+    "text": "Voetnoten\n\n\nJe kunt dit vinden door via het Start-menu ‘Instellingen’ te openen. Klik op ‘Systeem’ en dan ‘Info’. Onder ‘Apparaatspecificaties’ staat ‘Type systeem’. Hier staat of je een x64 or ARM processor hebt.↩︎\nJe kunt dit controleren door op het Apple-logo in de menubalk en dan op ‘Over deze Mac’ te klikken. Achter ‘Processor’ staat ofwel “Apple M…” ofwel “… Intel Core …”.↩︎"
   },
   {
     "objectID": "posts/uv-gebruiken/index.html",
