@@ -4,9 +4,12 @@
 # A list runs the commands in order; the first failure aborts the build.
 build = [
     "quarto render",
-    # Issue-templates horen in de default branch van de repo waar de issues
-    # staan. Dat is de publieke Pages-repo, niet deze (verborgen) bron-repo.
-    "cp -r .github _site/",
+    # Alles in _deploy/ hoort bij de publieke repo, niet bij de site: de
+    # README die bezoekers daar zien en de issue-templates. Die templates
+    # moeten in de default branch staan van de repo waar de issues staan,
+    # en dat is de publieke Pages-repo, niet deze (verborgen) bron-repo.
+    # De vorm `_deploy/.` is nodig, want `_deploy/*` slaat .github over.
+    "cp -R _deploy/. _site/",
 ]
 
 # Directory holding the build output, relative to the worktree root.
