@@ -27,9 +27,11 @@ order: 2
 
 ## macOS
 
+{{< video media/positron-install-mac-web.mp4 >}}
+
 1. Zorg dat je weet wat voor type processor je hebt. MacBooks uitgebracht sinds november 2020 hebben allemaal een Apple Silicon-processor. MacBooks van van voor half 2020 hebben allemaal een Intel-processor.
     - Klik op het Apple-logo in de menubalk en dan op 'Over deze Mac'.
-    - Achter 'Processor' staat ofwel "**Apple** M..." ofwel "... **Intel** Core ...".
+    - Achter 'Chip'/'Processor' staat ofwel "**Apple** M..." ofwel "... **Intel** Core ...".
 2. Download en installeer 'Positron':
     - Ga naar <https://positron.posit.co/download.html>
     - Klik op 'Download for Apple Silicon' of 'Download for Intel', afhankelijk van het type processor dat je hebt.
