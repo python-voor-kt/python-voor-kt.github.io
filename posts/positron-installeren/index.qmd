@@ -37,7 +37,9 @@ order: 2
     - Klik op 'Download for Apple Silicon' of 'Download for Intel', afhankelijk van het type processor dat je hebt.
     - Open het gedownloadde DMG-bestand.
     - Er opent een venster met 'Positron.app' en 'Applications'. Klik en sleep Positron bovenop Applications om Positron te installeren. Sluit daarna venster. 
-      ![Het installatie-venster voor Positron.](install-positron.png)
-    - Je kunt Positron nu openen via de Apps launcher, zoeken in Spotlight, of door Applicaties te openen in Finder.
+    - Je kunt Positron nu openen via de Apps launcher, zoeken in Spotlight, of door in Finder naar de map Applicaties.
+    - Verwijder de 'schijf' 'Positron...' die op je bureaublad staat.
+3. Het kan zijn dat je computer vraagt om commandoregeltools te installeren. Klik op "Annuleren".
+   ![Popup-scherm met de vraag om commandoregeltools te installeren.](media/install-command-tools.png)
 
 :::
