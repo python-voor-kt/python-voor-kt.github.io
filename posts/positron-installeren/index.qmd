@@ -8,10 +8,20 @@ order: 2
 
 # Positron installeren
 
-::: {.panel-tabset}
-## Windows
+Positron is een geïntegreerde omgeving voor het schrijven van code met veel ingebouwde tools voor data-analyse. Deze handleiding laat je zien hoe je Positron kan installeren.
 
-1. Zorg dat je weet wat voor type processor je hebt[^platform]: een x64-processor (Intel of AMD) of een ARM-processor:
+## Voorbereiding
+
+Zorg dat je eerste `uv` hebt geïnstalleerd. Zie [deze handleiding](../uv-installeren/index.qmd).
+
+## Installatie
+
+::: {.panel-tabset}
+### Windows
+
+{{< video media/positron-install-windows-web.mp4 >}}
+
+1. Zorg dat je weet wat voor type processor je hebt: een x64-processor (Intel of AMD) of een ARM-processor:
     - Open het Windows-menu en type 'Instellingen'. Klik op Intellingen op druk op Enter.
     - Klik op 'Systeem' en dan 'Info'. 
     - Onder 'Apparaatspecificaties' staat 'Type systeem'. Hier staat of je een x64 or ARM processor hebt.
@@ -25,7 +35,7 @@ order: 2
     - Ga naar <https://positron.posit.co/download.html#all-platforms>.
     - Zoek de downloads voor Windows. Zoek de versie die bij je processor past (x64 of ARM64). Klik op de knop rechts van 'System install'. 
 
-## macOS
+### macOS
 
 {{< video media/positron-install-mac-web.mp4 >}}
 
@@ -38,8 +48,8 @@ order: 2
     - Open het gedownloadde DMG-bestand.
     - Er opent een venster met 'Positron.app' en 'Applications'. Klik en sleep Positron bovenop Applications om Positron te installeren. Sluit daarna venster. 
     - Je kunt Positron nu openen via de Apps launcher, zoeken in Spotlight, of door in Finder naar de map Applicaties.
-    - Verwijder de 'schijf' 'Positron...' die op je bureaublad staat.
-3. Het kan zijn dat je computer vraagt om commandoregeltools te installeren. Klik op "Annuleren".
+    - Verwijder de schijf 'Positron...' die op je bureaublad staat.
+3. Het kan zijn dat je computer vraagt om commandoregeltools te installeren. Klik op "Annuleer".
    ![Popup-scherm met de vraag om commandoregeltools te installeren.](media/install-command-tools.png)
 
 :::
