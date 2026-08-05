@@ -1,0 +1,13 @@
+- input: 2026-08-05 12-58-21.mp4
+- output: positron-install-mac.mp4
+  editlist: 
+  - start: 0:10
+  - stop: 0:26
+  - start: 1:09
+  - stop: 1:28
+  - start: 1:33
+  - stop: 2:02
+  - start: 2:07
+  - stop: 2:11
+  - start: 2:21.8
+  - stop: 2:22
