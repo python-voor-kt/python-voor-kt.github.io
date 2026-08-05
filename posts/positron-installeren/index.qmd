@@ -8,30 +8,34 @@ order: 2
 
 # Positron installeren
 
+::: {.panel-tabset}
 ## Windows
 
-- Zorg dat je weet wat voor type processor je hebt[^platform]: een x64-processor (Intel of AMD) of een ARM-processor (onder andere in sommige Microsoft Surface-computers)
-- Download en installeer 'Visual C++ Redistributable':
+1. Zorg dat je weet wat voor type processor je hebt[^platform]: een x64-processor (Intel of AMD) of een ARM-processor:
+    - Open het Windows-menu en type 'Instellingen'. Klik op Intellingen op druk op Enter.
+    - Klik op 'Systeem' en dan 'Info'. 
+    - Onder 'Apparaatspecificaties' staat 'Type systeem'. Hier staat of je een x64 or ARM processor hebt.
+2. Download en installeer 'Visual C++ Redistributable':
     - Ga naar <https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version>
     - Klik op de juiste versie (X64 voor x64-processoren, ARM64 voor ARM-processoren)
     - Open het gedownloade bestand
     - Vink 'I agree to the license terms and conditions' aan en klik 'Install'
     - Klik na installatie op 'Restart'
-- Download en installeer 'Positron':
-    - Ga naar <https://positron.posit.co/download.html>
-    - Vink 'I agree to the Positron license agreement and Posit Privacy Policy.' aan
-    - Klik op de juiste versie (x64 of ARM64). Kies voor system level install 
-
-[^platform]: Je kunt dit vinden door via het Start-menu 'Instellingen' te openen. Klik op 'Systeem' en dan 'Info'. Onder 'Apparaatspecificaties' staat 'Type systeem'. Hier staat of je een x64 or ARM processor hebt.
+3. Download en installeer 'Positron':
+    - Ga naar <https://positron.posit.co/download.html#all-platforms>.
+    - Zoek de downloads voor Windows. Zoek de versie die bij je processor past (x64 of ARM64). Klik op de knop rechts van 'System install'. 
 
 ## macOS
 
-- Zorg dat je weet wat voor type processor je hebt. MacBooks uitgebracht sinds november 2020 hebben allemaal een Apple Silicon-processor. MacBooks van van voor half 2020 hebben allemaal een Intel-processor.[^platformapple] 
-- Download en installeer 'Positron':
+1. Zorg dat je weet wat voor type processor je hebt. MacBooks uitgebracht sinds november 2020 hebben allemaal een Apple Silicon-processor. MacBooks van van voor half 2020 hebben allemaal een Intel-processor.
+    - Klik op het Apple-logo in de menubalk en dan op 'Over deze Mac'.
+    - Achter 'Processor' staat ofwel "**Apple** M..." ofwel "... **Intel** Core ...".
+2. Download en installeer 'Positron':
     - Ga naar <https://positron.posit.co/download.html>
     - Klik op 'Download for Apple Silicon' of 'Download for Intel', afhankelijk van het type processor dat je hebt.
     - Open het gedownloadde DMG-bestand.
     - Er opent een venster met 'Positron.app' en 'Applications'. Klik en sleep Positron bovenop Applications om Positron te installeren. Sluit daarna venster. 
+      ![Het installatie-venster voor Positron.](install-positron.png)
     - Je kunt Positron nu openen via de Apps launcher, zoeken in Spotlight, of door Applicaties te openen in Finder.
 
-[^platformapple]: Je kunt dit controleren door op het Apple-logo in de menubalk en dan op 'Over deze Mac' te klikken. Achter 'Processor' staat ofwel "Apple M..." ofwel "... Intel Core ...".
+:::
