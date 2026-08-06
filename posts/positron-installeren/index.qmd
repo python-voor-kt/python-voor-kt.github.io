@@ -33,7 +33,7 @@ Zorg dat je eerste `uv` hebt geïnstalleerd. Zie [deze handleiding](../uv-instal
     - Klik na installatie op 'Restart'.
 3. Download en installeer 'Positron':
     - Ga naar <https://positron.posit.co/download.html#all-platforms>.
-    - Zoek de downloads voor Windows. Zoek de versie die bij je processor past (x64 of ARM64). Klik op de knop rechts van 'System install'. 
+    - Zoek de downloads voor Windows. Zoek de versie die bij je processor past (x64 of ARM64). Klik op de knop rechts van 'System install'.
     - Open het gedownloadde bestand.
     - Vink "I accept the agreement" aan en klik dan op "Next".
     - Klik weer op "Next", en dan op "Install".
@@ -48,13 +48,13 @@ Zorg dat je eerste `uv` hebt geïnstalleerd. Zie [deze handleiding](../uv-instal
     - Klik op het Apple-logo in de menubalk en dan op 'Over deze Mac'.
     - Achter 'Chip'/'Processor' staat ofwel "**Apple** M..." ofwel "... **Intel** Core ...".
 2. Download en installeer 'Positron':
-    - Ga naar <https://positron.posit.co/download.html>
+    - Ga naar <https://positron.posit.co/download.html>.
     - Klik op 'Download for Apple Silicon' of 'Download for Intel', afhankelijk van het type processor dat je hebt.
     - Open het gedownloadde DMG-bestand.
     - Er opent een venster met 'Positron.app' en 'Applications'. Klik en sleep Positron bovenop Applications om Positron te installeren. Sluit daarna venster. 
     - Je kunt Positron nu openen via de Apps launcher, zoeken in Spotlight, of door in Finder naar de map Applicaties.
     - Verwijder de schijf 'Positron...' die op je bureaublad staat.
-3. Het kan zijn dat je computer vraagt om commandoregeltools te installeren. Klik op "Annuleer".
+3. Het kan zijn dat je computer vraagt om commandoregeltools te installeren. Klik op "Annuleer".  
    ![Popup-scherm met de vraag om commandoregeltools te installeren.](media/install-command-tools.png){style="max-width: 550px;"}
 
 :::
