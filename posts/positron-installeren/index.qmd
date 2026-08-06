@@ -6,8 +6,6 @@ phase: install
 order: 2
 ---
 
-# Positron installeren
-
 Positron is een geïntegreerde omgeving voor het schrijven van code met veel ingebouwde tools voor data-analyse. Deze handleiding laat je zien hoe je Positron kan installeren.
 
 ## Voorbereiding
