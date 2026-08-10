@@ -11,5 +11,14 @@
       "/posts/nieuw-project-in-positron/index.html",
       "/posts/uv-gebruiken/index.html"
     ]
+  },
+  {
+    "listing": "/posts/nieuw-project-in-positron/index.html",
+    "items": [
+      "/posts/nieuw-project-in-positron/leeg-project.html",
+      "/posts/nieuw-project-in-positron/pyproject-downloaden.html",
+      "/posts/nieuw-project-in-positron/repository-clonen.html",
+      "/posts/nieuw-project-in-positron/zip-bestand.html"
+    ]
   }
 ]

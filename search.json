@@ -25,7 +25,7 @@
     "href": "index.html#werken-met-projecten",
     "title": "Python voor KT",
     "section": "2. Werken met projecten",
-    "text": "2. Werken met projecten\nDit gebruik je bij elk vak, elke opdracht en elke stage opnieuw.\n\n\n\n\n\n\n\nEen nieuw project starten in Positron\n\n\n\n\n\n\n\n\n\n\n\n\nuv gebruiken als project-manager\n\n\n\n\n\n\n\n\nGeen overeenkomsten"
+    "text": "2. Werken met projecten\nDit gebruik je bij elk vak, elke opdracht en elke stage opnieuw.\n\n\n\n\n\n\n\nEen nieuw project starten in Positron\n\n\nEen projectmap aanmaken, op vier manieren.\n\n\n\n\n\n\n\n\n\nuv gebruiken als project-manager\n\n\n\n\n\n\n\n\nGeen overeenkomsten"
   },
   {
     "objectID": "posts/uv-installeren/index.html",
@@ -42,46 +42,74 @@
     "text": "Installatie\nInstallatie van uv is heel eenvoudig. Onderstaande instructies zijn gekopiëerd uit de officiële documentatie van uv: https://docs.astral.sh/uv/.\n\nWindowsmacOS\n\n\n\n\nOpen Windows PowerShell: klik op het Windows-menu, type PowerShell, en klik op ‘Windows PowerShell’ of druk op de Enter-toets.\nKopiëer dit commando naar de PowerShell en druk op Enter.\npowershell -ExecutionPolicy ByPass `\n  -c \"irm https://astral.sh/uv/install.ps1 | iex\"\nDe installatie is goed gegaan als je een output krijgt met halverwege de zin “everything’s installed!”.\nSluit het venster.\nOpen PowerShell opnieuw.\nKopiëer dit commando naar de PowerShelle en druk op Enter.\nuv --version\nDe output toont als het goed is “uv” met daarachter het geïnstalleerde versienummer weer. uv is nu klaar voor gebruik.\n\n\n\n\n\nOpen een Terminal: Open Spotlight met Cmd+Spatie, type Terminal en druk op enter.\nKopiëer dit commando naar de Terminal en druk op Enter.\ncurl -LsSf https://astral.sh/uv/install.sh | sh\nDe installatie is goed gegaan als je een output krijgt met halverwege de zin “everything’s installed!”.\nSluit het venster.\nOpen Terminal opnieuw.\nKopiëer dit commando naar de Terminal en druk op Enter.\nuv --version\nDe output toont als het goed is “uv” met daarachter het geïnstalleerde versienummer weer. uv is nu klaar voor gebruik."
   },
   {
+    "objectID": "posts/nieuw-project-in-positron/repository-clonen.html",
+    "href": "posts/nieuw-project-in-positron/repository-clonen.html",
+    "title": "Een git-repository clonen",
+    "section": "",
+    "text": "← Terug naar het overzicht\nJe kunt een project starten door een repository te clonen vanaf GitHub of GitLab.\nOm bestanden uit een repository te kunnen downloaden, moet je een URL (link) hebben. Bruikbare URLs zien er als volgt uit:\n\nhttps://&lt;server&gt;/&lt;organisatie&gt;/&lt;repository&gt;\ngit@&lt;server&gt;:&lt;organisatie&gt;/&lt;repository&gt;.git\n\nHierbij is &lt;server&gt; een van github.com, gitlab.com of gitlab.tudelft.nl. &lt;organisatie&gt; is de organisatie die de repository beheert. &lt;repository&gt; is de naam van de repository.\n\n\n\n\n\n\nWaarschuwingClonen vs. downloaden\n\n\n\nDeze instructie is voor het clonen van een repository. Dit betekent dat je een connectie behoud met de repository, en bijvoorbeeld de geschiedenis van de bestanden kunt inzien, en kunt bijdragen aan wijzigingen aan de repository.\nHet kan zijn dat je slechts de bestanden wil downloaden die in de repository staan. Download dan de bestanden uit de repository:\n\nOpen de https://-link\nKlik op de ‘Code’-knop (groen in GitHub, blauw in GitLab)\nKlik op ‘Download ZIP’ (GitHub) of ‘zip’ onder ‘Download source code’ (GitLab)\nVervolg de instructies voor bestanden uit een *.zip-bestand\n\n\n\n\nOpen Positron.\nLinksbovenin staat een knop “⊕ New”. Klik op “⊕ New” en dan op “New Folder from Git…”.\nPlak/type de URL onder “Git repository URL”.\nKies de locatie voor de projectmap. Let op dat je projectmap niet in OneDrive mag staan.\nKlik op “OK”.\nPositron opent de gekloonde repository en vraagt of je de auteurs van de repository vertrouwt. Klik op “Yes, I trust the authors”, maar alleen als je de code in de repository kan vertrouwen. Als je op “No, I don’t trust the authors” klikt, kan je de code wel inzien, maar niet draaien.\nAls het project een pyproject.toml-bestand heeft, moet je een virtual environment maken. Controleer eerst of in pyproject.toml de instellingen (vooral de projectnaam, die moet voldoen aan de regels voor projectnamen) goed staan. Vervolgens zijn er twee opties.\n\nPositron herkent dat er een virtual environment aangemaakt moet worden.\n\nAls Positron herkent dat er een virtual environment moet worden aangemaakt komt er rechts onderin een popup met de tekst “This project has pyproject.toml but no virtual environment. Use uv to create a .venv and install these requirements?”. Let op dat hier “uv” staat, en niet iets anders.\nKlik “Yes”.\n\nInstallatie via de Terminal.\n\nOpen in Positron een terminal (in het onderste paneel in Positron, of klik in het menu op Terminal → New Terminal).\nType uv sync en druk op Enter. Dit maakt een nieuwe virtual environment voor je project en installeert de juiste pakketten.\n\n\nHet kan zijn dat Positron (rechts onderin) vraagt “We noticed a new environment has been created. Do you want to select it for the workspace folder?”. Klik op ‘Yes’.\nAls dat niet het geval is, kan je de virtual environment activeren door op “ Start Session” te klikken. Je ziet een lijst met environments waar je uit kan kiezen. Kies degene waar staat “Python  (uv: )”, met daaronder de locatie van je project."
+  },
+  {
     "objectID": "posts/nieuw-project-in-positron/index.html",
     "href": "posts/nieuw-project-in-positron/index.html",
     "title": "Een nieuw project starten in Positron",
     "section": "",
-    "text": "Om te zorgen dat je bestanden goed georganiseerd blijven, is het belangrijk voor elk project een nieuwe map aan te maken. Dit voorkomt (later) veel problemen."
+    "text": "Om te zorgen dat je bestanden goed georganiseerd blijven, is het belangrijk voor elk project een nieuwe project-map aan te maken. Dit voorkomt (later) veel problemen."
   },
   {
-    "objectID": "posts/nieuw-project-in-positron/index.html#met-een-leeg-project-starten",
-    "href": "posts/nieuw-project-in-positron/index.html#met-een-leeg-project-starten",
+    "objectID": "posts/nieuw-project-in-positron/index.html#voorbereiding",
+    "href": "posts/nieuw-project-in-positron/index.html#voorbereiding",
     "title": "Een nieuw project starten in Positron",
-    "section": "Met een leeg project starten",
-    "text": "Met een leeg project starten\n–installatiehandleiding–\nDaarna kan je pakketten installeren. Dit doe je door in de terminal uv add &lt;naam&gt; te draaien, waarbij je &lt;naam&gt; vervangt door de naam van het pakket. Zie ook deze post."
+    "section": "Voorbereiding",
+    "text": "Voorbereiding\nDeze handleiding gaat er vanuit dat je uv en Positron hebt geïnstalleerd. Zie de installatiehandleidingen voor uv en Positron."
   },
   {
-    "objectID": "posts/nieuw-project-in-positron/index.html#een-pyproject.toml-bestand-downloaden",
-    "href": "posts/nieuw-project-in-positron/index.html#een-pyproject.toml-bestand-downloaden",
+    "objectID": "posts/nieuw-project-in-positron/index.html#mappenstructuur",
+    "href": "posts/nieuw-project-in-positron/index.html#mappenstructuur",
     "title": "Een nieuw project starten in Positron",
-    "section": "Een pyproject.toml-bestand downloaden",
-    "text": "Een pyproject.toml-bestand downloaden\n–Zoals hierboven, maar Empty Project\n\nSleep het pyproject.toml-bestand naar de explorer (balk aan de linkerkant) in Positron.\nOpen een Terminal (klik in het menu op Terminal → New Terminal).\nDraai uv sync. Dit maakt een nieuwe virtual environment voor je project en installeert de juist pakketten.\n\nHet kan zijn dat je hierna Positron opnieuw moet opstarten, omdat Positron niet altijd de nieuwe virtual environment direct herkent."
+    "section": "Mappenstructuur",
+    "text": "Mappenstructuur\nHet is een goede gewoonte voor elk onderzoek, vak, opdracht of stage een nieuw project aan te maken. Je project komt in een projectmap te staan. Zet deze op een logische locatie.\n\n\n\n\n\n\nWaarschuwing 1: OneDrive (Windows) en andere cloudopslag\n\n\n\nMicrosoft Windows gebruikt tegenwoordig OneDrive als standaard locatie voor documenten. uv werkt niet goed als je je bestanden in OneDrive zet. OneDrive werkt namelijk met ‘cloudbestanden’, die niet altijd daadwerkelijk op je computer staan. Zelfs als de bestanden wel op je computer staan, worden ze niet als normale bestanden behandeld.\nDit kan ook gelden voor bestanden op bijvoorbeeld Dropbox.\nZet je projectmap dus nooit in OneDrive. Een goede locatie is een map in C:\\Users\\&lt;gebruikersnaam&gt;\\ (maar niet C:\\Users\\&lt;gebruikersnaam&gt;\\Documenten).\nHeb je wel eerder een project in OneDrive gezet, draai dan uv cache clean in je Terminal/PowerShell. uv deelt bestanden tussen projecten, waardoor een project in OneDrive ook problemen kan veroorzaken in je andere projecten. uv cache clean ruimt dat op.\n\n\n\n\n\n\n\n\nTip 1: Regels voor project-namen\n\n\n\nDe naam van een project-map moet aan bepaalde regels voldoen.\n\nDe naam moet beginnen én eindigen met een letter.\nDe naam mag alleen letters, cijfers, _, - en . (underscore, streepje en punt) bevatten."
   },
   {
-    "objectID": "posts/nieuw-project-in-positron/index.html#een-git-repository-clonen",
-    "href": "posts/nieuw-project-in-positron/index.html#een-git-repository-clonen",
+    "objectID": "posts/nieuw-project-in-positron/index.html#welke-handleiding-heb-je-nodig",
+    "href": "posts/nieuw-project-in-positron/index.html#welke-handleiding-heb-je-nodig",
     "title": "Een nieuw project starten in Positron",
-    "section": "Een git repository clonen",
-    "text": "Een git repository clonen\nJe kunt een project starten door een repository te clonen vanaf GitHub of GitLab.\nOm een bestanden uit een repository te kunnen downloaden, moet je een URL (link) hebben. Bruikbare URLs zien er als volgt uit:\n\nhttps://&lt;server&gt;/&lt;organisatie&gt;/&lt;repository&gt;\ngit@&lt;server&gt;:&lt;organisatie&gt;/&lt;repository&gt;.git\n\nHierbij is &lt;server&gt; een van github.com, gitlab.com of gitlab.tudelft.nl. &lt;organisatie&gt; is de organisatie die de repository beheert. &lt;repository&gt; is de naam van de repository.\n\n\n\n\n\n\nWaarschuwingClonen vs. downloaden\n\n\n\nDeze instructie is voor het clonen van een repository. Dit betekent dat je een connectie behoud met de repository, en bijvoorbeeld de geschiedenis van de bestanden kunt inzien, en kunt bijdragen aan wijzigingen aan de repository.\nHet kan zijn dat je slechts de bestanden wil downloaden die in de repository staan. Download dan de bestanden uit de *repository:\n\nOpen de https://-link\nKlik op de ‘Code’-knop (groen in GitHub, blauw in GitLab)\nKlik op ‘Download ZIP’ (GitHub) of ‘zip’ onder ‘Download source dode’ (GitLab)\nVervolg de instructies hier\n\n\n\n\nKlik op  New → New Folder from Git…\nPlak de URL in het bovenste veld.\nSelecteer de juiste locatie voor de projectmap.\nKlik OK. Wacht tot de repository gecloned is en opent.\nEr kan je gevraagd worden of je de auteurs van de repository vertrouwd. Klik alleen op ‘Yes, I trust the authors’ als je erop vertrouwd dat het veilig is de code veilig op je eigen computer te draaien.\nOpen een Terminal (klik in het menu op Terminal → New Terminal).\nDraai uv sync1. Dit maakt een nieuwe virtual environment voor je project en installeert de juist pakketten.\nHet kan zijn dat Positron (rechts onderin) vraagt of je “We noticed a new environment has been created. Do you want to select it for the workspace folder?”. Klik op ‘Yes’.\nAls dit niet gevraagd wordt, kan het zijn dat je Positron opnieuw moet opstarten. Positron herkent niet altijd de nieuwe virtual environment direct."
+    "section": "Welke handleiding heb je nodig?",
+    "text": "Welke handleiding heb je nodig?\nEr zijn vier manieren om in Positron met een nieuw project aan de slag te gaan. Welke je nodig hebt, hangt af van wat je hebt gekregen.\n\n\n\n\n\n\n\nMet een leeg Python-project starten\n\n\nJe begint helemaal zelf, zonder bestanden van iemand anders.\n\n\n\n\n\n\n\n\n\nEen pyproject.toml-bestand downloaden\n\n\nJe hebt een pyproject.toml-bestand gekregen.\n\n\n\n\n\n\n\n\n\nEen git-repository clonen\n\n\nJe hebt een link naar een repository op GitHub of GitLab gekregen.\n\n\n\n\n\n\n\n\n\nBestanden uit een *.zip-bestand\n\n\nJe hebt de bestanden als *.zip-bestand gekregen.\n\n\n\n\n\nGeen overeenkomsten"
   },
   {
-    "objectID": "posts/nieuw-project-in-positron/index.html#bestanden-uit-een-.zip-bestand",
-    "href": "posts/nieuw-project-in-positron/index.html#bestanden-uit-een-.zip-bestand",
-    "title": "Een nieuw project starten in Positron",
-    "section": "Bestanden uit een *.zip-bestand",
-    "text": "Bestanden uit een *.zip-bestand\nHet kan zijn dat je bestanden als *.zip-bestand krijgt aangeleverd.\nAls het *.zip-bestand een pyproject.toml-bestand bevat, voer dan de instructies voor het starten met een pyproject.toml-bestand uit. Vervang de stap “Sleep het pyproject.toml-bestand …” door onderstaande instructie.\nAls het *.zip-bestand geen pyproject.toml-bestand bevat, maar slechts bestanden die nodig zijn voor het project, voer dan de instructies voor het starten van een leeg project uit. Voer daarna onderstaande instructie uit.\n\nPak het *.zip-bestand uit:\n\nWindows: Klik met je rechtermuisknop op het bestand en klik op ‘Alles uitpakken’. Kies de projectmap om de bestanden in uit te pakken.\nmacOS: Dubbelklik op het bestand. Deze wordt automatisch uitgepakt in een map. Verplaats de bestanden uit de map naar de projectmap."
+    "objectID": "posts/nieuw-project-in-positron/zip-bestand.html",
+    "href": "posts/nieuw-project-in-positron/zip-bestand.html",
+    "title": "Bestanden uit een *.zip-bestand",
+    "section": "",
+    "text": "← Terug naar het overzicht\nHet kan zijn dat je bestanden als *.zip-bestand krijgt aangeleverd."
   },
   {
-    "objectID": "posts/nieuw-project-in-positron/index.html#footnotes",
-    "href": "posts/nieuw-project-in-positron/index.html#footnotes",
-    "title": "Een nieuw project starten in Positron",
-    "section": "Voetnoten",
-    "text": "Voetnoten\n\n\nWe gaan er hier vanuit dat het pyproject.toml-bestand compleet is. Soms is bijvoorbeeld de project-naam niet gegeven, omdat het repository voor verschillende projecten gebruikt kan worden. Maak pyproject.toml dan eerst compleet.↩︎"
+    "objectID": "posts/nieuw-project-in-positron/zip-bestand.html#project-aanmaken",
+    "href": "posts/nieuw-project-in-positron/zip-bestand.html#project-aanmaken",
+    "title": "Bestanden uit een *.zip-bestand",
+    "section": "Project aanmaken",
+    "text": "Project aanmaken\n\nHet *.zip-bestand bevat wel een pyproject.toml-bestand\nAls het *.zip-bestand een pyproject.toml-bestand bevat, voer dan de instructies voor het starten met een pyproject.toml-bestand uit. Vervang de stap “Sleep het pyproject.toml-bestand …” door onderstaande instructie.\n\n\nHet *.zip-bestand bevat geen pyproject.toml-bestand\nAls het *.zip-bestand geen pyproject.toml-bestand bevat, maar slechts bestanden die nodig zijn voor het project, voer dan eerst de instructies voor het starten van een leeg Python-project uit. Voer daarna onderstaande instructie uit."
+  },
+  {
+    "objectID": "posts/nieuw-project-in-positron/zip-bestand.html#zip-bestand-uitpakken.",
+    "href": "posts/nieuw-project-in-positron/zip-bestand.html#zip-bestand-uitpakken.",
+    "title": "Bestanden uit een *.zip-bestand",
+    "section": "Zip-bestand uitpakken.",
+    "text": "Zip-bestand uitpakken.\n\nWindowsmacOS\n\n\n\nKlik met je rechtermuisknop op het bestand en klik op ‘Alles uitpakken’. Kies de projectmap om de bestanden in uit te pakken.\n\n\n\n\nDubbelklik op het bestand. Deze wordt automatisch uitgepakt in een map.\nSleep de bestanden uit de map naar de explorer in Positron."
+  },
+  {
+    "objectID": "posts/nieuw-project-in-positron/leeg-project.html",
+    "href": "posts/nieuw-project-in-positron/leeg-project.html",
+    "title": "Met een leeg Python-project starten",
+    "section": "",
+    "text": "← Terug naar het overzicht\n\nOpen Positron.\nLinksbovenin staat een knop “⊕ New”. Klik op “⊕ New” en dan op “New Folder from Template…”.\nKlik op “Python Project” en klik op “Next”.\nType de naam van je project. Dit moet voldoen aan de regels voor projectnamen.\nKies de locatie voor de projectmap. Let op dat je projectmap niet in OneDrive mag staan.\nAls je git wil gebruiken voor versie-management, vink “Initialize Git repository” aan.\nLaat “Create pyproject.toml file” aangevinkt staan.\nKlik op “Next”.\nKies “Create a new virtual environment”.\nKies onder “Select a way to create a new environment” voor “uv”.\nLaat “Environment name” op “.venv” staan.\nKies een Python-versie. Voor je specifieke project kan een specifieke versie nodig zijn. Kies anders 3.12, 3.13 of 3.14.\nKlik “Create”.\nPositron vraagt of je het project in het huidige of een nieuw venster wil openen. Klik “Current Window”.\n\nJe nieuwe projectmap, inclusief een eigen virtual environment, is nu klaar. Je kunt nu de nodige pakketten installeren. Dit doe je door in de terminal uv add &lt;naam&gt; te draaien, waarbij je &lt;naam&gt; vervangt door de naam van het pakket. Zie ook deze post."
+  },
+  {
+    "objectID": "posts/nieuw-project-in-positron/pyproject-downloaden.html",
+    "href": "posts/nieuw-project-in-positron/pyproject-downloaden.html",
+    "title": "Een pyproject.toml-bestand downloaden",
+    "section": "",
+    "text": "← Terug naar het overzicht\n\nOpen Positron.\nLinksbovenin staat een knop “⊕ New”. Klik op “⊕ New” en dan op “New Folder from Template…”.\nKlik op “Empty Project” en klik op “Next”.\nType de naam van je project. Dit moet voldoen aan de regels voor projectnamen.\nKies de locatie voor de projectmap. Let op dat je projectmap niet in OneDrive mag staan.\nAls je git wil gebruiken voor versie-management, vink “Initialize Git repository” aan.\nKlik op “Create”.\nSleep het pyproject.toml-bestand naar de explorer in Positron (balk aan de linkerkant).\nOpen in Positron een terminal (in het onderste paneel in Positron, of klik in het menu op Terminal → New Terminal).\nType uv sync en druk op Enter. Dit maakt een nieuwe virtual environment voor je project en installeert de juiste pakketten.\nHet kan zijn dat je hierna Positron opnieuw moet opstarten, omdat Positron niet altijd de nieuwe virtual environment goed herkent."
   },
   {
     "objectID": "posts/positron-installeren/index.html",

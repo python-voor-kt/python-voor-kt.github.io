@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Marjon van Wees, Menno Bloembergen en Peter Somhorst">
+<meta name="description" content="Een projectmap aanmaken, op vier manieren.">
 
 <title>Een nieuw project starten in Positron – Python voor KT</title>
 <style>
@@ -37,6 +38,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -47,8 +50,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-445b8638c3d06994fee0907d791121c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,7 +77,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Zoeken"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-opties .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-opties'] = new List('listing-opties', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -129,7 +188,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Een nieuw project starten in Positron</h1>
-                      </div>
+                  <div>
+        <div class="description">
+          Een projectmap aanmaken, op vier manieren.
+        </div>
+      </div>
+                </div>
   </div>
     
   
@@ -158,113 +222,114 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Om te zorgen dat je bestanden goed georganiseerd blijven, is het belangrijk voor elk project een nieuwe map aan te maken. Dit voorkomt (later) veel problemen.</p>
-<section id="mappenstructuur" class="level3">
-<h3 class="anchored" data-anchor-id="mappenstructuur">Mappenstructuur</h3>
+<p>Om te zorgen dat je bestanden goed georganiseerd blijven, is het belangrijk voor elk project een nieuwe project-map aan te maken. Dit voorkomt (later) veel problemen.</p>
+<section id="voorbereiding" class="level2">
+<h2 class="anchored" data-anchor-id="voorbereiding">Voorbereiding</h2>
+<p>Deze handleiding gaat er vanuit dat je <code>uv</code> en Positron hebt geïnstalleerd. Zie de <a href="../../index.html">installatiehandleidingen</a> voor <a href="../../posts/uv-installeren/index.html"><code>uv</code></a> en <a href="../../posts/positron-installeren/index.html">Positron</a>.</p>
+</section>
+<section id="mappenstructuur" class="level2">
+<h2 class="anchored" data-anchor-id="mappenstructuur">Mappenstructuur</h2>
 <p>Het is een goede gewoonte voor elk onderzoek, vak, opdracht of stage een nieuw project aan te maken. Je project komt in een projectmap te staan. Zet deze op een logische locatie.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
+<div id="wrn-onedrive" class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Waarschuwing</span>OneDrive (Windows) en andere <em>cloud</em>opslag
+Waarschuwing&nbsp;1: OneDrive (Windows) en andere cloudopslag
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Windows 11 gebruikt tegenwoordig OneDrive als standaard locatie voor documenten. <code>uv</code> werkt niet goed als je je bestanden in OneDrive zet. OneDrive werkt namelijk met <em>cloud</em>-bestanden, die niet altijd daadwerkelijk op je computer staan. Zelfs als de bestanden wel op je computer staan, worden ze niet als normale bestanden behandeld.</p>
+<p>Microsoft Windows gebruikt tegenwoordig OneDrive als standaard locatie voor documenten. <code>uv</code> werkt niet goed als je je bestanden in OneDrive zet. OneDrive werkt namelijk met ‘cloudbestanden’, die niet altijd daadwerkelijk op je computer staan. Zelfs als de bestanden wel op je computer staan, worden ze niet als normale bestanden behandeld.</p>
 <p>Dit kan ook gelden voor bestanden op bijvoorbeeld Dropbox.</p>
 <p>Zet je projectmap dus <strong>nooit</strong> in OneDrive. Een goede locatie is een map in <code>C:\Users\&lt;gebruikersnaam&gt;\</code> (maar <strong>niet</strong> <code>C:\Users\&lt;gebruikersnaam&gt;\Documenten</code>).</p>
 <p>Heb je wel eerder een project in OneDrive gezet, draai dan <code>uv cache clean</code> in je Terminal/PowerShell. <code>uv</code> deelt bestanden tussen projecten, waardoor een project in OneDrive ook problemen kan veroorzaken in je <em>andere</em> projecten. <code>uv cache clean</code> ruimt dat op.</p>
 </div>
 </div>
-<p>Er zijn verschillende opties om in Positron aan de slag te gaan met een project nieuw project:</p>
-<ul>
-<li>met een leeg project starten</li>
-<li>een <code>pyproject.toml</code>-bestand downloaden</li>
-<li>een <code>git</code> <em>repository</em> <em>clonen</em></li>
-<li>bestanden downloaden in een <code>*.zip</code>-bestand</li>
-</ul>
-</section>
-<section id="met-een-leeg-project-starten" class="level2">
-<h2 class="anchored" data-anchor-id="met-een-leeg-project-starten">Met een leeg project starten</h2>
-<p>–installatiehandleiding–</p>
-<p>Daarna kan je pakketten installeren. Dit doe je door in de terminal <code>uv add &lt;naam&gt;</code> te draaien, waarbij je <code>&lt;naam&gt;</code> vervangt door de naam van het pakket. Zie ook <a href="../../posts/uv-gebruiken/index.html#pakketten-installeren">deze post</a>.</p>
-</section>
-<section id="een-pyproject.toml-bestand-downloaden" class="level2">
-<h2 class="anchored" data-anchor-id="een-pyproject.toml-bestand-downloaden">Een <code>pyproject.toml</code>-bestand downloaden</h2>
-<p>–Zoals hierboven, maar Empty Project</p>
-<ul>
-<li>Sleep het <code>pyproject.toml</code>-bestand naar de <span class="smallcaps">explorer</span> (balk aan de linkerkant) in Positron.</li>
-<li>Open een Terminal (klik in het menu op Terminal → New Terminal).</li>
-<li>Draai <code>uv sync</code>. Dit maakt een nieuwe <em>virtual environment</em> voor je project en installeert de juist pakketten.</li>
-</ul>
-<p>Het kan zijn dat je hierna Positron opnieuw moet opstarten, omdat Positron niet altijd de nieuwe <em>virtual environment</em> direct herkent.</p>
-</section>
-<section id="een-git-repository-clonen" class="level2">
-<h2 class="anchored" data-anchor-id="een-git-repository-clonen">Een <code>git</code> <em>repository</em> <em>clonen</em></h2>
-<p>Je kunt een project starten door een <em>repository</em> te <em>clonen</em> vanaf GitHub of GitLab.</p>
-<p>Om een bestanden uit een <em>repository</em> te kunnen downloaden, moet je een URL (link) hebben. Bruikbare URLs zien er als volgt uit:</p>
-<ul>
-<li>https://&lt;server&gt;/&lt;organisatie&gt;/&lt;repository&gt;</li>
-<li>git@&lt;server&gt;:&lt;organisatie&gt;/&lt;repository&gt;.git</li>
-</ul>
-<p>Hierbij is &lt;server&gt; een van <u>github.com</u>, <u>gitlab.com</u> of <u>gitlab.tudelft.nl</u>. &lt;organisatie&gt; is de organisatie die de repository beheert. &lt;repository&gt; is de naam van de repository.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
+<div id="tip-naming" class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Waarschuwing</span><em>Clonen</em> vs.&nbsp;<em>downloaden</em>
+Tip&nbsp;1: Regels voor project-namen
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Deze instructie is voor het <em>clonen</em> van een <em>repository</em>. Dit betekent dat je een connectie behoud met de <em>repository</em>, en bijvoorbeeld de geschiedenis van de bestanden kunt inzien, en kunt bijdragen aan wijzigingen aan de <em>repository</em>.</p>
-<p>Het kan zijn dat je slechts de bestanden wil downloaden die in de repository staan. Download dan de bestanden uit de *repository:</p>
+<p>De naam van een project-map moet aan bepaalde regels voldoen.</p>
 <ul>
-<li>Open de https://-link</li>
-<li>Klik op de ‘Code’-knop (groen in GitHub, blauw in GitLab)</li>
-<li>Klik op ‘Download ZIP’ (GitHub) of ‘zip’ onder ‘Download source dode’ (GitLab)</li>
-<li>Vervolg de instructies <a href="#bestanden-uit-een-.zip-bestand">hier</a></li>
+<li>De naam moet beginnen én eindigen met een letter.</li>
+<li>De naam mag alleen letters, cijfers, _, - en . (underscore, streepje en punt) bevatten.</li>
 </ul>
 </div>
 </div>
-<ul>
-<li>Klik op <i class="fa-solid fa-circle-plus" aria-label="circle-plus"></i> New → New Folder from Git…</li>
-<li>Plak de URL in het bovenste veld.</li>
-<li>Selecteer de juiste locatie voor de projectmap.</li>
-<li>Klik OK. Wacht tot de <em>repository</em> gecloned is en opent.</li>
-<li>Er kan je gevraagd worden of je de auteurs van de <em>repository</em> vertrouwd. Klik alleen op ‘Yes, I trust the authors’ als je erop vertrouwd dat het veilig is de code veilig op je eigen computer te draaien.</li>
-<li>Open een Terminal (klik in het menu op Terminal → New Terminal).</li>
-<li>Draai <code>uv sync</code><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Dit maakt een nieuwe <em>virtual environment</em> voor je project en installeert de juist pakketten.</li>
-<li>Het kan zijn dat Positron (rechts onderin) vraagt of je “We noticed a new environment has been created. Do you want to select it for the workspace folder?”. Klik op ‘Yes’.</li>
-<li>Als dit niet gevraagd wordt, kan het zijn dat je Positron opnieuw moet opstarten. Positron herkent niet altijd de nieuwe <em>virtual environment</em> direct.</li>
-</ul>
 </section>
-<section id="bestanden-uit-een-.zip-bestand" class="level2">
-<h2 class="anchored" data-anchor-id="bestanden-uit-een-.zip-bestand">Bestanden uit een *.zip-bestand</h2>
-<p>Het kan zijn dat je bestanden als <code>*.zip</code>-bestand krijgt aangeleverd.</p>
-<p>Als het <code>*.zip</code>-bestand een <code>pyproject.toml</code>-bestand bevat, voer dan de <a href="#een-pyproject.toml-bestand-downloaden">instructies</a> voor het starten met een <code>pyproject.toml</code>-bestand uit. Vervang de stap “Sleep het <code>pyproject.toml</code>-bestand …” door onderstaande instructie.</p>
-<p>Als het <code>*.zip</code>-bestand geen <code>pyproject.toml</code>-bestand bevat, maar slechts bestanden die nodig zijn voor het project, voer dan de <a href="#met-een-leeg-project-starten">instructies</a> voor het starten van een leeg project uit. Voer daarna onderstaande instructie uit.</p>
-<ul>
-<li>Pak het <code>*.zip</code>-bestand uit:
-<ul>
-<li>Windows: Klik met je rechtermuisknop op het bestand en klik op ‘Alles uitpakken’. Kies de projectmap om de bestanden in uit te pakken.</li>
-<li>macOS: Dubbelklik op het bestand. Deze wordt automatisch uitgepakt in een map. Verplaats de bestanden uit de map naar de projectmap.</li>
-</ul></li>
-</ul>
+<section id="welke-handleiding-heb-je-nodig" class="level2">
+<h2 class="anchored" data-anchor-id="welke-handleiding-heb-je-nodig">Welke handleiding heb je nodig?</h2>
+<p>Er zijn vier manieren om in Positron met een nieuw project aan de slag te gaan. Welke je nodig hebt, hangt af van wat je hebt gekregen.</p>
+<div id="listing-opties" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1786361031336" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
+<a href="../../posts/nieuw-project-in-positron/leeg-project.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Met een leeg Python-project starten
+</h5>
+<div class="card-text listing-description delink">
+<p>Je begint helemaal zelf, zonder bestanden van iemand anders.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1786361031336" data-listing-reading-time-sort="1" data-listing-word-count-sort="151">
+<a href="../../posts/nieuw-project-in-positron/pyproject-downloaden.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Een <code>pyproject.toml</code>-bestand downloaden
+</h5>
+<div class="card-text listing-description delink">
+<p>Je hebt een <code>pyproject.toml</code>-bestand gekregen.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1786361031336" data-listing-reading-time-sort="3" data-listing-word-count-sort="509">
+<a href="../../posts/nieuw-project-in-positron/repository-clonen.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Een <code>git</code>-<em>repository</em> <em>clonen</em>
+</h5>
+<div class="card-text listing-description delink">
+<p>Je hebt een link naar een repository op GitHub of GitLab gekregen.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1786361031336" data-listing-reading-time-sort="1" data-listing-word-count-sort="133">
+<a href="../../posts/nieuw-project-in-positron/zip-bestand.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Bestanden uit een <code>*.zip</code>-bestand
+</h5>
+<div class="card-text listing-description delink">
+<p>Je hebt de bestanden als <code>*.zip</code>-bestand gekregen.</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">Geen overeenkomsten</div>
+</div>
+
 
 
 </section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Voetnoten</h2>
-
-<ol>
-<li id="fn1"><p>We gaan er hier vanuit dat het <code>pyproject.toml</code>-bestand compleet is. Soms is bijvoorbeeld de project-naam niet gegeven, omdat het <em>repository</em> voor verschillende projecten gebruikt kan worden. Maak <code>pyproject.toml</code> dan eerst compleet.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
