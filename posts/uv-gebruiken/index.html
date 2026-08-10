@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Peter Somhorst">
+<meta name="description" content="Projecten en pakketten beheren met uv vanuit de Terminal.">
 
 <title>uv gebruiken als project-manager – Python voor KT</title>
 <style>
@@ -162,7 +163,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title"><code>uv</code> gebruiken als project-manager</h1>
-                      </div>
+                  <div>
+        <div class="description">
+          Projecten en pakketten beheren met <code>uv</code> vanuit de Terminal.
+        </div>
+      </div>
+                </div>
   </div>
     
   
@@ -191,21 +197,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p><code>uv</code> is een project-manager voor Python projecten. Het zorgt voor</p>
+<div class="grid intro">
+<div class="g-col-12 g-col-sm-2">
+<p><img src="../uv-installeren/media/uv-logo.svg" class="img-fluid"></p>
+</div>
+<div class="g-col-12 g-col-sm-10">
+<p><code>uv</code> is een project- en pakketmanager voor Python. Deze handleiding laat je zien hoe je met <code>uv</code> een project aanmaakt en pakketten installeert vanuit de Terminal.</p>
+</div>
+</div>
+<p><code>uv</code> zorgt voor</p>
 <ul>
 <li>eenvoudige aanmaak en management van <em>virtual environments</em>;</li>
 <li>installatie van verschillende versies van Python;</li>
 <li>snelle installatie van Python-pakketten;</li>
-<li>aftemming van versies van <em>dependencies</em>;</li>
+<li>afstemming van versies van <em>dependencies</em>;</li>
 <li>reproduceerbare installaties via een <em>lockfile</em>.</li>
 </ul>
-<section id="installatie" class="level2">
-<h2 class="anchored" data-anchor-id="installatie">Installatie</h2>
-<p>Een korte installatie-handleiding is <a href="../../posts/uv-installeren/index.html">hier</a> te vinden.</p>
-</section>
-<section id="project-aanmaken" class="level2">
-<h2 class="anchored" data-anchor-id="project-aanmaken">Project aanmaken</h2>
-<p>Het is aangeraden voor elk project (onderzoek, stage, vak, opdracht, spontaan idee) een nieuw <code>uv</code>-project aan te maken. Hier beschrijven we de methode die alleen gebruik maakt van de Terminal/PowerShell.</p>
+<section id="voorbereiding" class="level2">
+<h2 class="anchored" data-anchor-id="voorbereiding">Voorbereiding</h2>
+<p>Zorg dat je <code>uv</code> hebt geïnstalleerd. Zie <a href="../../posts/uv-installeren/index.html">deze handleiding</a>.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -216,31 +226,87 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Veel programmeer-programma’s, waaronder Positron, hebben ook een eigen (eenvoudigere) manier om projecten aan te maken. We hebben een <a href="../../posts/nieuw-project-in-positron/index.html">handleiding voor projecte in Positron</a> geschreven.</p>
+<p>Veel programmeer-programma’s, waaronder Positron, hebben ook een eigen (eenvoudigere) manier om projecten aan te maken. We hebben een <a href="../../posts/nieuw-project-in-positron/index.html">handleiding voor projecten in Positron</a> geschreven.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-warning callout-titled">
+</section>
+<section id="terminal-openen" class="level2">
+<h2 class="anchored" data-anchor-id="terminal-openen">Een Terminal openen</h2>
+<p>Alle commando’s in deze handleiding draai je in een Terminal (macOS) of PowerShell (Windows), vanuit de map waar je project staat of moet komen.</p>
+<section id="in-positron" class="level3">
+<h3 class="anchored" data-anchor-id="in-positron">In Positron</h3>
+<p>Heb je je project al open in Positron, gebruik dan de ingebouwde terminal. Die staat meteen in de map van je project, dus je hoeft niet meer met <code>cd</code> naar de map te gaan.</p>
+<ol type="1">
+<li>Klik onderin het paneel op het tabblad <span class="smallcaps">terminal</span>, of klik in het menu op Terminal → New Terminal.</li>
+<li>Zie je het onderste paneel niet? Klik dan in het menu op View → Appearance → Panel, of gebruik Ctrl+` (Windows) of Cmd+` (macOS).</li>
+</ol>
+</section>
+<section id="buiten-positron" class="level3">
+<h3 class="anchored" data-anchor-id="buiten-positron">Buiten Positron</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">macOS</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ol type="1">
+<li><p>Klik op het Windows-menu, type <code>PowerShell</code>, en klik op ‘Windows PowerShell’ of druk op de Enter-toets.</p></li>
+<li><p>Ga naar de map waar je wil werken met <code>cd</code>, waarbij je <code>&lt;pad&gt;</code> vervangt door de locatie van de map. Bijvoorbeeld: <code>cd C:\Users\voorbeeld\Studie\programmeren</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="op">&lt;</span>pad<span class="op">&gt;</span></span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ol type="1">
+<li><p>Open Spotlight met Cmd+Spatie, type <code>Terminal</code> en druk op Enter.</p></li>
+<li><p>Ga naar de map waar je wil werken met <code>cd</code>, waarbij je <code>&lt;pad&gt;</code> vervangt door de locatie van de map. Bijvoorbeeld: <code>cd ~/Studie/programmeren</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="op">&lt;</span>pad<span class="op">&gt;</span></span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="wrn-onedrive" class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Waarschuwing</span>OneDrive (Windows) en andere cloud-tools
+Waarschuwing&nbsp;1: OneDrive (Windows) en andere cloudopslag
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Zet een <code>uv</code>-project <strong>nooit</strong> in OneDrive. Windows gebruikt OneDrive tegenwoordig als standaard locatie voor documenten. OneDrive werkt met ‘cloudbestanden’, die niet altijd daadwerkelijk op je computer staan. Zels als de bestanden wel op je computer staan, worden ze niet als normale bestanden behandeld.</p>
-<p>Dit kan ook gelden voor bijvoorbeeld Dropbox.</p>
-<p>Een goede locatie is <code>C:\Users\&lt;gebruikersnaam&gt;\</code> (maar niet <code>C:\Users\&lt;gebruikersnaam&gt;\Documenten</code>).</p>
-<p>Heb je wel eerder een project in OneDrive gezet, draai dan <code>uv cache clean</code> in je Terminal/PowerShell.</p>
+<p>Zet een <code>uv</code>-project <strong>nooit</strong> in OneDrive. Microsoft Windows gebruikt tegenwoordig OneDrive als standaard locatie voor documenten. OneDrive werkt met ‘cloudbestanden’, die niet altijd daadwerkelijk op je computer staan. Zelfs als de bestanden wel op je computer staan, worden ze niet als normale bestanden behandeld.</p>
+<p>Dit kan ook gelden voor bestanden op bijvoorbeeld Dropbox.</p>
+<p>Een goede locatie is een map in <code>C:\Users\&lt;gebruikersnaam&gt;\</code> (maar <strong>niet</strong> <code>C:\Users\&lt;gebruikersnaam&gt;\Documenten</code>).</p>
+<p>Heb je wel eerder een project in OneDrive gezet, draai dan <code>uv cache clean</code> in je Terminal/PowerShell. <code>uv</code> deelt bestanden tussen projecten, waardoor een project in OneDrive ook problemen kan veroorzaken in je <em>andere</em> projecten. <code>uv cache clean</code> ruimt dat op.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="project-aanmaken" class="level2">
+<h2 class="anchored" data-anchor-id="project-aanmaken">Project aanmaken</h2>
+<p>Het is aangeraden voor elk project (onderzoek, stage, vak, opdracht, spontaan idee) een nieuw <code>uv</code>-project aan te maken. Hier beschrijven we de methode die alleen gebruik maakt van de Terminal/PowerShell.</p>
+<div id="tip-naming" class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip&nbsp;1: Regels voor project-namen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>De naam van een project-map moet aan bepaalde regels voldoen.</p>
+<ul>
+<li>De naam moet beginnen én eindigen met een letter.</li>
+<li>De naam mag alleen letters, cijfers, _, - en . (underscore, streepje en punt) bevatten.</li>
+</ul>
 </div>
 </div>
 <section id="nieuw-project" class="level3">
 <h3 class="anchored" data-anchor-id="nieuw-project">Nieuw project</h3>
-<p>Open een Terminal/PowerShell, en ga naar de bovenliggende map waarin je je project wil maken. Als de project-map <code>C:\Users\voorbeeld\Studie\programmeren\project-1</code> moet worden, ga je dus naar <code>C:\Users\voorbeeld\Studie\programmeren</code>.</p>
-<p>Draai daarna onderstaande code, waarbij je <code>&lt;projectnaam&gt;</code> vervangt met de naam van je project, in het voorbeeld hierboven dus <code>uv init project-1</code>. Dit maakt een nieuwe map, en zet daar de benodigde bestanden in.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> init <span class="op">&lt;</span>projectnaam<span class="op">&gt;</span>  </span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div>
-<p>De naam van een projectmap moet starten met een letter, en mag alleen letters, cijfers, <code>-</code>, <code>_</code> en <code>.</code> (geen spaties) bevatten.</p>
+<ol type="1">
+<li><p><a href="#terminal-openen">Open een Terminal/PowerShell</a> en ga naar de bovenliggende map waarin je je project wil maken. Als de project-map <code>C:\Users\voorbeeld\Studie\programmeren\project-1</code> moet worden, ga je dus naar <code>C:\Users\voorbeeld\Studie\programmeren</code>.</p></li>
+<li><p>Draai onderstaand commando, waarbij je <code>&lt;projectnaam&gt;</code> vervangt door de naam van je project — in het voorbeeld hierboven dus <code>uv init project-1</code>. De naam moet voldoen aan de <a href="#tip-naming">regels voor projectnamen</a>. Dit maakt een nieuwe map, en zet daar de benodigde bestanden in.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> init <span class="op">&lt;</span>projectnaam<span class="op">&gt;</span></span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -258,16 +324,20 @@ Tip
 <section id="bestaand-project-zonder-pyproject.toml-bestand" class="level3">
 <h3 class="anchored" data-anchor-id="bestaand-project-zonder-pyproject.toml-bestand">Bestaand project zonder <code>pyproject.toml</code>-bestand</h3>
 <p>Als je een bestaande projectmap hebt, maar nog geen <code>pyproject.toml</code>-bestand, volg dan deze instructies.</p>
-<p>Open een Terminal/PowerShell, en ga naar de projectmap. Draai daarna onderstaande code. Dit maakt in deze map de benodigde bestanden aan.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> init</span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Let op dat de naam van een projectmap moet starten met een letter, en alleen letters, cijfers, <code>-</code>, <code>_</code> en <code>.</code> (geen spaties) mag bevatten.</p>
+<ol type="1">
+<li><p><a href="#terminal-openen">Open een Terminal/PowerShell</a> en ga naar de projectmap. Let op dat de naam van de map voldoet aan de <a href="#tip-naming">regels voor projectnamen</a>.</p></li>
+<li><p>Draai onderstaand commando. Dit maakt in deze map de benodigde bestanden aan.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> init</span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
 </section>
 <section id="bestaand-project-dat-al-een-pyproject.toml-bestand-heeft" class="level3">
 <h3 class="anchored" data-anchor-id="bestaand-project-dat-al-een-pyproject.toml-bestand-heeft">Bestaand project dat al een <code>pyproject.toml</code>-bestand heeft</h3>
 <p>Als je al een projectmap met een <code>pyproject.toml</code>-bestand hebt, volg dan deze instructies.</p>
-<p>Open een Terminal/PowerShell, en ga naar de projectmap. Draai daarna onderstaande code. Dit vertelt <code>uv</code> dat je al een project hebt, en om een <em>virtual environment</em> aan te maken op basis van het <code>pyproject.toml</code>-bestand.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> sync</span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Let op dat de naam van een projectmap moet starten met een letter, en alleen letters, cijfers, <code>-</code>, <code>_</code> en <code>.</code> (geen spaties) mag bevatten.</p>
+<ol type="1">
+<li><p><a href="#terminal-openen">Open een Terminal/PowerShell</a> en ga naar de projectmap. Let op dat de naam van de map voldoet aan de <a href="#tip-naming">regels voor projectnamen</a>.</p></li>
+<li><p>Draai onderstaand commando. Dit vertelt <code>uv</code> dat je al een project hebt, en om een <em>virtual environment</em> aan te maken op basis van het <code>pyproject.toml</code>-bestand.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> sync</span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -278,17 +348,17 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Een virtuele omgeving (<em>virtual environment</em>, vaak afgekort met <em>venv</em>) is een arparte ‘virtuele’ installatie van een specifieke versie van Python. Hierin installeer je alle Python-pakketten die je voor een project nodig hebt. Dit zorgt ervoor dat je de juiste versies van alle <em>dependencies</em> installeert voor het juiste project. Als je voor Project A bijvoorbeeld een pakket nodig hebt die een ‘oudere’ versie van NumPy (&lt;2.0) gebruikt, en Project B juist gebruik wil maken van de nieuwste mogelijkheden van Numpy (2.0 of nieuwer), kunnen deze projecten niet gebruik maken van dezelfde installaties. Door ze beiden in een eigen <em>virtual environment</em> te draaien, heb je dit probleem niet.</p>
+<p>Een virtuele omgeving (<em>virtual environment</em>, vaak afgekort met <em>venv</em>) is een aparte ‘virtuele’ installatie van een specifieke versie van Python. Hierin installeer je alle Python-pakketten die je voor een project nodig hebt. Dit zorgt ervoor dat je de juiste versies van alle <em>dependencies</em> installeert voor het juiste project. Als je voor Project A bijvoorbeeld een pakket nodig hebt die een ‘oudere’ versie van NumPy (&lt;2.0) gebruikt, en Project B juist gebruik wil maken van de nieuwste mogelijkheden van NumPy (2.0 of nieuwer), kunnen deze projecten niet gebruik maken van dezelfde installaties. Door ze beiden in een eigen <em>virtual environment</em> te draaien, heb je dit probleem niet.</p>
 </div>
 </div>
 </section>
 </section>
 <section id="pakketten-installeren" class="level2">
 <h2 class="anchored" data-anchor-id="pakketten-installeren">Pakketten installeren</h2>
-<p>Je kunt paketten aan je installatie toevoegen met onderstaand commando, waarbij je <code>&lt;naam&gt;</code> vervangt door de naam van het pakket. Je kunt meerdere paketten toevoegen door meerdere namen achter elkaar te plaatsen, bijvoorbeeld <code>uv add numpy scipy matplotlib pandas</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> add <span class="op">&lt;</span>naam<span class="op">&gt;</span></span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Je kunt pakketten aan je installatie toevoegen met onderstaand commando, waarbij je <code>&lt;naam&gt;</code> vervangt door de naam van het pakket. Je kunt meerdere pakketten toevoegen door meerdere namen achter elkaar te plaatsen, bijvoorbeeld <code>uv add numpy scipy matplotlib pandas</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> add <span class="op">&lt;</span>naam<span class="op">&gt;</span></span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div>
 <p><code>uv</code> voegt het pakket toe aan de lijst met <em>dependencies</em> in <code>pyproject.toml</code>, en installeert het pakket en al zijn <em>dependencies</em>.</p>
-<p>Je kunt ook pakketten installeren met <code>uv pip add &lt;naam&gt;</code>. Dit installeert een pakket wel, maar voegt het niet toe aan de <em>dependencies</em> van het project. Daarmee is de installatie niet reproduceerbaar. Dit kan nuttig zijn om bijvoorbeeld een pakket uit te proberen, of tijdelijk te installeren en daarna weer te verwijderen.</p>
+<p>Je kunt ook pakketten installeren met <code>uv pip install &lt;naam&gt;</code>. Dit installeert een pakket wel, maar voegt het niet toe aan de <em>dependencies</em> van het project. Daarmee is de installatie niet reproduceerbaar. Dit kan nuttig zijn om bijvoorbeeld een pakket uit te proberen, of tijdelijk te installeren en daarna weer te verwijderen.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -300,7 +370,7 @@ Tip
 </div>
 <div class="callout-body-container callout-body">
 <p>Python-projecten maken meestal gebruik van andere Python-pakketten. Dit heet een <em>dependency</em>. Als je bijvoorbeeld <code>matplotlib</code> installeert, worden er ook negen <em>dependencies</em>, pakketten waar matplotlib gebruik van maakt, geïnstalleerd. Eén van deze pakketten heeft weer een eigen <em>dependency</em>, die ook wordt geïnstalleerd. Dit heet samen een <em>dependency tree</em>. Met het terminal-commando <code>uv tree</code> kan je deze voor je eigen project weergeven.</p>
-<p>Bij installatie van pakketten is het belangrijk dat alle pakketten in de <em>dependecy tree</em> goed met elkaar samenwerken. Het kan bijvoorbeeld zijn dat pakket A en pakket B beiden pakket C als <em>dependency</em> hebben, waarbij pakket A kan werken met pakket C versie 1.2 tot 2.7, terwijl pakket B werkt met pakket C versie 2.0 tot 3.1. Een goede project-manager zorgt voor goede afstemming tussen versies, en stopt de installatie als er geen afstemming mogelijk is.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Bij installatie van pakketten is het belangrijk dat alle pakketten in de <em>dependency tree</em> goed met elkaar samenwerken. Het kan bijvoorbeeld zijn dat pakket A en pakket B beiden pakket C als <em>dependency</em> hebben, waarbij pakket A kan werken met pakket C versie 1.2 tot 2.7, terwijl pakket B werkt met pakket C versie 2.0 tot 3.1. Een goede project-manager zorgt voor goede afstemming tussen versies, en stopt de installatie als er geen afstemming mogelijk is.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">

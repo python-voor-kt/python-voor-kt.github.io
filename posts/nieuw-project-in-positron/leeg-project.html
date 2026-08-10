@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Marjon van Wees, Menno Bloembergen en Peter Somhorst">
-<meta name="description" content="Je begint helemaal zelf, zonder bestanden van iemand anders.">
+<meta name="description" content="Je begint zonder aangeleverde bestanden.">
 
-<title>Met een leeg Python-project starten – Python voor KT</title>
+<title>Een leeg Python-project starten – Python voor KT</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -48,6 +48,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-445b8638c3d06994fee0907d791121c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -127,10 +129,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Met een leeg Python-project starten</h1>
+      <h1 class="title">Een leeg Python-project starten</h1>
                   <div>
         <div class="description">
-          Je begint helemaal zelf, zonder bestanden van iemand anders.
+          Je begint zonder aangeleverde bestanden.
         </div>
       </div>
                 </div>
@@ -163,6 +165,15 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><a href="../../posts/nieuw-project-in-positron/index.html">← Terug naar het overzicht</a></p>
+<p>Met deze handleiding maakt je een leeg Python-project in Positron. Als je bestanden aangeleverd hebt gekregen, gebruik dan een andere handleiding.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">macOS</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="media/positron-python-project-macos-web.mp4"></video></div>
+</div>
+</div>
+</div>
 <ol type="1">
 <li>Open Positron.</li>
 <li>Linksbovenin staat een knop “⊕ New”. Klik op “⊕ New” en dan op “New Folder from Template…”.</li>
@@ -175,9 +186,10 @@ ul.task-list li input[type="checkbox"] {
 <li>Kies “Create a new virtual environment”.</li>
 <li>Kies onder “Select a way to create a new environment” voor “uv”.</li>
 <li>Laat “Environment name” op “.venv” staan.</li>
-<li>Kies een Python-versie. Voor je specifieke project kan een specifieke versie nodig zijn. Kies anders 3.12, 3.13 of 3.14.</li>
+<li>Kies een Python-versie. Voor je specifieke project kan een specifieke versie nodig zijn. Kies anders versie 3.14.</li>
 <li>Klik “Create”.</li>
 <li>Positron vraagt of je het project in het huidige of een nieuw venster wil openen. Klik “Current Window”.</li>
+<li>Het kan zijn dat macOS toestemming vraagt voor Positron om bestanden in je Documenten-directorie te benaderen. Sta dit toe.</li>
 </ol>
 <p>Je nieuwe projectmap, inclusief een eigen virtual environment, is nu klaar. Je kunt nu de nodige pakketten installeren. Dit doe je door in de terminal <code>uv add &lt;naam&gt;</code> te draaien, waarbij je <code>&lt;naam&gt;</code> vervangt door de naam van het pakket. Zie ook <a href="../../posts/uv-gebruiken/index.html#pakketten-installeren">deze post</a>.</p>
 
@@ -585,6 +597,7 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 

@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Marjon van Wees, Menno Bloembergen en Peter Somhorst">
-<meta name="description" content="Je hebt de bestanden als *.zip-bestand gekregen.">
+<meta name="description" content="Je hebt een zip-bestand gekregen.">
 
-<title>Bestanden uit een *.zip-bestand – Python voor KT</title>
+<title>Starten met een zip-bestand – Python voor KT</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -48,6 +48,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-445b8638c3d06994fee0907d791121c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -127,10 +129,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Bestanden uit een <code>*.zip</code>-bestand</h1>
+      <h1 class="title">Starten met een zip-bestand</h1>
                   <div>
         <div class="description">
-          Je hebt de bestanden als <code>*.zip</code>-bestand gekregen.
+          Je hebt een zip-bestand gekregen.
         </div>
       </div>
                 </div>
@@ -163,16 +165,16 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><a href="../../posts/nieuw-project-in-positron/index.html">← Terug naar het overzicht</a></p>
-<p>Het kan zijn dat je bestanden als <code>*.zip</code>-bestand krijgt aangeleverd.</p>
+<p>Het kan zijn dat je bestanden als zip-bestand krijgt aangeleverd.</p>
 <section id="project-aanmaken" class="level2">
 <h2 class="anchored" data-anchor-id="project-aanmaken">Project aanmaken</h2>
-<section id="het-.zip-bestand-bevat-wel-een-pyproject.toml-bestand" class="level3">
-<h3 class="anchored" data-anchor-id="het-.zip-bestand-bevat-wel-een-pyproject.toml-bestand">Het <code>*.zip</code>-bestand bevat <em>wel</em> een <code>pyproject.toml</code>-bestand</h3>
-<p>Als het <code>*.zip</code>-bestand een <code>pyproject.toml</code>-bestand bevat, voer dan de instructies voor het starten met een <a href="../../posts/nieuw-project-in-positron/pyproject-downloaden.html"><code>pyproject.toml</code>-bestand</a> uit. <strong>Vervang</strong> de stap “Sleep het <code>pyproject.toml</code>-bestand …” door onderstaande instructie.</p>
+<section id="het-zip-bestand-bevat-wel-een-pyproject.toml-bestand" class="level3">
+<h3 class="anchored" data-anchor-id="het-zip-bestand-bevat-wel-een-pyproject.toml-bestand">Het zip-bestand bevat <em>wel</em> een <code>pyproject.toml</code>-bestand</h3>
+<p>Als het zip-bestand een <code>pyproject.toml</code>-bestand bevat, voer dan de instructies voor het starten met een <a href="../../posts/nieuw-project-in-positron/pyproject-downloaden.html"><code>pyproject.toml</code>-bestand</a> uit. <strong>Vervang</strong> de stap “Sleep het <code>pyproject.toml</code>-bestand …” door onderstaande instructie.</p>
 </section>
-<section id="het-.zip-bestand-bevat-geen-pyproject.toml-bestand" class="level3">
-<h3 class="anchored" data-anchor-id="het-.zip-bestand-bevat-geen-pyproject.toml-bestand">Het <code>*.zip</code>-bestand bevat <em>geen</em> <code>pyproject.toml</code>-bestand</h3>
-<p>Als het <code>*.zip</code>-bestand geen <code>pyproject.toml</code>-bestand bevat, maar slechts bestanden die nodig zijn voor het project, voer dan eerst de instructies voor het starten van een <a href="../../posts/nieuw-project-in-positron/leeg-project.html">leeg Python-project</a> uit. Voer <strong>daarna</strong> onderstaande instructie uit.</p>
+<section id="het-zip-bestand-bevat-geen-pyproject.toml-bestand" class="level3">
+<h3 class="anchored" data-anchor-id="het-zip-bestand-bevat-geen-pyproject.toml-bestand">Het zip-bestand bevat <em>geen</em> <code>pyproject.toml</code>-bestand</h3>
+<p>Als het zip-bestand geen <code>pyproject.toml</code>-bestand bevat, maar slechts bestanden die nodig zijn voor het project, voer dan eerst de instructies voor het starten van een <a href="../../posts/nieuw-project-in-positron/leeg-project.html">leeg Python-project</a> uit. Voer <strong>daarna</strong> onderstaande instructie uit.</p>
 </section>
 </section>
 <section id="zip-bestand-uitpakken." class="level2">
@@ -186,9 +188,10 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="media/positron-zip-project-macos-web.mp4"></video></div>
 <ol type="1">
 <li>Dubbelklik op het bestand. Deze wordt automatisch uitgepakt in een map.</li>
-<li>Sleep de bestanden uit de map naar de <span class="smallcaps">explorer</span> in Positron.</li>
+<li>Sleep de bestanden uit de map naar de <span class="smallcaps">explorer</span> in Positron. Als er in het zip-bestand een of meerdere mappen zitten, kan Positron vragen of je de map wil kopiëren of wil toevoegen aan de <em>workspace</em>. Klik dan op “Copy Folder”.</li>
 </ol>
 </div>
 </div>
@@ -599,6 +602,7 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 
