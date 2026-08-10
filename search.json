@@ -11,35 +11,35 @@
     "href": "index.html",
     "title": "Python voor KT",
     "section": "",
-    "text": "Instructiemateriaal over Python en uv voor studenten en docenten Klinische Technologie. Begin je net? Werk de handleidingen hieronder in volgorde af.\nBij de meeste staat een filmpje bovenaan de pagina. Alle commando’s staan ook in de tekst, zodat je ze kunt kopiëren."
+    "text": "Instructiemateriaal over Python en uv voor studenten en docenten Klinische Technologie. Begin je net? Werk de handleidingen hieronder in volgorde af.\nSommige handleidingen hebben filmpjes om je te helpen. Alle commando’s staan ook in de tekst, zodat je ze kunt kopiëren."
   },
   {
-    "objectID": "index.html#installeren",
-    "href": "index.html#installeren",
+    "objectID": "index.html#uv-en-positron-installeren",
+    "href": "index.html#uv-en-positron-installeren",
     "title": "Python voor KT",
-    "section": "1. Installeren",
-    "text": "1. Installeren\nDit doe je één keer, aan het begin.\n\n\n\n\n\nuv installeren\n\n\n\n\n\n\n\n\n\n\n\n\n\nPositron installeren\n\n\n\n\n\n\n\n\n\n\n\nGeen overeenkomsten"
+    "section": "1. uv en Positron installeren",
+    "text": "1. uv en Positron installeren\n\n\n\n\n\n\n\n\nuv installeren\n\n\n\n\n\n\n\n\n\n\nPositron installeren\n\n\n\n\n\nGeen overeenkomsten"
   },
   {
     "objectID": "index.html#werken-met-projecten",
     "href": "index.html#werken-met-projecten",
     "title": "Python voor KT",
     "section": "2. Werken met projecten",
-    "text": "2. Werken met projecten\nDit gebruik je bij elk vak, elke opdracht en elke stage opnieuw.\n\n\n\n\n\nEen nieuw project starten in Positron\n\n\n\n\n\n\n\n\n\n\n\n\n\nuv gebruiken als project-manager\n\n\n\n\n\n\n\n\n\n\n\nGeen overeenkomsten"
+    "text": "2. Werken met projecten\nDit gebruik je bij elk vak, elke opdracht en elke stage opnieuw.\n\n\n\n\n\n\n\nEen nieuw project starten in Positron\n\n\n\n\n\n\n\n\n\n\n\n\nuv gebruiken als project-manager\n\n\n\n\n\n\n\n\nGeen overeenkomsten"
   },
   {
     "objectID": "posts/uv-installeren/index.html",
     "href": "posts/uv-installeren/index.html",
     "title": "uv installeren",
     "section": "",
-    "text": "Installatie van uv is heel eenvoudig. Onderstaande instructies zijn gekopiëerd uit de officiële documentatie van uv: https://docs.astral.sh/uv/.\n\nWindowsmacOS\n\n\n\n\nOpen Windows PowerShell: klik op het Windows-menu, type PowerShell, en klik op ‘Windows PowerShell’ of druk op de Enter-toets.\nKopiëer dit commando naar de PowerShell en druk op Enter.\npowershell -ExecutionPolicy ByPass `\n  -c \"irm https://astral.sh/uv/install.ps1 | iex\"\nDe installatie is goed gegaan als je een output krijgt met halverwege de zin “everything’s installed!”.\nSluit het venster.\nOpen PowerShell opnieuw.\nKopiëer dit commando naar de PowerShelle en druk op Enter.\nuv --version\nDe output toont als het goed is “uv” met daarachter het geïnstalleerde versienummer weer. uv is nu klaar voor gebruik.\n\n\n\n\n\nOpen een Terminal: Open Spotlight met Cmd+Spatie, type Terminal en druk op enter.\nKopiëer dit commando naar de Terminal en druk op Enter.\ncurl -LsSf https://astral.sh/uv/install.sh | sh\nDe installatie is goed gegaan als je een output krijgt met halverwege de zin “everything’s installed!”.\nSluit het venster.\nOpen Terminal opnieuw.\nKopiëer dit commando naar de Terminal en druk op Enter.\nuv --version\nDe output toont als het goed is “uv” met daarachter het geïnstalleerde versienummer weer. uv is nu klaar voor gebruik."
+    "text": "uv is een Python project- en pakketmanager die snel en eenvoudig in gebruik is."
   },
   {
     "objectID": "posts/uv-installeren/index.html#installatie",
     "href": "posts/uv-installeren/index.html#installatie",
     "title": "uv installeren",
-    "section": "",
-    "text": "Installatie van uv is heel eenvoudig. Onderstaande instructies zijn gekopiëerd uit de officiële documentatie van uv: https://docs.astral.sh/uv/.\n\nWindowsmacOS\n\n\n\n\nOpen Windows PowerShell: klik op het Windows-menu, type PowerShell, en klik op ‘Windows PowerShell’ of druk op de Enter-toets.\nKopiëer dit commando naar de PowerShell en druk op Enter.\npowershell -ExecutionPolicy ByPass `\n  -c \"irm https://astral.sh/uv/install.ps1 | iex\"\nDe installatie is goed gegaan als je een output krijgt met halverwege de zin “everything’s installed!”.\nSluit het venster.\nOpen PowerShell opnieuw.\nKopiëer dit commando naar de PowerShelle en druk op Enter.\nuv --version\nDe output toont als het goed is “uv” met daarachter het geïnstalleerde versienummer weer. uv is nu klaar voor gebruik.\n\n\n\n\n\nOpen een Terminal: Open Spotlight met Cmd+Spatie, type Terminal en druk op enter.\nKopiëer dit commando naar de Terminal en druk op Enter.\ncurl -LsSf https://astral.sh/uv/install.sh | sh\nDe installatie is goed gegaan als je een output krijgt met halverwege de zin “everything’s installed!”.\nSluit het venster.\nOpen Terminal opnieuw.\nKopiëer dit commando naar de Terminal en druk op Enter.\nuv --version\nDe output toont als het goed is “uv” met daarachter het geïnstalleerde versienummer weer. uv is nu klaar voor gebruik."
+    "section": "Installatie",
+    "text": "Installatie\nInstallatie van uv is heel eenvoudig. Onderstaande instructies zijn gekopiëerd uit de officiële documentatie van uv: https://docs.astral.sh/uv/.\n\nWindowsmacOS\n\n\n\n\nOpen Windows PowerShell: klik op het Windows-menu, type PowerShell, en klik op ‘Windows PowerShell’ of druk op de Enter-toets.\nKopiëer dit commando naar de PowerShell en druk op Enter.\npowershell -ExecutionPolicy ByPass `\n  -c \"irm https://astral.sh/uv/install.ps1 | iex\"\nDe installatie is goed gegaan als je een output krijgt met halverwege de zin “everything’s installed!”.\nSluit het venster.\nOpen PowerShell opnieuw.\nKopiëer dit commando naar de PowerShelle en druk op Enter.\nuv --version\nDe output toont als het goed is “uv” met daarachter het geïnstalleerde versienummer weer. uv is nu klaar voor gebruik.\n\n\n\n\n\nOpen een Terminal: Open Spotlight met Cmd+Spatie, type Terminal en druk op enter.\nKopiëer dit commando naar de Terminal en druk op Enter.\ncurl -LsSf https://astral.sh/uv/install.sh | sh\nDe installatie is goed gegaan als je een output krijgt met halverwege de zin “everything’s installed!”.\nSluit het venster.\nOpen Terminal opnieuw.\nKopiëer dit commando naar de Terminal en druk op Enter.\nuv --version\nDe output toont als het goed is “uv” met daarachter het geïnstalleerde versienummer weer. uv is nu klaar voor gebruik."
   },
   {
     "objectID": "posts/nieuw-project-in-positron/index.html",
