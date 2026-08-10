@@ -1,5 +1,29 @@
 /* css styles */
 
+/* `foreground: white` in _quarto.yml zet alleen de rusttoestand van de navbar.
+   Bootstrap leidt de actieve en hover-kleur apart af uit het thema en komt dan
+   op bijna-zwart uit. Deze variabelen trekken dat recht.
+
+   De selector moet `[data-bs-theme=dark]` meenemen: Bootstrap zet deze
+   variabelen ook op `.navbar[data-bs-theme=dark]`, en dat is specifieker dan
+   `.navbar` alleen. Zonder die tweede regel wint Bootstrap, hoe laat
+   styles.css ook geladen wordt. */
+.navbar,
+.navbar-dark,
+.navbar[data-bs-theme="dark"] {
+  --bs-navbar-active-color: #fff;
+  --bs-navbar-hover-color: rgba(255, 255, 255, 0.8);
+  --bs-navbar-brand-hover-color: #fff;
+}
+
+/* Titels bevatten inline code (`uv` installeren). Zonder dit staat er een
+   lichtgrijs blokje omheen, midden in de gekleurde banner. */
+.quarto-title-banner code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}
+
 /* Mailadres wordt door JavaScript ingevuld; zie about.qmd. */
 .contact-mail {
   overflow-wrap: anywhere;
