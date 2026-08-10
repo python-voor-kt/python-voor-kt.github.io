@@ -1,0 +1,47 @@
+---
+title: "Een `git`-*repository* *clonen*"
+description: "Je hebt een link naar een repository op GitHub of GitLab gekregen."
+author: "Marjon van Wees, Menno Bloembergen en Peter Somhorst"
+category: manual
+order: 3
+---
+
+[← Terug naar het overzicht](index.qmd)
+
+Je kunt een project starten door een *repository* te *clonen* vanaf GitHub of GitLab.
+
+Om bestanden uit een *repository* te kunnen downloaden, moet je een URL (link) hebben. Bruikbare URLs zien er als volgt uit:
+
+- https://\<server\>/\<organisatie\>/\<repository\>
+- git\@\<server\>:\<organisatie\>/\<repository\>.git
+
+Hierbij is \<server\> een van [github.com]{.underline}, [gitlab.com]{.underline} of [gitlab.tudelft.nl]{.underline}. \<organisatie\> is de organisatie die de repository beheert. \<repository\> is de naam van de repository.
+
+::: {.callout-warning}
+## *Clonen* vs. *downloaden*
+Deze instructie is voor het *clonen* van een *repository*. Dit betekent dat je een connectie behoud met de *repository*, en bijvoorbeeld de geschiedenis van de bestanden kunt inzien, en kunt bijdragen aan wijzigingen aan de *repository*.
+
+Het kan zijn dat je slechts de bestanden wil downloaden die in de repository staan. Download dan de bestanden uit de *repository*:
+
+- Open de https://-link
+- Klik op de 'Code'-knop (groen in GitHub, blauw in GitLab)
+- Klik op 'Download ZIP' (GitHub) of 'zip' onder 'Download source code' (GitLab)
+- Vervolg de instructies voor [bestanden uit een `*.zip`-bestand](zip-bestand.qmd)
+:::
+
+1. Open Positron.
+2. Linksbovenin staat een knop "⊕ New". Klik op "⊕ New" en dan op "New Folder from Git...".
+3. Plak/type de URL onder "Git repository URL".
+4. Kies de locatie voor de projectmap. Let op dat je projectmap [**niet** in OneDrive](index.qmd#wrn-onedrive) mag staan.
+5. Klik op "OK".
+6. Positron opent de gekloonde *repository* en vraagt of je de auteurs van de *repository* vertrouwt. Klik op "Yes, I trust the authors", maar alleen als je de code in de *repository* kan vertrouwen. Als je op "No, I don't trust the authors" klikt, kan je de code wel inzien, maar niet draaien.
+7. Als het project een `pyproject.toml`-bestand heeft, moet je een virtual environment maken. Controleer eerst of in `pyproject.toml` de instellingen (vooral de projectnaam, die moet voldoen aan [de regels voor projectnamen](index.qmd#tip-naming)) goed staan.
+Vervolgens zijn er twee opties.
+    a. Positron herkent dat er een virtual environment aangemaakt moet worden.
+        - Als Positron herkent dat er een virtual environment moet worden aangemaakt komt er rechts onderin een popup met de tekst "This project has pyproject.toml but no virtual environment. Use uv to create a .venv and install these requirements?". Let op dat hier "uv" staat, en niet iets anders.
+        - Klik "Yes".
+    b. Installatie via de Terminal.
+        - Open in Positron een [terminal]{.smallcaps} (in het onderste paneel in Positron, of klik in het menu op Terminal → New Terminal).
+        - Type `uv sync` en druk op Enter. Dit maakt een nieuwe *virtual environment* voor je project en installeert de juiste pakketten.
+8. Het kan zijn dat Positron (rechts onderin) vraagt "We noticed a new environment has been created. Do you want to select it for the workspace folder?". Klik op 'Yes'.
+9. Als dat niet het geval is, kan je de *virtual environment* activeren door op "{{< fa right-left >}} Start Session" te klikken. Je ziet een lijst met environments waar je uit kan kiezen. Kies degene waar staat "Python <versie> (uv: <project-naam>)", met daaronder de locatie van je project.

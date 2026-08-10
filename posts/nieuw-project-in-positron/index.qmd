@@ -1,22 +1,41 @@
 ---
 title: "Een nieuw project starten in Positron"
+description: "Een projectmap aanmaken, op vier manieren."
 author: "Marjon van Wees, Menno Bloembergen en Peter Somhorst"
 category: manual
 phase: projects
 order: 1
+listing:
+  - id: opties
+    contents:
+      - leeg-project.qmd
+      - pyproject-downloaden.qmd
+      - repository-clonen.qmd
+      - zip-bestand.qmd
+    sort: "order"
+    type: grid
+    fields: [title, description]
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
 ---
 
-Om te zorgen dat je bestanden goed georganiseerd blijven, is het belangrijk voor elk project een nieuwe map aan te maken. Dit voorkomt (later) veel problemen.
+Om te zorgen dat je bestanden goed georganiseerd blijven, is het belangrijk voor elk project een nieuwe project-map aan te maken. Dit voorkomt (later) veel problemen.
 
-### Mappenstructuur
+## Voorbereiding
 
-Het is een goede gewoonte voor elk onderzoek, vak, opdracht of stage een nieuw project aan te maken. Je project komt in een projectmap te staan. Zet deze op een logische locatie. 
+Deze handleiding gaat er vanuit dat je `uv` en Positron hebt geïnstalleerd. Zie de [installatiehandleidingen](../../index.qmd) voor [`uv`](../uv-installeren/index.qmd) en [Positron](../positron-installeren/index.qmd).
 
-::: {.callout-warning}
-## OneDrive (Windows) en andere *cloud*opslag
-Windows 11 gebruikt tegenwoordig OneDrive als standaard locatie voor documenten. 
-`uv` werkt niet goed als je je bestanden in OneDrive zet. 
-OneDrive werkt namelijk met *cloud*-bestanden, die niet altijd daadwerkelijk op je computer staan. 
+## Mappenstructuur
+
+Het is een goede gewoonte voor elk onderzoek, vak, opdracht of stage een nieuw project aan te maken. Je project komt in een projectmap te staan. Zet deze op een logische locatie.
+
+::: {.callout-warning #wrn-onedrive}
+# OneDrive (Windows) en andere cloudopslag
+Microsoft Windows gebruikt tegenwoordig OneDrive als standaard locatie voor documenten.
+`uv` werkt niet goed als je je bestanden in OneDrive zet.
+OneDrive werkt namelijk met 'cloudbestanden', die niet altijd daadwerkelijk op je computer staan.
 Zelfs als de bestanden wel op je computer staan, worden ze niet als normale bestanden behandeld.
 
 Dit kan ook gelden voor bestanden op bijvoorbeeld Dropbox.
@@ -26,72 +45,18 @@ Zet je projectmap dus **nooit** in OneDrive. Een goede locatie is een map in `C:
 Heb je wel eerder een project in OneDrive gezet, draai dan `uv cache clean` in je Terminal/PowerShell. `uv` deelt bestanden tussen projecten, waardoor een project in OneDrive ook problemen kan veroorzaken in je *andere* projecten. `uv cache clean` ruimt dat op.
 :::
 
-Er zijn verschillende opties om in Positron aan de slag te gaan met een project nieuw project:
+::: {.callout-tip #tip-naming}
+# Regels voor project-namen
 
-- met een leeg project starten
-- een `pyproject.toml`-bestand downloaden
-- een `git` *repository* *clonen*
-- bestanden downloaden in een `*.zip`-bestand
+De naam van een project-map moet aan bepaalde regels voldoen.
 
-## Met een leeg project starten
-
---installatiehandleiding--
-
-Daarna kan je pakketten installeren. Dit doe je door in de terminal `uv add <naam>` te draaien, waarbij je `<naam>` vervangt door de naam van het pakket. Zie ook [deze post](../uv-gebruiken/index.qmd#pakketten-installeren).
-
-## Een `pyproject.toml`-bestand downloaden
-
---Zoals hierboven, maar Empty Project
-
-- Sleep het `pyproject.toml`-bestand naar de [explorer]{.smallcaps} (balk aan de linkerkant) in Positron. 
-- Open een Terminal (klik in het menu op Terminal → New Terminal).
-- Draai `uv sync`. Dit maakt een nieuwe *virtual environment* voor je project en installeert de juist pakketten.
-
-Het kan zijn dat je hierna Positron opnieuw moet opstarten, omdat Positron niet altijd de nieuwe *virtual environment* direct herkent.
-
-## Een `git` *repository* *clonen*
-
-Je kunt een project starten door een *repository* te *clonen* vanaf GitHub of GitLab. 
-
-Om een bestanden uit een *repository* te kunnen downloaden, moet je een URL (link) hebben. Bruikbare URLs zien er als volgt uit:
-
-- https://\<server\>/\<organisatie\>/\<repository\>
-- git\@\<server\>:\<organisatie\>/\<repository\>.git
-
-Hierbij is \<server\> een van [github.com]{.underline}, [gitlab.com]{.underline} of [gitlab.tudelft.nl]{.underline}. \<organisatie\> is de organisatie die de repository beheert. \<repository\> is de naam van de repository.
-
-::: {.callout-warning}
-## *Clonen* vs. *downloaden*
-Deze instructie is voor het *clonen* van een *repository*. Dit betekent dat je een connectie behoud met de *repository*, en bijvoorbeeld de geschiedenis van de bestanden kunt inzien, en kunt bijdragen aan wijzigingen aan de *repository*. 
-
-Het kan zijn dat je slechts de bestanden wil downloaden die in de repository staan. Download dan de bestanden uit de *repository:
-
-- Open de https://-link
-- Klik op de 'Code'-knop (groen in GitHub, blauw in GitLab)
-- Klik op 'Download ZIP' (GitHub) of 'zip' onder 'Download source dode' (GitLab)
-- Vervolg de instructies [hier](#bestanden-uit-een-.zip-bestand)
+- De naam moet beginnen én eindigen met een letter.
+- De naam mag alleen letters, cijfers, _, - en . (underscore, streepje en punt) bevatten.
 :::
 
-- Klik op {{< fa circle-plus >}} New → New Folder from Git...
-- Plak de URL in het bovenste veld.
-- Selecteer de juiste locatie voor de projectmap. 
-- Klik OK. Wacht tot de *repository* gecloned is en opent. 
-- Er kan je gevraagd worden of je de auteurs van de *repository* vertrouwd. Klik alleen op 'Yes, I trust the authors' als je erop vertrouwd dat het veilig is de code veilig op je eigen computer te draaien. 
-- Open een Terminal (klik in het menu op Terminal → New Terminal).
-- Draai `uv sync`[^check-pyproject]. Dit maakt een nieuwe *virtual environment* voor je project en installeert de juist pakketten.
-- Het kan zijn dat Positron (rechts onderin) vraagt of je "We noticed a new environment has been created. Do you want to select it for the workspace folder?". Klik op 'Yes'. 
-- Als dit niet gevraagd wordt, kan het zijn dat je Positron opnieuw moet opstarten. Positron herkent niet altijd de nieuwe *virtual environment* direct.
+## Welke handleiding heb je nodig?
 
-[^check-pyproject]: We gaan er hier vanuit dat het `pyproject.toml`-bestand compleet is. Soms is bijvoorbeeld de project-naam niet gegeven, omdat het *repository* voor verschillende projecten gebruikt kan worden. Maak `pyproject.toml` dan eerst compleet. 
+Er zijn vier manieren om in Positron met een nieuw project aan de slag te gaan. Welke je nodig hebt, hangt af van wat je hebt gekregen.
 
-## Bestanden uit een *.zip-bestand
-
-Het kan zijn dat je bestanden als `*.zip`-bestand krijgt aangeleverd.
-
-Als het `*.zip`-bestand een `pyproject.toml`-bestand bevat, voer dan de [instructies](#een-pyproject.toml-bestand-downloaden) voor het starten met een `pyproject.toml`-bestand uit. Vervang de stap "Sleep het `pyproject.toml`-bestand ..." door onderstaande instructie.
-
-Als het `*.zip`-bestand geen `pyproject.toml`-bestand bevat, maar slechts bestanden die nodig zijn voor het project, voer dan de [instructies](#met-een-leeg-project-starten) voor het starten van een leeg project uit. Voer daarna onderstaande instructie uit. 
-
-- Pak het `*.zip`-bestand uit:
-    - Windows: Klik met je rechtermuisknop op het bestand en klik op 'Alles uitpakken'. Kies de projectmap om de bestanden in uit te pakken.
-    - macOS: Dubbelklik op het bestand. Deze wordt automatisch uitgepakt in een map. Verplaats de bestanden uit de map naar de projectmap. 
+::: {#opties}
+:::

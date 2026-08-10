@@ -1,0 +1,32 @@
+---
+title: "Bestanden uit een `*.zip`-bestand"
+description: "Je hebt de bestanden als `*.zip`-bestand gekregen."
+author: "Marjon van Wees, Menno Bloembergen en Peter Somhorst"
+category: manual
+order: 4
+---
+
+[← Terug naar het overzicht](index.qmd)
+
+Het kan zijn dat je bestanden als `*.zip`-bestand krijgt aangeleverd.
+
+## Project aanmaken
+
+### Het `*.zip`-bestand bevat *wel* een `pyproject.toml`-bestand
+Als het `*.zip`-bestand een `pyproject.toml`-bestand bevat, voer dan de instructies voor het starten met een [`pyproject.toml`-bestand](pyproject-downloaden.qmd) uit. **Vervang** de stap "Sleep het `pyproject.toml`-bestand ..." door onderstaande instructie.
+
+### Het `*.zip`-bestand bevat *geen* `pyproject.toml`-bestand
+Als het `*.zip`-bestand geen `pyproject.toml`-bestand bevat, maar slechts bestanden die nodig zijn voor het project, voer dan eerst de instructies voor het starten van een [leeg Python-project](leeg-project.qmd) uit. Voer **daarna** onderstaande instructie uit.
+
+## Zip-bestand uitpakken.
+
+::: {.panel-tabset}
+## Windows
+
+1. Klik met je rechtermuisknop op het bestand en klik op 'Alles uitpakken'. Kies de projectmap om de bestanden in uit te pakken.
+
+
+## macOS
+1. Dubbelklik op het bestand. Deze wordt automatisch uitgepakt in een map. 
+2. Sleep de bestanden uit de map naar de [explorer]{.smallcaps} in Positron.
+:::

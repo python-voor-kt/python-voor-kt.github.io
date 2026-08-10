@@ -1,0 +1,28 @@
+---
+title: "Met een leeg Python-project starten"
+description: "Je begint helemaal zelf, zonder bestanden van iemand anders."
+author: "Marjon van Wees, Menno Bloembergen en Peter Somhorst"
+category: manual
+order: 1
+---
+
+[← Terug naar het overzicht](index.qmd)
+
+1. Open Positron.
+2. Linksbovenin staat een knop "⊕ New". Klik op "⊕ New" en dan op "New Folder from Template...".
+3. Klik op "Python Project" en klik op "Next".
+4. Type de naam van je project. Dit moet voldoen aan de [regels voor projectnamen](index.qmd#tip-naming).
+5. Kies de locatie voor de projectmap. Let op dat je projectmap [**niet** in OneDrive](index.qmd#wrn-onedrive) mag staan.
+6. Als je git wil gebruiken voor versie-management, vink "Initialize Git repository" aan.
+7. Laat "Create pyproject.toml file" aangevinkt staan.
+8. Klik op "Next".
+9. Kies "Create a new virtual environment".
+10. Kies onder "Select a way to create a new environment" voor "uv".
+11. Laat "Environment name" op ".venv" staan.
+12. Kies een Python-versie. Voor je specifieke project kan een specifieke versie nodig zijn. Kies anders 3.12, 3.13 of 3.14.
+13. Klik "Create".
+14. Positron vraagt of je het project in het huidige of een nieuw venster wil openen. Klik "Current Window".
+
+Je nieuwe projectmap, inclusief een eigen virtual environment, is nu klaar.
+Je kunt nu de nodige pakketten installeren.
+Dit doe je door in de terminal `uv add <naam>` te draaien, waarbij je `<naam>` vervangt door de naam van het pakket. Zie ook [deze post](../uv-gebruiken/index.qmd#pakketten-installeren).
