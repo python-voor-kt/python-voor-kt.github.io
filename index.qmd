@@ -6,8 +6,8 @@ listing:
     include:
       phase: install
     sort: "order"
-    type: default
-    fields: [title, description]
+    type: grid
+    fields: [title, image]
     categories: false
     sort-ui: false
     filter-ui: false
@@ -17,7 +17,7 @@ listing:
     include:
       phase: projects
     sort: "order"
-    type: default
+    type: grid
     fields: [title, description]
     categories: false
     sort-ui: false
@@ -28,12 +28,18 @@ listing:
 Instructiemateriaal over Python en `uv` voor studenten en docenten Klinische
 Technologie. Begin je net? Werk de handleidingen hieronder in volgorde af.
 
-Bij de meeste staat een filmpje bovenaan de pagina. Alle commando's staan ook
-in de tekst, zodat je ze kunt kopiëren.
+Sommige handleidingen hebben filmpjes om je te helpen. Alle commando's staan ook
+in de tekst, zodat je ze kunt kopiëren. 
 
-## 1. Installeren
+::: {.callout-tip}
+Als er een commando in een handleiding staat, staat er altijd een kopiëer-knop 
+(<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(71, 88, 171)" viewBox="0 0 16 16"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/></svg>) 
+naast. Als je daar op klikt, wordt de tekst gekopiëerd naar je klembord.
+:::
 
-Dit doe je één keer, aan het begin.
+## 1. `uv` en Positron installeren
+
+
 
 ::: {#install}
 :::
