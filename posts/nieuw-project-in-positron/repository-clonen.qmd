@@ -1,5 +1,5 @@
 ---
-title: "Een `git`-*repository* *clonen*"
+title: "Een `git` *repository* *clonen*"
 description: "Je hebt een link naar een repository op GitHub of GitLab gekregen."
 author: "Marjon van Wees, Menno Bloembergen en Peter Somhorst"
 category: manual
@@ -27,6 +27,13 @@ Het kan zijn dat je slechts de bestanden wil downloaden die in de repository sta
 - Klik op de 'Code'-knop (groen in GitHub, blauw in GitLab)
 - Klik op 'Download ZIP' (GitHub) of 'zip' onder 'Download source code' (GitLab)
 - Vervolg de instructies voor [bestanden uit een `*.zip`-bestand](zip-bestand.qmd)
+:::
+
+::: {.panel-tabset}
+
+## macOS
+
+{{< video media/positron-clone-git-macos-web.mp4 >}}
 :::
 
 1. Open Positron.

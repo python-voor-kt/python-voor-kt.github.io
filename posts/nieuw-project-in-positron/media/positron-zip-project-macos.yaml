@@ -1,0 +1,9 @@
+- input: 2026-08-10 16-26-28.mp4
+- output: positron-zip-project-macos.mp4
+  editlist: 
+  - start: 0:02.5
+  - stop: 0:23
+  - start: 0:25.5
+  - stop: 0:44
+  - start: 0:45.8
+  - stop: 0:54

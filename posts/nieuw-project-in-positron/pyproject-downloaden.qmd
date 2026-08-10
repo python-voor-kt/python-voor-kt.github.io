@@ -1,5 +1,5 @@
 ---
-title: "Een `pyproject.toml`-bestand downloaden"
+title: "Starten met een `pyproject.toml` bestand"
 description: "Je hebt een `pyproject.toml`-bestand gekregen."
 author: "Marjon van Wees, Menno Bloembergen en Peter Somhorst"
 category: manual
@@ -8,6 +8,15 @@ order: 2
 
 [← Terug naar het overzicht](index.qmd)
 
+Deze handleiding is voor als je (onder andere) een `pyproject.toml`-bestand aangeleverd hebt gekregen. Heb je geen bestanden aangeleverd gekregen, gebruik dan [deze handleiding](leeg-project.qmd).
+
+::: {.panel-tabset}
+
+## macOS
+
+{{< video media/positron-pyproject-macos-web.mp4 >}}
+:::
+
 1. Open Positron.
 2. Linksbovenin staat een knop "⊕ New". Klik op "⊕ New" en dan op "New Folder from Template...".
 3. Klik op "Empty Project" en klik op "Next".
@@ -15,7 +24,7 @@ order: 2
 5. Kies de locatie voor de projectmap. Let op dat je projectmap [**niet** in OneDrive](index.qmd#wrn-onedrive) mag staan.
 6. Als je git wil gebruiken voor versie-management, vink "Initialize Git repository" aan.
 7. Klik op "Create".
-8. Sleep het `pyproject.toml`-bestand naar de [explorer]{.smallcaps} in Positron (balk aan de linkerkant).
+8. Sleep het `pyproject.toml`-bestand (en everntuele andere bestanden) naar de [explorer]{.smallcaps} in Positron (balk aan de linkerkant).
 9. Open in Positron een [terminal]{.smallcaps} (in het onderste paneel in Positron, of klik in het menu op Terminal → New Terminal).
 10. Type `uv sync` en druk op Enter. Dit maakt een nieuwe *virtual environment* voor je project en installeert de juiste pakketten.
 11. Het kan zijn dat je hierna Positron opnieuw moet opstarten, omdat Positron niet altijd de nieuwe *virtual environment* goed herkent.

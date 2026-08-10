@@ -1,0 +1,7 @@
+- input: 2026-08-10 16-00-57.mp4
+- output: positron-clone-git-macos.mp4
+  editlist: 
+  - start: 1:05
+  - stop: 1:27
+  - start: 1:55
+  - stop: 2:18

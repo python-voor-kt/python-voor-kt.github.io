@@ -1,0 +1,9 @@
+- input: 2026-08-10 15-48-51.mp4
+- output: positron-pyproject-macos.mp4
+  editlist: 
+  - start: 0:17
+  - stop: 0:41
+  - start: 1:09
+  - stop: 1:25
+  - start: 1:39
+  - stop: 2:03
