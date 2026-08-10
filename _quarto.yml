@@ -7,6 +7,8 @@ website:
   site-url: https://python-voor-kt.github.io
   title: "Python voor KT"
   navbar:
+    background: primary
+    foreground: white
     left:
       - href: index.qmd
         text: Handleidingen
@@ -19,8 +21,11 @@ format:
   html:
     theme:
       - cosmo
-      - brand
+      - theme.scss
     css: styles.css
+    # Geldt voor de hele site. Kleur is $primary uit theme.scss.
+    title-block-banner: "#00A6D6"
+    title-block-banner-color: white
 
 
 

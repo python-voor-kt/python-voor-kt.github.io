@@ -1,0 +1,19 @@
+/*-- scss:defaults --*/
+
+// Huisstijl van de site.
+//
+// Dit stond eerder in _brand.yml. Dat werkte, maar zette Quarto ook aan om een
+// compleet donker thema te genereren, inclusief een donker syntax-stylesheet
+// dat ongescoped meelift en o.a. `code span.ex` cyaan kleurde. Via een gewoon
+// SCSS-thema krijg je alleen de lichte variant.
+
+// Accentkleur: banner, knoppen, actieve navigatie.
+$primary: #00a6d6;
+
+// Zelfde kleur, donkerder, voor links. Cyaan op wit haalt 2,8:1 contrast,
+// onder de 4,5:1 die WCAG voor gewone tekst vraagt; deze haalt 6:1.
+$link-color: #006c8a;
+
+// Inline code. Cosmo's standaard is paars (#7d12ba), wat vloekt met het
+// accent en ook in de titels opdook, want die bevatten code zoals `uv`.
+$code-color: #08313f;
