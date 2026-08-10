@@ -6,6 +6,14 @@ phase: install
 order: 1
 ---
 
+::: {.grid .intro}
+::: {.g-col-12 .g-col-sm-2}
+![](media/uv-logo.svg)
+:::
+::: {.g-col-12 .g-col-sm-10}
+`uv` is een Python project- en pakketmanager die snel en eenvoudig in gebruik is.
+:::
+:::
 
 ## Installatie
 Installatie van `uv` is heel eenvoudig. Onderstaande instructies zijn gekopiëerd uit de officiële documentatie van `uv`: <https://docs.astral.sh/uv/>. 

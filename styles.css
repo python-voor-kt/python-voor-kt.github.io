@@ -8,3 +8,8 @@
 .contact-mail noscript {
   font-style: italic;
 }
+
+/* Logo naast de inleidende tekst van een handleiding. */
+.intro {
+  align-items: center;
+}

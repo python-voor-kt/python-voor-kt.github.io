@@ -6,7 +6,14 @@ phase: install
 order: 2
 ---
 
+::: {.grid .intro}
+::: {.g-col-12 .g-col-sm-2}
+![](media/positron-logo.png)
+:::
+::: {.g-col-12 .g-col-sm-10}
 Positron is een geïntegreerde omgeving voor het schrijven van code met veel ingebouwde tools voor data-analyse. Deze handleiding laat je zien hoe je Positron kan installeren.
+:::
+:::
 
 ## Voorbereiding
 
