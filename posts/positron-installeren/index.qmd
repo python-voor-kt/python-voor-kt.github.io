@@ -59,7 +59,6 @@ Zorg dat je eerste `uv` hebt geïnstalleerd. Zie [deze handleiding](../uv-instal
     - Er opent een venster met 'Positron.app' en 'Applications'. Klik en sleep Positron bovenop Applications om Positron te installeren. Sluit daarna venster. 
     - Je kunt Positron nu openen via de Apps launcher, zoeken in Spotlight, of door in Finder naar de map Applicaties.
     - Verwijder de schijf 'Positron...' die op je bureaublad staat.
-3. Het kan zijn dat je computer vraagt om commandoregeltools te installeren. Klik op "Annuleer".  
+    3. Het kan zijn dat je computer vraagt om commandoregeltools te installeren. Dit is niet nodig, maar als je het niet doet zal macOS deze vraag regelmatig herhalen. Om die reden alleen is het handig om het wel te installeren. Klik daarvoor op "Installeer".  
    ![Popup-scherm met de vraag om commandoregeltools te installeren.](media/install-command-tools.png){style="max-width: 550px;"}
-
 :::
