@@ -4,5 +4,6 @@
 # (see https://quarto.org/docs/projects/code-execution.html#freeze)
 freeze: true
 
-# Enable banner style title blocks
-title-block-banner: true
+# Inhoudsopgave, zodat lange handleidingen navigeerbaar blijven
+toc: true
+toc-title: Op deze pagina
