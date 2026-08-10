@@ -1,5 +1,6 @@
 ---
 title: "Positron installeren"
+description: "Installatie van Positron op Windows en macOS."
 author: "Peter Somhorst"
 category: manual
 phase: install

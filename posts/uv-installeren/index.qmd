@@ -1,5 +1,6 @@
 --- 
 title: "`uv` installeren"
+description: "Installatie van `uv` op Windows en macOS."
 author: "Peter Somhorst"
 category: manual
 phase: install
