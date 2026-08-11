@@ -50,5 +50,7 @@ Vervolgens zijn er twee opties.
     b. Installatie via de Terminal.
         - Open in Positron een [terminal]{.smallcaps} (in het onderste paneel in Positron, of klik in het menu op Terminal → New Terminal).
         - Type `uv sync` en druk op Enter. Dit maakt een nieuwe *virtual environment* voor je project en installeert de juiste pakketten.
-8. Het kan zijn dat Positron (rechts onderin) vraagt "We noticed a new environment has been created. Do you want to select it for the workspace folder?". Klik op 'Yes'.
-9. Als dat niet het geval is, kan je de *virtual environment* activeren door op "{{< fa right-left >}} Start Session" te klikken. Je ziet een lijst met environments waar je uit kan kiezen. Kies degene waar staat "Python <versie> (uv: <project-naam>)", met daaronder de locatie van je project.
+8. Hierna moet je de *virtual environment* activeren. Je kunt rechtsbovenin zien welke *virtual environment* actief is, bijvoorbeeld "Python 3.14.6 (uv: <projectnaam>)". Voor het activeren zijn verschillende opties:
+    - Positron herkent dat je een *virtual environment* hebt aangemaakt, en biedt aan deze te activeren. NB: dit werkt niet altijd goed. Doe voor de zekerheid de volgende optie.
+    - Als er geen virtual environment is geselecteerd staat er rechts bovenin staat "{{< fa right-left-arrows >}} Start Session". Klik daarop. Je ziet een lijst met environments waar je uit kan kiezen. Kies degene waar staat "Python <versie> (uv: <project-naam>)", met daaronder de locatie van je project.
+    - Als de *virtual environment* hier niet bij staat, kan het zijn dat je Positron opnieuw moet opstarten.
