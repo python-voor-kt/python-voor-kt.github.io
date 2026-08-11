@@ -102,7 +102,7 @@
     "href": "posts/nieuw-project-in-positron/zip-bestand.html#zip-bestand-uitpakken",
     "title": "Starten met een zip-bestand",
     "section": "Zip-bestand uitpakken",
-    "text": "Zip-bestand uitpakken\n\nWindowsmacOS\n\n\n\nKlik met je rechtermuisknop op het bestand en klik op ‘Alles uitpakken’. Kies de projectmap om de bestanden in uit te pakken.\n\n\n\n\n\nDubbelklik op het bestand. Het wordt automatisch uitgepakt in een map.\nSleep de bestanden uit de map naar de explorer in Positron. Als er in het zip-bestand een of meerdere mappen zitten, kan Positron vragen of je de map wil kopiëren of wil toevoegen aan de workspace. Klik dan op “Copy Folder”."
+    "text": "Zip-bestand uitpakken\n\nWindowsmacOS\n\n\n\n\nKlik met je rechtermuisknop op het bestand en klik op ‘Alles uitpakken’. Kies de projectmap om de bestanden in uit te pakken.\n\n\n\n\n\nDubbelklik op het bestand. Het wordt automatisch uitgepakt in een map.\nSleep de bestanden uit de map naar de explorer in Positron. Als er in het zip-bestand een of meerdere mappen zitten, kan Positron vragen of je de map wil kopiëren of wil toevoegen aan de workspace. Klik dan op “Copy Folder”."
   },
   {
     "objectID": "posts/nieuw-project-in-positron/install-git.html",
