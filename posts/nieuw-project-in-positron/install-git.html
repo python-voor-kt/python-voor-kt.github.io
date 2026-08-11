@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Peter Somhorst">
-<meta name="description" content="Installatie van Positron op Windows en macOS.">
+<meta name="description" content="Installatie van git op Windows en macOS.">
 
-<title>Positron installeren – Python voor KT</title>
+<title>git installeren – Python voor KT</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,6 +27,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -48,8 +83,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-deb154cc1c1131104b99736d090ea826.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -146,10 +179,10 @@ background: #00A6D6;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Positron installeren</h1>
+      <h1 class="title"><code>git</code> installeren</h1>
                   <div>
         <div class="description">
-          Installatie van Positron op Windows en macOS.
+          Installatie van <code>git</code> op Windows en macOS.
         </div>
       </div>
                 </div>
@@ -178,8 +211,8 @@ background: #00A6D6;
     <h2 id="toc-title">Op deze pagina</h2>
    
   <ul>
-  <li><a href="#voorbereiding" id="toc-voorbereiding" class="nav-link active" data-scroll-target="#voorbereiding">Voorbereiding</a></li>
-  <li><a href="#installatie" id="toc-installatie" class="nav-link" data-scroll-target="#installatie">Installatie</a></li>
+  <li><a href="#installatie" id="toc-installatie" class="nav-link active" data-scroll-target="#installatie">Installatie</a></li>
+  <li><a href="#controleren-of-het-gelukt-is" id="toc-controleren-of-het-gelukt-is" class="nav-link" data-scroll-target="#controleren-of-het-gelukt-is">Controleren of het gelukt is</a></li>
   </ul>
 </nav>
     </div>
@@ -190,72 +223,87 @@ background: #00A6D6;
 
 
 
-<div class="grid intro">
-<div class="g-col-12 g-col-sm-2">
-<p><img src="media/positron-logo.png" class="img-fluid"></p>
-</div>
-<div class="g-col-12 g-col-sm-10">
-<p>Positron is een geïntegreerde omgeving voor het schrijven van code met veel ingebouwde tools voor data-analyse. Deze handleiding laat je zien hoe je Positron kan installeren.</p>
-</div>
-</div>
-<section id="voorbereiding" class="level2">
-<h2 class="anchored" data-anchor-id="voorbereiding">Voorbereiding</h2>
-<p>Zorg dat je eerste <code>uv</code> hebt geïnstalleerd. Zie <a href="../../posts/uv-installeren/index.html">deze handleiding</a>.</p>
-</section>
+<p><a href="../../posts/nieuw-project-in-positron/index.html">← Terug naar het overzicht</a></p>
+<p><code>git</code> is een <em>versiebeheersysteem</em>. Het houdt bij hoe de bestanden in een project door de tijd veranderen: je kunt terugzien wat er is gewijzigd, terug naar een eerdere versie, en met meerdere mensen aan dezelfde bestanden werken zonder elkaars werk te overschrijven. Een project dat op deze manier wordt bijgehouden heet een <em>repository</em>.</p>
+<p>Onderzoeksgroepen en vakken delen hun code vaak als repository op GitHub of GitLab. Om zo’n repository naar je eigen computer te halen — <em>clonen</em> — heb je <code>git</code> nodig.</p>
+<p>Op macOS is <code>git</code> onderdeel van de commandoregeltools, die je mogelijk al hebt geïnstalleerd; op Windows moet je het zelf installeren.</p>
+<p>Controleer eerst of je het al hebt. <a href="../../posts/uv-gebruiken/index.html#terminal-openen">Open een Terminal</a> — in Positron of daarbuiten — en voer uit:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Krijg je een versienummer te zien, zoals <code>git version 2.55.0</code>, dan ben je klaar en hoef je de rest van deze handleiding niet te volgen.</p>
 <section id="installatie" class="level2">
 <h2 class="anchored" data-anchor-id="installatie">Installatie</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">macOS</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="media/positron-install-windows-web.mp4"></video></div>
 <ol type="1">
 <li>Zorg dat je weet wat voor type processor je hebt: een x64-processor (Intel of AMD) of een ARM-processor:
 <ul>
-<li>Open het Windows-menu en type ‘Instellingen’. Klik op Intellingen op druk op Enter.</li>
+<li>Open het Windows-menu en type ‘Instellingen’. Klik op Instellingen of druk op Enter.</li>
 <li>Klik op ‘Systeem’ en dan ‘Info’.</li>
-<li>Onder ‘Apparaatspecificaties’ staat ‘Type systeem’. Hier staat of je een x64 or ARM processor hebt.</li>
+<li>Onder ‘Apparaatspecificaties’ staat ‘Type systeem’. Hier staat of je een x64- of ARM-processor hebt.</li>
 </ul></li>
-<li>Download en installeer ‘Visual C++ Redistributable’:
+<li>Download het installatiebestand:
 <ul>
-<li>Ga naar <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version" class="uri">https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version</a></li>
-<li>Klik op de download-link voor de juiste versie (X64 voor x64-processoren, ARM64 voor ARM-processoren).</li>
+<li>Ga naar <a href="https://git-scm.com/install/windows" class="uri">https://git-scm.com/install/windows</a>.</li>
+<li>Zoek het kopje ‘Standalone Installer’.</li>
+<li>Heb je een <strong>x64</strong>-processor, klik dan op ‘Git for Windows/x64 Setup’.</li>
+<li>Heb je een <strong>ARM</strong>-processor, klik dan op ‘Git for Windows/ARM64 Setup’.</li>
+</ul></li>
+<li>Installeer <code>git</code>:
+<ul>
 <li>Open het gedownloade bestand.</li>
-<li>Vink ‘I agree to the license terms and conditions’ aan en klik ‘Install’.</li>
-<li>Klik na installatie op ‘Restart’.</li>
+<li>Klik op ‘Next’ bij het scherm met de licentie.</li>
+<li>Je krijgt daarna een lange reeks schermen met instellingen. De standaardinstellingen zijn prima: klik steeds op ‘Next’.</li>
+<li>Klik in het laatste scherm op ‘Install’.</li>
+<li>Klik na afloop op ‘Finish’.</li>
 </ul></li>
-<li>Download en installeer ‘Positron’:
-<ul>
-<li>Ga naar <a href="https://positron.posit.co/download.html#all-platforms" class="uri">https://positron.posit.co/download.html#all-platforms</a>.</li>
-<li>Zoek de downloads voor Windows. Zoek de versie die bij je processor past (x64 of ARM64). Klik op de knop rechts van ‘System install’.</li>
-<li>Open het gedownloadde bestand.</li>
-<li>Vink “I accept the agreement” aan en klik dan op “Next”.</li>
-<li>Klik weer op “Next”, en dan op “Install”.</li>
-<li>Als de installatie klaar is, klik op “Finish”.</li>
-<li>Om Positron op te starten, klik op het Windows-menu en type ‘Positron’. Druk op Enter of klik op de gevonden applicatie.</li>
-</ul></li>
+<li>Sluit Positron helemaal af en start het opnieuw op. Werk je buiten Positron, sluit dan het PowerShell-venster en open een nieuw venster.</li>
 </ol>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="media/positron-install-mac-web.mp4"></video></div>
+<p>Op macOS installeer je <code>git</code> als onderdeel van de <em>command line tools</em> van Apple.</p>
 <ol type="1">
-<li>Zorg dat je weet wat voor type processor je hebt. MacBooks uitgebracht sinds november 2020 hebben allemaal een Apple Silicon-processor. MacBooks van voor half 2020 hebben allemaal een Intel-processor.
-<ul>
-<li>Klik op het Apple-logo in de menubalk en dan op ‘Over deze Mac’.</li>
-<li>Achter ‘Chip’/‘Processor’ staat ofwel “<strong>Apple</strong> M…” ofwel “… <strong>Intel</strong> Core …”.</li>
-</ul></li>
-<li>Download en installeer ‘Positron’:
-<ul>
-<li>Ga naar <a href="https://positron.posit.co/download.html" class="uri">https://positron.posit.co/download.html</a>.</li>
-<li>Klik op ‘Download for Apple Silicon’ of ‘Download for Intel’, afhankelijk van het type processor dat je hebt.</li>
-<li>Open het gedownloadde DMG-bestand.</li>
-<li>Er opent een venster met ‘Positron.app’ en ‘Applications’. Klik en sleep Positron bovenop Applications om Positron te installeren. Sluit daarna venster.</li>
-<li>Je kunt Positron nu openen via de Apps launcher, zoeken in Spotlight, of door in Finder naar de map Applicaties.</li>
-<li>Verwijder de schijf ‘Positron…’ die op je bureaublad staat.</li>
-</ul></li>
-<li>Het kan zijn dat je computer vraagt om commandoregeltools te installeren. Dit is nu nog niet nodig, maar wel als je <a href="../../posts/nieuw-project-in-positron/install-git.html"><code>git</code></a> wil gebruiken. Als je de commandoregeltools niet installeert zal macOS deze vraag regelmatig herhalen. Om die reden alleen is het handig om het wel te installeren. Klik daarvoor op “Installeer”. <img src="media/install-command-tools.png" class="img-fluid" style="max-width: 550px;" alt="Popup-scherm met de vraag om commandoregeltools te installeren."></li>
+<li><p><a href="../../posts/uv-gebruiken/index.html#terminal-openen">Open een Terminal</a>, in Positron of daarbuiten.</p></li>
+<li><p>Voer onderstaand commando uit:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--install</span></span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Er verschijnt een venster met de vraag of je de command line tools wil installeren. Klik op ‘Installeer’.</p></li>
+<li><p>Klik op ‘Akkoord’ om de licentie te accepteren.</p></li>
+<li><p>Wacht tot de installatie klaar is. Dit kan een paar minuten duren.</p></li>
 </ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Opmerking</span>“command line tools are already installed”
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Krijg je deze melding, dan staan de tools er al en is <code>git</code> dus al geïnstalleerd. Je bent klaar.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="controleren-of-het-gelukt-is" class="level2">
+<h2 class="anchored" data-anchor-id="controleren-of-het-gelukt-is">Controleren of het gelukt is</h2>
+<p><a href="../../posts/uv-gebruiken/index.html#terminal-openen">Open een Terminal</a> en voer uit:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Je hoort nu een versienummer te zien, bijvoorbeeld <code>git version 2.55.0</code>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>“git wordt niet herkend”
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Krijg je op Windows een foutmelding dat het commando niet gevonden is, dan draait Positron nog met de instellingen van vóór de installatie. Een nieuw tabblad in de terminal helpt dan niet: Positron geeft dat tabblad zijn eigen instellingen mee, en die zijn vastgelegd toen Positron opstartte. Sluit Positron helemaal af en start het opnieuw op.</p>
 </div>
 </div>
 
@@ -664,8 +712,6 @@ background: #00A6D6;
   });
   </script>
 </div> <!-- /content -->
-<script>videojs(video_shortcode_videojs_video1);</script>
-<script>videojs(video_shortcode_videojs_video2);</script>
 
 
 
