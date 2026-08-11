@@ -1,0 +1,5 @@
+- input: 2026-08-11 14-24-41.mp4
+- output: positron-zip-project-windows.mp4
+  editlist: 
+  - start: 0:09
+  - stop: 1:19

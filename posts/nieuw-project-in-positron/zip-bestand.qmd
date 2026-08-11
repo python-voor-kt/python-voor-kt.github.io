@@ -23,6 +23,8 @@ Als het zip-bestand geen `pyproject.toml`-bestand bevat, maar slechts bestanden 
 ::: {.panel-tabset}
 ## Windows
 
+{{< video media/positron-zip-project-windows-web.mp4 >}}
+
 1. Klik met je rechtermuisknop op het bestand en klik op 'Alles uitpakken'. Kies de projectmap om de bestanden in uit te pakken.
 
 
