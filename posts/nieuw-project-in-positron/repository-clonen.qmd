@@ -29,6 +29,10 @@ Het kan zijn dat je slechts de bestanden wil downloaden die in de repository sta
 - Vervolg de instructies voor [bestanden uit een `*.zip`-bestand](zip-bestand.qmd)
 :::
 
+## Voorbereiding
+
+Om een repository te kunnen clonen moet `git` geïnstalleerd zijn. Zie [deze handleiding](install-git.qmd) voor instructies hoe je kan controleren of `git` geïnstalleerd is, en voor installatie van `git`.
+
 ::: {.panel-tabset}
 
 ## macOS

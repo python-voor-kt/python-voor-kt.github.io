@@ -1,0 +1,89 @@
+---
+title: "`git` installeren"
+description: "Installatie van `git` op Windows en macOS."
+author: "Peter Somhorst"
+category: manual
+---
+
+[← Terug naar het overzicht](index.qmd)
+
+`git` is een *versiebeheersysteem*. Het houdt bij hoe de bestanden in een project door de tijd veranderen: je kunt terugzien wat er is gewijzigd, terug naar een eerdere versie, en met meerdere mensen aan dezelfde bestanden werken zonder elkaars werk te overschrijven. Een project dat op deze manier wordt bijgehouden heet een *repository*.
+
+Onderzoeksgroepen en vakken delen hun code vaak als repository op GitHub of GitLab. Om zo'n repository naar je eigen computer te halen — *clonen* — heb je `git` nodig.
+
+Op macOS is `git` onderdeel van de commandoregeltools, die je mogelijk al hebt geïnstalleerd; op Windows moet je het zelf installeren.
+
+Controleer eerst of je het al hebt. [Open een Terminal](../uv-gebruiken/index.qmd#terminal-openen) — in Positron of daarbuiten — en voer uit:
+
+```bash
+git --version
+```
+
+Krijg je een versienummer te zien, zoals `git version 2.55.0`, dan ben je klaar
+en hoef je de rest van deze handleiding niet te volgen.
+
+## Installatie
+
+::: {.panel-tabset}
+
+### Windows
+
+1. Zorg dat je weet wat voor type processor je hebt: een x64-processor (Intel of AMD) of een ARM-processor:
+    - Open het Windows-menu en type 'Instellingen'. Klik op Instellingen of druk op Enter.
+    - Klik op 'Systeem' en dan 'Info'.
+    - Onder 'Apparaatspecificaties' staat 'Type systeem'. Hier staat of je een x64- of ARM-processor hebt.
+2. Download het installatiebestand:
+    - Ga naar <https://git-scm.com/install/windows>.
+    - Zoek het kopje 'Standalone Installer'.
+    - Heb je een **x64**-processor, klik dan op 'Git for Windows/x64 Setup'.
+    - Heb je een **ARM**-processor, klik dan op 'Git for Windows/ARM64 Setup'.
+3. Installeer `git`:
+    - Open het gedownloade bestand.
+    - Klik op 'Next' bij het scherm met de licentie.
+    - Je krijgt daarna een reeks schermen met instellingen. De standaardinstellingen zijn prima: klik steeds op 'Next'.
+    - Klik in het laatste scherm op 'Install'.
+    - Klik na afloop op 'Finish'.
+4. Sluit Positron helemaal af en start het opnieuw op. Werk je buiten Positron, sluit dan het PowerShell-venster en open een nieuw venster.
+
+### macOS
+
+Op macOS installeer je `git` als onderdeel van de *command line tools* van
+Apple.
+
+1. [Open een Terminal](../uv-gebruiken/index.qmd#terminal-openen), in Positron of daarbuiten.
+2. Voer onderstaand commando uit:
+
+    ```bash
+    xcode-select --install
+    ```
+
+3. Er verschijnt een venster met de vraag of je de command line tools wil installeren. Klik op 'Installeer'.
+4. Klik op 'Akkoord' om de licentie te accepteren.
+5. Wacht tot de installatie klaar is. Dit kan een paar minuten duren.
+
+::: {.callout-note}
+## "command line tools are already installed"
+Krijg je deze melding, dan staan de tools er al en is `git` dus al
+geïnstalleerd. Je bent klaar.
+:::
+
+:::
+
+## Controleren of het gelukt is
+
+[Open een Terminal](../uv-gebruiken/index.qmd#terminal-openen) en voer uit:
+
+```bash
+git --version
+```
+
+Je hoort nu een versienummer te zien, bijvoorbeeld `git version 2.55.0`.
+
+::: {.callout-tip}
+## "git wordt niet herkend"
+Krijg je op Windows een foutmelding dat het commando niet gevonden is, dan draait
+Positron nog met de instellingen van vóór de installatie. Een nieuw tabblad in de
+terminal helpt dan niet: Positron geeft dat tabblad zijn eigen instellingen mee,
+en die zijn vastgelegd toen Positron opstartte. Sluit Positron helemaal af en
+start het opnieuw op.
+:::
