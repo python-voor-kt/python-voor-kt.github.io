@@ -1,0 +1,11 @@
+- input: 2026-08-11 13-50-02.mp4
+- output: positron-clone-git-windows.mp4
+  editlist: 
+  - start: 0:37
+  - stop: 1:16
+  - start: 1:19
+  - stop: 1:22.5
+  - start: 1:27
+  - stop: 1:49
+  - start: 1:57
+  - stop: 1:58

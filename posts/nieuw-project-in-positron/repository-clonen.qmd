@@ -34,6 +34,9 @@ Het kan zijn dat je slechts de bestanden wil downloaden die in de repository sta
 Om een repository te kunnen clonen moet `git` geïnstalleerd zijn. Zie [deze handleiding](install-git.qmd) voor instructies hoe je kan controleren of `git` geïnstalleerd is, en voor installatie van `git`.
 
 ::: {.panel-tabset}
+## Windows
+
+{{< video media/positron-clone-git-windows-web.mp4 >}}
 
 ## macOS
 

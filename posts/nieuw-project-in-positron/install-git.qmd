@@ -40,7 +40,7 @@ en hoef je de rest van deze handleiding niet te volgen.
 3. Installeer `git`:
     - Open het gedownloade bestand.
     - Klik op 'Next' bij het scherm met de licentie.
-    - Je krijgt daarna een reeks schermen met instellingen. De standaardinstellingen zijn prima: klik steeds op 'Next'.
+    - Je krijgt daarna een lange reeks schermen met instellingen. De standaardinstellingen zijn prima: klik steeds op 'Next'.
     - Klik in het laatste scherm op 'Install'.
     - Klik na afloop op 'Finish'.
 4. Sluit Positron helemaal af en start het opnieuw op. Werk je buiten Positron, sluit dan het PowerShell-venster en open een nieuw venster.
