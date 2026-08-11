@@ -50,6 +50,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-deb154cc1c1131104b99736d090ea826.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
 <link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -186,10 +188,13 @@ background: #00A6D6;
 <p><a href="../../posts/nieuw-project-in-positron/index.html">← Terug naar het overzicht</a></p>
 <p>Deze handleiding is voor als je (onder andere) een <code>pyproject.toml</code>-bestand aangeleverd hebt gekregen. Heb je geen bestanden aangeleverd gekregen, gebruik dan <a href="../../posts/nieuw-project-in-positron/leeg-project.html">deze handleiding</a>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">macOS</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">macOS</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="media/positron-pyproject-macos-web.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="media/positron-pyproject-windows-web.mp4"></video></div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="media/positron-pyproject-macos-web.mp4"></video></div>
 </div>
 </div>
 </div>
@@ -204,7 +209,12 @@ background: #00A6D6;
 <li>Sleep het <code>pyproject.toml</code>-bestand (en everntuele andere bestanden) naar de <span class="smallcaps">explorer</span> in Positron (balk aan de linkerkant).</li>
 <li>Open in Positron een <span class="smallcaps">terminal</span> (in het onderste paneel in Positron, of klik in het menu op Terminal → New Terminal).</li>
 <li>Type <code>uv sync</code> en druk op Enter. Dit maakt een nieuwe <em>virtual environment</em> voor je project en installeert de juiste pakketten.</li>
-<li>Het kan zijn dat je hierna Positron opnieuw moet opstarten, omdat Positron niet altijd de nieuwe <em>virtual environment</em> goed herkent.</li>
+<li>Hierna moet je de <em>virtual environment</em> activeren. Je kunt rechtsbovenin zien welke <em>virtual environment</em> actief is, bijvoorbeeld “Python 3.14.6 (uv: <projectnaam>)”. Voor het activeren zijn verschillende opties:
+<ul>
+<li>Positron herkent dat je een <em>virtual environment</em> hebt aangemaakt, en biedt aan deze te activeren. NB: dit werkt niet altijd goed. Doe voor de zekerheid de volgende optie.</li>
+<li>Als er geen virtual environment is geselecteerd staat er rechts bovenin staat “<i class="fa-solid fa-right-left-arrows" aria-label="right-left-arrows"></i> Start Session”. Klik daarop. Je ziet een lijst met environments waar je uit kan kiezen. Kies degene waar staat “Python <versie> (uv: <project-naam>)”, met daaronder de locatie van je project.</project-naam></versie></li>
+<li>Als de <em>virtual environment</em> hier niet bij staat, kan het zijn dat je Positron opnieuw moet opstarten.</li>
+</ul></projectnaam></li>
 </ol>
 
 
@@ -612,6 +622,7 @@ background: #00A6D6;
   </script>
 </div> <!-- /content -->
 <script>videojs(video_shortcode_videojs_video1);</script>
+<script>videojs(video_shortcode_videojs_video2);</script>
 
 
 
