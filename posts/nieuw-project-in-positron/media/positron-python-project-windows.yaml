@@ -1,0 +1,7 @@
+- input: 2026-08-11 11-09-29.mp4
+- output: positron-python-project-windows.mp4
+  editlist: 
+  - start: 0:07
+  - stop: 0:52
+  - start: 1:00
+  - stop: 1:03

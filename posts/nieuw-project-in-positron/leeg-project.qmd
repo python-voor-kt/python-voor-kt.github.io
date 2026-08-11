@@ -11,7 +11,9 @@ order: 1
 Met deze handleiding maakt je een leeg Python-project in Positron. Als je bestanden aangeleverd hebt gekregen, gebruik dan een andere handleiding.
 
 ::: {.panel-tabset}
+## Windows
 
+{{< video media/positron-python-project-windows-web.mp4 >}}
 
 ## macOS
 
