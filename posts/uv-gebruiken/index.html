@@ -326,11 +326,11 @@ Waarschuwing&nbsp;1: OneDrive (Windows) en andere cloudopslag
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip&nbsp;1: Regels voor project-namen
+Tip&nbsp;1: Regels voor projectnamen
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>De naam van een project-map moet aan bepaalde regels voldoen.</p>
+<p>De naam van een projectmap moet aan bepaalde regels voldoen.</p>
 <ul>
 <li>De naam moet beginnen én eindigen met een letter.</li>
 <li>De naam mag alleen letters, cijfers, _, - en . (underscore, streepje en punt) bevatten.</li>
@@ -340,7 +340,7 @@ Tip&nbsp;1: Regels voor project-namen
 <section id="nieuw-project" class="level3">
 <h3 class="anchored" data-anchor-id="nieuw-project">Nieuw project</h3>
 <ol type="1">
-<li><p><a href="#terminal-openen">Open een Terminal/PowerShell</a> en ga naar de bovenliggende map waarin je je project wil maken. Als de project-map <code>C:\Users\voorbeeld\Studie\programmeren\project-1</code> moet worden, ga je dus naar <code>C:\Users\voorbeeld\Studie\programmeren</code>.</p></li>
+<li><p><a href="#terminal-openen">Open een Terminal/PowerShell</a> en ga naar de bovenliggende map waarin je je project wil maken. Als de projectmap <code>C:\Users\voorbeeld\Studie\programmeren\project-1</code> moet worden, ga je dus naar <code>C:\Users\voorbeeld\Studie\programmeren</code>.</p></li>
 <li><p>Draai onderstaand commando, waarbij je <code>&lt;projectnaam&gt;</code> vervangt door de naam van je project — in het voorbeeld hierboven dus <code>uv init project-1</code>. De naam moet voldoen aan de <a href="#tip-naming">regels voor projectnamen</a>. Dit maakt een nieuwe map, en zet daar de benodigde bestanden in.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> init <span class="op">&lt;</span>projectnaam<span class="op">&gt;</span></span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>
@@ -372,7 +372,7 @@ Tip&nbsp;1: Regels voor project-namen
 <p>Als je al een projectmap met een <code>pyproject.toml</code>-bestand hebt, volg dan deze instructies.</p>
 <ol type="1">
 <li><p><a href="#terminal-openen">Open een Terminal/PowerShell</a> en ga naar de projectmap. Let op dat de naam van de map voldoet aan de <a href="#tip-naming">regels voor projectnamen</a>.</p></li>
-<li><p>Draai onderstaand commando. Dit vertelt <code>uv</code> dat je al een project hebt, en om een <em>virtual environment</em> aan te maken op basis van het <code>pyproject.toml</code>-bestand.</p>
+<li><p>Draai onderstaand commando. Dit vertelt <code>uv</code> dat je al een project hebt, en om een virtual environment aan te maken op basis van het <code>pyproject.toml</code>-bestand.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> sync</span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -381,11 +381,11 @@ Tip&nbsp;1: Regels voor project-namen
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Opmerking</span><em>Virtual environments</em>
+<span class="screen-reader-only">Opmerking</span>Virtual environments
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Een virtuele omgeving (<em>virtual environment</em>, vaak afgekort met <em>venv</em>) is een aparte ‘virtuele’ installatie van een specifieke versie van Python. Hierin installeer je alle Python-pakketten die je voor een project nodig hebt. Dit zorgt ervoor dat je de juiste versies van alle <em>dependencies</em> installeert voor het juiste project. Als je voor Project A bijvoorbeeld een pakket nodig hebt die een ‘oudere’ versie van NumPy (&lt;2.0) gebruikt, en Project B juist gebruik wil maken van de nieuwste mogelijkheden van NumPy (2.0 of nieuwer), kunnen deze projecten niet gebruik maken van dezelfde installaties. Door ze beiden in een eigen <em>virtual environment</em> te draaien, heb je dit probleem niet.</p>
+<p>Een virtuele omgeving (<em>virtual environment</em>, vaak afgekort met <em>venv</em>) is een aparte ‘virtuele’ installatie van een specifieke versie van Python. Hierin installeer je alle Python-pakketten die je voor een project nodig hebt. Dit zorgt ervoor dat je de juiste versies van alle dependencies installeert voor het juiste project. Als je voor Project A bijvoorbeeld een pakket nodig hebt dat een ‘oudere’ versie van NumPy (&lt;2.0) gebruikt, en Project B juist gebruik wil maken van de nieuwste mogelijkheden van NumPy (2.0 of nieuwer), kunnen deze projecten niet gebruik maken van dezelfde installaties. Door ze beiden in een eigen virtual environment te draaien, heb je dit probleem niet.</p>
 </div>
 </div>
 </section>
@@ -394,20 +394,20 @@ Tip&nbsp;1: Regels voor project-namen
 <h2 class="anchored" data-anchor-id="pakketten-installeren">Pakketten installeren</h2>
 <p>Je kunt pakketten aan je installatie toevoegen met onderstaand commando, waarbij je <code>&lt;naam&gt;</code> vervangt door de naam van het pakket. Je kunt meerdere pakketten toevoegen door meerdere namen achter elkaar te plaatsen, bijvoorbeeld <code>uv add numpy scipy matplotlib pandas</code>.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> add <span class="op">&lt;</span>naam<span class="op">&gt;</span></span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div>
-<p><code>uv</code> voegt het pakket toe aan de lijst met <em>dependencies</em> in <code>pyproject.toml</code>, en installeert het pakket en al zijn <em>dependencies</em>.</p>
-<p>Je kunt ook pakketten installeren met <code>uv pip install &lt;naam&gt;</code>. Dit installeert een pakket wel, maar voegt het niet toe aan de <em>dependencies</em> van het project. Daarmee is de installatie niet reproduceerbaar. Dit kan nuttig zijn om bijvoorbeeld een pakket uit te proberen, of tijdelijk te installeren en daarna weer te verwijderen.</p>
+<p><code>uv</code> voegt het pakket toe aan de lijst met dependencies in <code>pyproject.toml</code>, en installeert het pakket en al zijn dependencies.</p>
+<p>Je kunt ook pakketten installeren met <code>uv pip install &lt;naam&gt;</code>. Dit installeert een pakket wel, maar voegt het niet toe aan de dependencies van het project. Daarmee is de installatie niet reproduceerbaar. Dit kan nuttig zijn om bijvoorbeeld een pakket uit te proberen, of tijdelijk te installeren en daarna weer te verwijderen.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Opmerking</span><em>Dependencies</em>
+<span class="screen-reader-only">Opmerking</span>Dependencies
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Python-projecten maken meestal gebruik van andere Python-pakketten. Dit heet een <em>dependency</em>. Als je bijvoorbeeld <code>matplotlib</code> installeert, worden er ook negen <em>dependencies</em>, pakketten waar matplotlib gebruik van maakt, geïnstalleerd. Eén van deze pakketten heeft weer een eigen <em>dependency</em>, die ook wordt geïnstalleerd. Dit heet samen een <em>dependency tree</em>. Met het terminal-commando <code>uv tree</code> kan je deze voor je eigen project weergeven.</p>
-<p>Bij installatie van pakketten is het belangrijk dat alle pakketten in de <em>dependency tree</em> goed met elkaar samenwerken. Het kan bijvoorbeeld zijn dat pakket A en pakket B beiden pakket C als <em>dependency</em> hebben, waarbij pakket A kan werken met pakket C versie 1.2 tot 2.7, terwijl pakket B werkt met pakket C versie 2.0 tot 3.1. Een goede project-manager zorgt voor goede afstemming tussen versies, en stopt de installatie als er geen afstemming mogelijk is.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Python-projecten maken meestal gebruik van andere Python-pakketten. Dit heet een <em>dependency</em>. Als je bijvoorbeeld <code>matplotlib</code> installeert, worden er ook negen dependencies, pakketten waar matplotlib gebruik van maakt, geïnstalleerd. Eén van deze pakketten heeft weer een eigen dependency, die ook wordt geïnstalleerd. Dit heet samen een <em>dependency tree</em>. Met het terminal-commando <code>uv tree</code> kan je deze voor je eigen project weergeven.</p>
+<p>Bij installatie van pakketten is het belangrijk dat alle pakketten in de dependency tree goed met elkaar samenwerken. Het kan bijvoorbeeld zijn dat pakket A en pakket B beiden pakket C als dependency hebben, waarbij pakket A kan werken met pakket C versie 1.2 tot 2.7, terwijl pakket B werkt met pakket C versie 2.0 tot 3.1. Een goede project-manager zorgt voor goede afstemming tussen versies, en stopt de installatie als er geen afstemming mogelijk is.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -416,11 +416,11 @@ Tip&nbsp;1: Regels voor project-namen
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Opmerking</span><em>lockfile</em>
+<span class="screen-reader-only">Opmerking</span>Lockfile
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><code>uv</code> maakt voor geïnstalleerde projecten altijd een <em>lockfile</em> aan. Hierin staat nauwkeurig beschreven welke versie van elk pakket in het project gebruikt is. Hierdoor kan de <em>virtual environment</em> exact gereproduceerd worden op dezelfde én andere computers.</p>
+<p><code>uv</code> maakt voor geïnstalleerde projecten altijd een <em>lockfile</em> aan. Hierin staat nauwkeurig beschreven welke versie van elk pakket in het project gebruikt is. Hierdoor kan de virtual environment exact gereproduceerd worden op dezelfde én andere computers.</p>
 </div>
 </div>
 

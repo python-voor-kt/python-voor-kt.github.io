@@ -193,7 +193,7 @@ background: #00A6D6;
 
 <p><a href="../../posts/nieuw-project-in-positron/index.html">← Terug naar het overzicht</a></p>
 <p>Je kunt een project starten door een <em>repository</em> te <em>clonen</em> vanaf GitHub of GitLab.</p>
-<p>Om bestanden uit een <em>repository</em> te kunnen downloaden, moet je een URL (link) hebben. Bruikbare URLs zien er als volgt uit:</p>
+<p>Om bestanden uit een repository te kunnen downloaden, moet je een URL (link) hebben. Bruikbare URLs zien er als volgt uit:</p>
 <ul>
 <li>https://&lt;server&gt;/&lt;organisatie&gt;/&lt;repository&gt;</li>
 <li>git@&lt;server&gt;:&lt;organisatie&gt;/&lt;repository&gt;.git</li>
@@ -205,12 +205,12 @@ background: #00A6D6;
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Waarschuwing</span><em>Clonen</em> vs.&nbsp;<em>downloaden</em>
+<span class="screen-reader-only">Waarschuwing</span>Clonen vs.&nbsp;downloaden
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Deze instructie is voor het <em>clonen</em> van een <em>repository</em>. Dit betekent dat je een connectie behoud met de <em>repository</em>, en bijvoorbeeld de geschiedenis van de bestanden kunt inzien, en kunt bijdragen aan wijzigingen aan de <em>repository</em>.</p>
-<p>Het kan zijn dat je slechts de bestanden wil downloaden die in de repository staan. Download dan de bestanden uit de <em>repository</em>:</p>
+<p>Deze instructie is voor het clonen van een repository. Dit betekent dat je een connectie behoudt met de repository, en bijvoorbeeld de geschiedenis van de bestanden kunt inzien, en kunt bijdragen aan wijzigingen aan de repository.</p>
+<p>Het kan zijn dat je slechts de bestanden wil downloaden die in de repository staan. Download dan de bestanden uit de repository:</p>
 <ul>
 <li>Open de https://-link</li>
 <li>Klik op de ‘Code’-knop (groen in GitHub, blauw in GitLab)</li>
@@ -239,8 +239,8 @@ background: #00A6D6;
 <li>Plak/type de URL onder “Git repository URL”.</li>
 <li>Kies de locatie voor de projectmap. Let op dat je projectmap <a href="../../posts/nieuw-project-in-positron/index.html#wrn-onedrive"><strong>niet</strong> in OneDrive</a> mag staan.</li>
 <li>Klik op “OK”.</li>
-<li>Positron opent de gekloonde <em>repository</em> en vraagt of je de auteurs van de <em>repository</em> vertrouwt. Klik op “Yes, I trust the authors”, maar alleen als je de code in de <em>repository</em> kan vertrouwen. Als je op “No, I don’t trust the authors” klikt, kan je de code wel inzien, maar niet draaien.</li>
-<li>Als het project een <code>pyproject.toml</code>-bestand heeft, moet je een virtual environment maken. Controleer eerst of in <code>pyproject.toml</code> de instellingen (vooral de projectnaam, die moet voldoen aan <a href="../../posts/nieuw-project-in-positron/index.html#tip-naming">de regels voor projectnamen</a>) goed staan. Vervolgens zijn er twee opties.
+<li>Positron opent de gekloonde repository en vraagt of je de auteurs van de repository vertrouwt. Klik op “Yes, I trust the authors”, maar alleen als je de code in de repository kan vertrouwen. Als je op “No, I don’t trust the authors” klikt, kan je de code wel inzien, maar niet draaien.</li>
+<li>Als het project een <code>pyproject.toml</code>-bestand heeft, moet je een <em>virtual environment</em> maken. Controleer eerst of in <code>pyproject.toml</code> de instellingen (vooral de projectnaam, die moet voldoen aan <a href="../../posts/nieuw-project-in-positron/index.html#tip-naming">de regels voor projectnamen</a>) goed staan. Vervolgens zijn er twee opties.
 <ol type="a">
 <li>Positron herkent dat er een virtual environment aangemaakt moet worden.
 <ul>
@@ -250,14 +250,14 @@ background: #00A6D6;
 <li>Installatie via de Terminal.
 <ul>
 <li>Open in Positron een <span class="smallcaps">terminal</span> (in het onderste paneel in Positron, of klik in het menu op Terminal → New Terminal).</li>
-<li>Type <code>uv sync</code> en druk op Enter. Dit maakt een nieuwe <em>virtual environment</em> voor je project en installeert de juiste pakketten.</li>
+<li>Type <code>uv sync</code> en druk op Enter. Dit maakt een nieuwe virtual environment voor je project en installeert de juiste pakketten.</li>
 </ul></li>
 </ol></li>
-<li>Hierna moet je de <em>virtual environment</em> activeren. Je kunt rechtsbovenin zien welke <em>virtual environment</em> actief is, bijvoorbeeld “Python 3.14.6 (uv: <projectnaam>)”. Voor het activeren zijn verschillende opties:
+<li>Hierna moet je de virtual environment activeren. Je kunt rechtsbovenin zien welke virtual environment actief is, bijvoorbeeld “Python 3.14.6 (uv: <projectnaam>)”. Voor het activeren zijn verschillende opties:
 <ul>
-<li>Positron herkent dat je een <em>virtual environment</em> hebt aangemaakt, en biedt aan deze te activeren. NB: dit werkt niet altijd goed. Doe voor de zekerheid de volgende optie.</li>
-<li>Als er geen virtual environment is geselecteerd staat er rechts bovenin staat “<i class="fa-solid fa-right-left-arrows" aria-label="right-left-arrows"></i> Start Session”. Klik daarop. Je ziet een lijst met environments waar je uit kan kiezen. Kies degene waar staat “Python <versie> (uv: <project-naam>)”, met daaronder de locatie van je project.</project-naam></versie></li>
-<li>Als de <em>virtual environment</em> hier niet bij staat, kan het zijn dat je Positron opnieuw moet opstarten.</li>
+<li>Positron herkent dat je een virtual environment hebt aangemaakt, en biedt aan deze te activeren. NB: dit werkt niet altijd goed. Doe voor de zekerheid de volgende optie.</li>
+<li>Als er geen virtual environment is geselecteerd staat er rechts bovenin “<i class="fa-solid fa-right-left" aria-label="right-left"></i> Start Session”. Klik daarop. Je ziet een lijst met environments waar je uit kan kiezen. Kies degene waar staat “Python <versie> (uv: <projectnaam>)”, met daaronder de locatie van je project.</projectnaam></versie></li>
+<li>Als de virtual environment hier niet bij staat, kan het zijn dat je Positron opnieuw moet opstarten.</li>
 </ul></projectnaam></li>
 </ol>
 
