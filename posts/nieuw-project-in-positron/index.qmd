@@ -21,7 +21,7 @@ listing:
     feed: false
 ---
 
-Om te zorgen dat je bestanden goed georganiseerd blijven, is het belangrijk voor elk project een nieuwe project-map aan te maken. Dit voorkomt (later) veel problemen.
+Om te zorgen dat je bestanden goed georganiseerd blijven, is het belangrijk voor elk project een nieuwe projectmap aan te maken. Dit voorkomt (later) veel problemen.
 
 ## Voorbereiding
 
@@ -32,7 +32,7 @@ Deze handleiding gaat er vanuit dat je `uv` en Positron hebt geïnstalleerd. Zie
 Het is een goede gewoonte voor elk onderzoek, vak, opdracht of stage een nieuw project aan te maken. Je project komt in een projectmap te staan. Zet deze op een logische locatie.
 
 ::: {.callout-warning #wrn-onedrive}
-# OneDrive (Windows) en andere cloudopslag
+## OneDrive (Windows) en andere cloudopslag
 Microsoft Windows gebruikt tegenwoordig OneDrive als standaard locatie voor documenten.
 `uv` werkt niet goed als je je bestanden in OneDrive zet.
 OneDrive werkt namelijk met 'cloudbestanden', die niet altijd daadwerkelijk op je computer staan.
@@ -46,9 +46,9 @@ Heb je wel eerder een project in OneDrive gezet, draai dan `uv cache clean` in j
 :::
 
 ::: {.callout-tip #tip-naming}
-# Regels voor project-namen
+## Regels voor projectnamen
 
-De naam van een project-map moet aan bepaalde regels voldoen.
+De naam van een projectmap moet aan bepaalde regels voldoen.
 
 - De naam moet beginnen én eindigen met een letter.
 - De naam mag alleen letters, cijfers, _, - en . (underscore, streepje en punt) bevatten.

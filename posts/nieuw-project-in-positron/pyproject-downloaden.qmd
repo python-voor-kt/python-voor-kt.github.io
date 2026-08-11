@@ -1,5 +1,5 @@
 ---
-title: "Starten met een `pyproject.toml` bestand"
+title: "Starten met een `pyproject.toml`-bestand"
 description: "Je hebt een `pyproject.toml`-bestand gekregen."
 author: "Marjon van Wees, Menno Bloembergen en Peter Somhorst"
 category: manual
@@ -27,10 +27,10 @@ Deze handleiding is voor als je (onder andere) een `pyproject.toml`-bestand aang
 5. Kies de locatie voor de projectmap. Let op dat je projectmap [**niet** in OneDrive](index.qmd#wrn-onedrive) mag staan.
 6. Als je git wil gebruiken voor versie-management, vink "Initialize Git repository" aan.
 7. Klik op "Create".
-8. Sleep het `pyproject.toml`-bestand (en everntuele andere bestanden) naar de [explorer]{.smallcaps} in Positron (balk aan de linkerkant).
+8. Sleep het `pyproject.toml`-bestand (en eventuele andere bestanden) naar de [explorer]{.smallcaps} in Positron (balk aan de linkerkant).
 9. Open in Positron een [terminal]{.smallcaps} (in het onderste paneel in Positron, of klik in het menu op Terminal → New Terminal).
 10. Type `uv sync` en druk op Enter. Dit maakt een nieuwe *virtual environment* voor je project en installeert de juiste pakketten.
-11. Hierna moet je de *virtual environment* activeren. Je kunt rechtsbovenin zien welke *virtual environment* actief is, bijvoorbeeld "Python 3.14.6 (uv: <projectnaam>)". Voor het activeren zijn verschillende opties:
-    - Positron herkent dat je een *virtual environment* hebt aangemaakt, en biedt aan deze te activeren. NB: dit werkt niet altijd goed. Doe voor de zekerheid de volgende optie.
-    - Als er geen virtual environment is geselecteerd staat er rechts bovenin staat "{{< fa right-left-arrows >}} Start Session". Klik daarop. Je ziet een lijst met environments waar je uit kan kiezen. Kies degene waar staat "Python <versie> (uv: <project-naam>)", met daaronder de locatie van je project.
-    - Als de *virtual environment* hier niet bij staat, kan het zijn dat je Positron opnieuw moet opstarten.
+11. Hierna moet je de virtual environment activeren. Je kunt rechtsbovenin zien welke virtual environment actief is, bijvoorbeeld "Python 3.14.6 (uv: <projectnaam>)". Voor het activeren zijn verschillende opties:
+    - Positron herkent dat je een virtual environment hebt aangemaakt, en biedt aan deze te activeren. NB: dit werkt niet altijd goed. Doe voor de zekerheid de volgende optie.
+    - Als er geen virtual environment is geselecteerd staat er rechts bovenin "{{< fa right-left >}} Start Session". Klik daarop. Je ziet een lijst met environments waar je uit kan kiezen. Kies degene waar staat "Python <versie> (uv: <projectnaam>)", met daaronder de locatie van je project.
+    - Als de virtual environment hier niet bij staat, kan het zijn dat je Positron opnieuw moet opstarten.

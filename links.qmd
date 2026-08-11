@@ -11,7 +11,7 @@ listing:
   filter-ui: true
 ---
 
-Hier staat een collectie met links naar nuttige pagina's, bijvoorbeeld de documentatie van verschillen Python-pakketten, readers van vakken, of externe pagina's die handig kunnen zijn. 
+Hier staat een collectie met links naar nuttige pagina's, bijvoorbeeld de documentatie van verschillende Python-pakketten, readers van vakken, of externe pagina's die handig kunnen zijn. 
 
 ::: {#links}
 :::

@@ -26,7 +26,7 @@ en hoef je de rest van deze handleiding niet te volgen.
 
 ::: {.panel-tabset}
 
-### Windows
+## Windows
 
 1. Zorg dat je weet wat voor type processor je hebt: een x64-processor (Intel of AMD) of een ARM-processor:
     - Open het Windows-menu en type 'Instellingen'. Klik op Instellingen of druk op Enter.
@@ -45,7 +45,7 @@ en hoef je de rest van deze handleiding niet te volgen.
     - Klik na afloop op 'Finish'.
 4. Sluit Positron helemaal af en start het opnieuw op. Werk je buiten Positron, sluit dan het PowerShell-venster en open een nieuw venster.
 
-### macOS
+## macOS
 
 Op macOS installeer je `git` als onderdeel van de *command line tools* van
 Apple.

@@ -18,11 +18,11 @@ order: 2
 
 `uv` zorgt voor
 
-- eenvoudige aanmaak en management van _virtual environments_;
+- eenvoudige aanmaak en management van *virtual environments*;
 - installatie van verschillende versies van Python;
 - snelle installatie van Python-pakketten;
-- afstemming van versies van _dependencies_;
-- reproduceerbare installaties via een _lockfile_.
+- afstemming van versies van *dependencies*;
+- reproduceerbare installaties via een *lockfile*.
 
 ## Voorbereiding
 
@@ -47,7 +47,7 @@ Heb je je project al open in Positron, gebruik dan de ingebouwde terminal. Die s
 ### Buiten Positron
 
 ::: {.panel-tabset}
-#### Windows
+## Windows
 
 1. Klik op het Windows-menu, type `PowerShell`, en klik op 'Windows PowerShell' of druk op de Enter-toets.
 2. Ga naar de map waar je wil werken met `cd`, waarbij je `<pad>` vervangt door de locatie van de map. Bijvoorbeeld: `cd C:\Users\voorbeeld\Studie\programmeren`.
@@ -55,7 +55,7 @@ Heb je je project al open in Positron, gebruik dan de ingebouwde terminal. Die s
    cd <pad>
    ```
 
-#### macOS
+## macOS
 
 1. Open Spotlight met Cmd+Spatie, type `Terminal` en druk op Enter.
 2. Ga naar de map waar je wil werken met `cd`, waarbij je `<pad>` vervangt door de locatie van de map. Bijvoorbeeld: `cd ~/Studie/programmeren`.
@@ -65,7 +65,7 @@ Heb je je project al open in Positron, gebruik dan de ingebouwde terminal. Die s
 :::
 
 ::: {.callout-warning #wrn-onedrive}
-# OneDrive (Windows) en andere cloudopslag
+## OneDrive (Windows) en andere cloudopslag
 Zet een `uv`-project **nooit** in OneDrive. Microsoft Windows gebruikt tegenwoordig OneDrive als standaard locatie voor documenten.
 OneDrive werkt met 'cloudbestanden', die niet altijd daadwerkelijk op je computer staan.
 Zelfs als de bestanden wel op je computer staan, worden ze niet als normale bestanden behandeld.
@@ -83,9 +83,9 @@ Het is aangeraden voor elk project (onderzoek, stage, vak, opdracht, spontaan id
 
 
 ::: {.callout-tip #tip-naming}
-# Regels voor project-namen
+## Regels voor projectnamen
 
-De naam van een project-map moet aan bepaalde regels voldoen.
+De naam van een projectmap moet aan bepaalde regels voldoen.
 
 - De naam moet beginnen én eindigen met een letter.
 - De naam mag alleen letters, cijfers, _, - en . (underscore, streepje en punt) bevatten.
@@ -93,7 +93,7 @@ De naam van een project-map moet aan bepaalde regels voldoen.
 
 ### Nieuw project
 
-1. [Open een Terminal/PowerShell](#terminal-openen) en ga naar de bovenliggende map waarin je je project wil maken. Als de project-map `C:\Users\voorbeeld\Studie\programmeren\project-1` moet worden, ga je dus naar `C:\Users\voorbeeld\Studie\programmeren`.
+1. [Open een Terminal/PowerShell](#terminal-openen) en ga naar de bovenliggende map waarin je je project wil maken. Als de projectmap `C:\Users\voorbeeld\Studie\programmeren\project-1` moet worden, ga je dus naar `C:\Users\voorbeeld\Studie\programmeren`.
 2. Draai onderstaand commando, waarbij je `<projectnaam>` vervangt door de naam van je project — in het voorbeeld hierboven dus `uv init project-1`. De naam moet voldoen aan de [regels voor projectnamen](#tip-naming). Dit maakt een nieuwe map, en zet daar de benodigde bestanden in.
    ```bash
    uv init <projectnaam>
@@ -120,14 +120,14 @@ Als je een bestaande projectmap hebt, maar nog geen `pyproject.toml`-bestand, vo
 Als je al een projectmap met een `pyproject.toml`-bestand hebt, volg dan deze instructies.
 
 1. [Open een Terminal/PowerShell](#terminal-openen) en ga naar de projectmap. Let op dat de naam van de map voldoet aan de [regels voor projectnamen](#tip-naming).
-2. Draai onderstaand commando. Dit vertelt `uv` dat je al een project hebt, en om een _virtual environment_ aan te maken op basis van het `pyproject.toml`-bestand.
+2. Draai onderstaand commando. Dit vertelt `uv` dat je al een project hebt, en om een virtual environment aan te maken op basis van het `pyproject.toml`-bestand.
    ```bash
    uv sync
    ```
 
 ::: {.callout-note}
-## _Virtual environments_
-Een virtuele omgeving (_virtual environment_, vaak afgekort met _venv_) is een aparte 'virtuele' installatie van een specifieke versie van Python. Hierin installeer je alle Python-pakketten die je voor een project nodig hebt. Dit zorgt ervoor dat je de juiste versies van alle _dependencies_ installeert voor het juiste project. Als je voor Project A bijvoorbeeld een pakket nodig hebt die een 'oudere' versie van NumPy (<2.0) gebruikt, en Project B juist gebruik wil maken van de nieuwste mogelijkheden van NumPy (2.0 of nieuwer), kunnen deze projecten niet gebruik maken van dezelfde installaties. Door ze beiden in een eigen _virtual environment_ te draaien, heb je dit probleem niet.
+## Virtual environments
+Een virtuele omgeving (*virtual environment*, vaak afgekort met *venv*) is een aparte 'virtuele' installatie van een specifieke versie van Python. Hierin installeer je alle Python-pakketten die je voor een project nodig hebt. Dit zorgt ervoor dat je de juiste versies van alle dependencies installeert voor het juiste project. Als je voor Project A bijvoorbeeld een pakket nodig hebt dat een 'oudere' versie van NumPy (<2.0) gebruikt, en Project B juist gebruik wil maken van de nieuwste mogelijkheden van NumPy (2.0 of nieuwer), kunnen deze projecten niet gebruik maken van dezelfde installaties. Door ze beiden in een eigen virtual environment te draaien, heb je dit probleem niet.
 :::
 
 ## Pakketten installeren
@@ -138,20 +138,20 @@ Je kunt pakketten aan je installatie toevoegen met onderstaand commando, waarbij
 uv add <naam>
 ```
 
-`uv` voegt het pakket toe aan de lijst met *dependencies* in `pyproject.toml`, en installeert het pakket en al zijn *dependencies*.
+`uv` voegt het pakket toe aan de lijst met dependencies in `pyproject.toml`, en installeert het pakket en al zijn dependencies.
 
-Je kunt ook pakketten installeren met `uv pip install <naam>`. Dit installeert een pakket wel, maar voegt het niet toe aan de *dependencies* van het project. Daarmee is de installatie niet reproduceerbaar. Dit kan nuttig zijn om bijvoorbeeld een pakket uit te proberen, of tijdelijk te installeren en daarna weer te verwijderen.
+Je kunt ook pakketten installeren met `uv pip install <naam>`. Dit installeert een pakket wel, maar voegt het niet toe aan de dependencies van het project. Daarmee is de installatie niet reproduceerbaar. Dit kan nuttig zijn om bijvoorbeeld een pakket uit te proberen, of tijdelijk te installeren en daarna weer te verwijderen.
 
 ::: {.callout-note}
-## _Dependencies_
-Python-projecten maken meestal gebruik van andere Python-pakketten. Dit heet een _dependency_. Als je bijvoorbeeld `matplotlib` installeert, worden er ook negen _dependencies_, pakketten waar matplotlib gebruik van maakt, geïnstalleerd. Eén van deze pakketten heeft weer een eigen _dependency_, die ook wordt geïnstalleerd. Dit heet samen een _dependency tree_. Met het terminal-commando `uv tree` kan je deze voor je eigen project weergeven.
+## Dependencies
+Python-projecten maken meestal gebruik van andere Python-pakketten. Dit heet een *dependency*. Als je bijvoorbeeld `matplotlib` installeert, worden er ook negen dependencies, pakketten waar matplotlib gebruik van maakt, geïnstalleerd. Eén van deze pakketten heeft weer een eigen dependency, die ook wordt geïnstalleerd. Dit heet samen een *dependency tree*. Met het terminal-commando `uv tree` kan je deze voor je eigen project weergeven.
 
-Bij installatie van pakketten is het belangrijk dat alle pakketten in de _dependency tree_ goed met elkaar samenwerken. Het kan bijvoorbeeld zijn dat pakket A en pakket B beiden pakket C als _dependency_ hebben, waarbij pakket A kan werken met pakket C versie 1.2 tot 2.7, terwijl pakket B werkt met pakket C versie 2.0 tot 3.1. Een goede project-manager zorgt voor goede afstemming tussen versies, en stopt de installatie als er geen afstemming mogelijk is.[^pipdeps]
+Bij installatie van pakketten is het belangrijk dat alle pakketten in de dependency tree goed met elkaar samenwerken. Het kan bijvoorbeeld zijn dat pakket A en pakket B beiden pakket C als dependency hebben, waarbij pakket A kan werken met pakket C versie 1.2 tot 2.7, terwijl pakket B werkt met pakket C versie 2.0 tot 3.1. Een goede project-manager zorgt voor goede afstemming tussen versies, en stopt de installatie als er geen afstemming mogelijk is.[^pipdeps]
 
 [^pipdeps]: De standaard manier om Python-pakketten te installeren, `pip`, zorgt niet voor afstemming tussen versies, maar installeert een versie die werkt voor het meest recent geïnstalleerde pakket. Dit kan soms tot problemen leiden.
 :::
 
 ::: {.callout-note}
-## _lockfile_
-`uv` maakt voor geïnstalleerde projecten altijd een _lockfile_ aan. Hierin staat nauwkeurig beschreven welke versie van elk pakket in het project gebruikt is. Hierdoor kan de _virtual environment_ exact gereproduceerd worden op dezelfde én andere computers.
+## Lockfile
+`uv` maakt voor geïnstalleerde projecten altijd een *lockfile* aan. Hierin staat nauwkeurig beschreven welke versie van elk pakket in het project gebruikt is. Hierdoor kan de virtual environment exact gereproduceerd worden op dezelfde én andere computers.
 :::

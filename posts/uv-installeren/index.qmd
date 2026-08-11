@@ -17,16 +17,16 @@ order: 1
 :::
 
 ## Installatie
-Installatie van `uv` is heel eenvoudig. Onderstaande instructies zijn gekopiëerd uit de officiële documentatie van `uv`: <https://docs.astral.sh/uv/>. 
+Installatie van `uv` is heel eenvoudig. Onderstaande instructies zijn gekopieerd uit de officiële documentatie van `uv`: <https://docs.astral.sh/uv/>. 
 
 ::: {.panel-tabset}
 
-### Windows
+## Windows
 
 {{< video media/uv-install-windows-web.mp4 >}}
 
 1. Open Windows PowerShell: klik op het Windows-menu, type `PowerShell`, en klik op 'Windows PowerShell' of druk op de Enter-toets.
-2. Kopiëer dit commando naar de PowerShell en druk op Enter.
+2. Kopieer dit commando naar de PowerShell en druk op Enter.
    ```bash
    powershell -ExecutionPolicy ByPass `
      -c "irm https://astral.sh/uv/install.ps1 | iex"
@@ -34,25 +34,25 @@ Installatie van `uv` is heel eenvoudig. Onderstaande instructies zijn gekopiëer
    De installatie is goed gegaan als je een output krijgt met halverwege de zin "everything's installed!".
 3. Sluit het venster. 
 4. Open PowerShell opnieuw.
-5. Kopiëer dit commando naar de PowerShelle en druk op Enter.
+5. Kopieer dit commando naar de PowerShell en druk op Enter.
    ```bash
    uv --version
    ```
    De output toont als het goed is "uv" met daarachter het geïnstalleerde versienummer weer. `uv` is nu klaar voor gebruik.
 
-### macOS
+## macOS
 
 {{< video media/uv-install-mac-web.mp4 >}}
 
-1. Open een Terminal: Open Spotlight met Cmd+Spatie, type `Terminal` en druk op enter.
-2. Kopiëer dit commando naar de Terminal en druk op Enter.
+1. Open een Terminal: Open Spotlight met Cmd+Spatie, type `Terminal` en druk op Enter.
+2. Kopieer dit commando naar de Terminal en druk op Enter.
    ```bash
    curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
    De installatie is goed gegaan als je een output krijgt met halverwege de zin "everything's installed!".
 3. Sluit het venster.
 4. Open Terminal opnieuw.
-4. Kopiëer dit commando naar de Terminal en druk op Enter.
+5. Kopieer dit commando naar de Terminal en druk op Enter.
    ```bash
    uv --version
    ```

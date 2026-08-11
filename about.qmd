@@ -1,6 +1,6 @@
 ---
 title: "Over deze pagina"
-image: https://logos-world.net/wp-content/uploads/2021/10/Python-Emblem.png
+image: media/Python-Emblem.png
 about:
   template: jolla
   links:
@@ -40,3 +40,8 @@ Heb je geen GitHub-account, of gaat je vraag niet over de inhoud van deze site? 
   });
 </script>
 ```
+
+## Wijzigingen
+
+- **11 augustus 2026** — Deze pagina is gelanceerd, met handleidingen voor het
+  installeren van `uv` en Positron en voor het starten van een nieuw project.
