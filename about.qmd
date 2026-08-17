@@ -41,7 +41,7 @@ Heb je geen GitHub-account, of gaat je vraag niet over de inhoud van deze site? 
 </script>
 ```
 
-## Wijzigingen
+## Wijzigingen {.changelog}
 
 - **17 augustus 2026**
     - De tekst over de locatie van de projectmap is geüpdated.

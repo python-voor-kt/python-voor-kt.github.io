@@ -24,6 +24,13 @@
   color: inherit;
 }
 
+/* Het about-sjabloon 'jolla' centreert alles via `div.quarto-about-jolla main`.
+   Voor een datumlijst leest dat slecht, dus de changelog lijnt links uit. De
+   selector heeft twee klassen en verslaat daarmee die van Quarto. */
+.quarto-about-jolla main .changelog {
+  text-align: left;
+}
+
 /* Mailadres wordt door JavaScript ingevuld; zie about.qmd. */
 .contact-mail {
   overflow-wrap: anywhere;
