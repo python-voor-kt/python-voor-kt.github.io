@@ -44,6 +44,7 @@ Heb je geen GitHub-account, of gaat je vraag niet over de inhoud van deze site? 
 ## Wijzigingen
 
 - **17 augustus 2026**
-    - De tekst over de locatie van de projectmap is geüpdated. 
+    - De tekst over de locatie van de projectmap is geüpdated.
+    - De regels over projectmapnamen zijn verbeterd. 
 - **11 augustus 2026**
     - Deze pagina is gelanceerd, met handleidingen voor het installeren van `uv` en Positron en voor het starten van een nieuw project.

@@ -60,8 +60,9 @@ Heb je wel eerder een project in OneDrive gezet, draai dan `uv cache clean` in j
 
 De naam van een projectmap moet aan bepaalde regels voldoen.
 
-- De naam moet beginnen én eindigen met een letter.
-- De naam mag alleen letters, cijfers, _, - en . (underscore, streepje en punt) bevatten.
+- De naam moet beginnen met een letter.
+- De naam moet eindigen met een letter of cijfer.
+- De naam mag verder alleen letters, cijfers, _, - en . (*underscore*, streepje en punt) bevatten.
 :::
 
 ## Welke handleiding heb je nodig?
