@@ -27,9 +27,19 @@ Om te zorgen dat je bestanden goed georganiseerd blijven, is het belangrijk voor
 
 Deze handleiding gaat er vanuit dat je `uv` en Positron hebt geïnstalleerd. Zie de [installatiehandleidingen](../../index.qmd) voor [`uv`](../uv-installeren/index.qmd) en [Positron](../positron-installeren/index.qmd).
 
-## Mappenstructuur
+## Locatie van je projectmap
 
-Het is een goede gewoonte voor elk onderzoek, vak, opdracht of stage een nieuw project aan te maken. Je project komt in een projectmap te staan. Zet deze op een logische locatie.
+Het is een goede gewoonte voor elk onderzoek, vak, opdracht of stage een nieuw project aan te maken. Je project komt in een projectmap te staan. Zet deze op een logische locatie, bijvoorbeeld in een map `Studie` in de map van het gebruikersaccount op je computer. 
+
+Voor Windows-gebruikers is dit een goede beginlocatie:  
+`C:\Users\<gebruikersnaam>\Studie`
+
+Voor macOS-gebruikers is dit een goede beginlocatie:  
+`/Users/<gebruikersnaam>/Documenten/Studie`
+
+De projectmap komt in deze beginlocatie te staan, dus bijvoorbeeld:  
+`C:\Users\<gebruikersnaam>\Studie\ProjectA` of  
+`/Users/<gebruikersnaam>/Documenten/Studie/KT1355/opdracht_x`.
 
 ::: {.callout-warning #wrn-onedrive}
 ## OneDrive (Windows) en andere cloudopslag
