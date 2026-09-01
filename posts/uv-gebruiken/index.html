@@ -286,7 +286,7 @@ Tip
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <ol type="1">
 <li><p>Klik op het Windows-menu, type <code>PowerShell</code>, en klik op ‘Windows PowerShell’ of druk op de Enter-toets.</p></li>
-<li><p>Ga naar de map waar je wil werken met <code>cd</code>, waarbij je <code>&lt;pad&gt;</code> vervangt door de locatie van de map. Bijvoorbeeld: <code>cd C:\Users\voorbeeld\Studie\programmeren</code>.</p>
+<li><p>Ga naar de map waar je wil werken met <code>cd</code>, waarbij je <code>&lt;pad&gt;</code> vervangt door de locatie van de map. Bijvoorbeeld: <code>cd C:\Gebruikers\voorbeeld\Studie\programmeren</code>.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="op">&lt;</span>pad<span class="op">&gt;</span></span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>
 </div>
@@ -311,7 +311,7 @@ Waarschuwing&nbsp;1: OneDrive (Windows) en andere cloudopslag
 <div class="callout-body-container callout-body">
 <p>Zet een <code>uv</code>-project <strong>nooit</strong> in OneDrive. Microsoft Windows gebruikt tegenwoordig OneDrive als standaard locatie voor documenten. OneDrive werkt met ‘cloudbestanden’, die niet altijd daadwerkelijk op je computer staan. Zelfs als de bestanden wel op je computer staan, worden ze niet als normale bestanden behandeld.</p>
 <p>Dit kan ook gelden voor bestanden op bijvoorbeeld Dropbox.</p>
-<p>Een goede locatie is een map in <code>C:\Users\&lt;gebruikersnaam&gt;\</code> (maar <strong>niet</strong> <code>C:\Users\&lt;gebruikersnaam&gt;\Documenten</code>).</p>
+<p>Een goede locatie is een map in <code>C:\Gebruikers\&lt;gebruikersnaam&gt;\</code>, bijvoorbeeld <code>C:\Gebruikers\&lt;gebruikersnaam&gt;\Studie</code> (maar <strong>niet</strong> <code>C:\Gebruikers\&lt;gebruikersnaam&gt;\Documenten</code>).</p>
 <p>Heb je wel eerder een project in OneDrive gezet, draai dan <code>uv cache clean</code> in je Terminal/PowerShell. <code>uv</code> deelt bestanden tussen projecten, waardoor een project in OneDrive ook problemen kan veroorzaken in je <em>andere</em> projecten. <code>uv cache clean</code> ruimt dat op.</p>
 </div>
 </div>
@@ -340,7 +340,7 @@ Tip&nbsp;1: Regels voor projectnamen
 <section id="nieuw-project" class="level3">
 <h3 class="anchored" data-anchor-id="nieuw-project">Nieuw project</h3>
 <ol type="1">
-<li><p><a href="#terminal-openen">Open een Terminal/PowerShell</a> en ga naar de bovenliggende map waarin je je project wil maken. Als de projectmap <code>C:\Users\voorbeeld\Studie\programmeren\project-1</code> moet worden, ga je dus naar <code>C:\Users\voorbeeld\Studie\programmeren</code>.</p></li>
+<li><p><a href="#terminal-openen">Open een Terminal/PowerShell</a> en ga naar de bovenliggende map waarin je je project wil maken. Als de projectmap <code>C:\Gebruikers\&lt;gebruikersnaam&gt;\Studie\programmeren\project-1</code> moet worden, ga je dus naar <code>C:\Gebruikers\&lt;gebruikersnaam&gt;\Studie\programmeren</code>.</p></li>
 <li><p>Draai onderstaand commando, waarbij je <code>&lt;projectnaam&gt;</code> vervangt door de naam van je project — in het voorbeeld hierboven dus <code>uv init project-1</code>. De naam moet voldoen aan de <a href="#tip-naming">regels voor projectnamen</a>. Dit maakt een nieuwe map, en zet daar de benodigde bestanden in.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> init <span class="op">&lt;</span>projectnaam<span class="op">&gt;</span></span></code></pre></div><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>

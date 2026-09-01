@@ -258,11 +258,11 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="locatie-van-je-projectmap">Locatie van je projectmap</h2>
 <p>Het is een goede gewoonte voor elk onderzoek, vak, opdracht of stage een nieuw project aan te maken. Je project komt in een projectmap te staan. Zet deze op een logische locatie, bijvoorbeeld in een map <code>Studie</code> in de map van het gebruikersaccount op je computer.</p>
 <p>Voor Windows-gebruikers is dit een goede beginlocatie:<br>
-<code>C:\Users\&lt;gebruikersnaam&gt;\Studie</code></p>
+<code>C:\Gebruikers\&lt;gebruikersnaam&gt;\Studie</code></p>
 <p>Voor macOS-gebruikers is dit een goede beginlocatie:<br>
 <code>/Users/&lt;gebruikersnaam&gt;/Documenten/Studie</code></p>
 <p>De projectmap komt in deze beginlocatie te staan, dus bijvoorbeeld:<br>
-<code>C:\Users\&lt;gebruikersnaam&gt;\Studie\ProjectA</code> of<br>
+<code>C:\Gebruikers\&lt;gebruikersnaam&gt;\Studie\ProjectA</code> of<br>
 <code>/Users/&lt;gebruikersnaam&gt;/Documenten/Studie/KT1355/opdracht_x</code>.</p>
 <div id="wrn-onedrive" class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -276,8 +276,8 @@ Waarschuwing&nbsp;1: OneDrive (Windows) en andere cloudopslag
 <div class="callout-body-container callout-body">
 <p>Microsoft Windows gebruikt tegenwoordig OneDrive als standaard locatie voor documenten. <code>uv</code> werkt niet goed als je je bestanden in OneDrive zet. OneDrive werkt namelijk met ‘cloudbestanden’, die niet altijd daadwerkelijk op je computer staan. Zelfs als de bestanden wel op je computer staan, worden ze niet als normale bestanden behandeld.</p>
 <p>Dit kan ook gelden voor bestanden op bijvoorbeeld Dropbox.</p>
-<p>Zet je projectmap dus <strong>nooit</strong> in OneDrive. Een goede locatie is een map in <code>C:\Users\&lt;gebruikersnaam&gt;\</code> (maar <strong>niet</strong> <code>C:\Users\&lt;gebruikersnaam&gt;\Documenten</code>).</p>
-<p>Heb je wel eerder een project in OneDrive gezet, draai dan <code>uv cache clean</code> in je Terminal/PowerShell. <code>uv</code> deelt bestanden tussen projecten, waardoor een project in OneDrive ook problemen kan veroorzaken in je <em>andere</em> projecten. <code>uv cache clean</code> ruimt dat op.</p>
+<p>Zet je projectmap dus <strong>nooit</strong> in OneDrive, en dus ook niet in je standaard ‘Documenten’-locatie. Een goede locatie is een map in <code>C:\Gebruikers\&lt;gebruikersnaam&gt;\</code>, bijvoorbeeld <code>C:\Gebruikers\&lt;gebruikersnaam&gt;\Studie</code> (maar <strong>niet</strong> <code>C:\Gebruikers\&lt;gebruikersnaam&gt;\Documenten</code>).</p>
+<p>Heb je wel eerder een project in OneDrive gezet, draai dan het commando <code>uv cache clean</code> in je Terminal/PowerShell. <code>uv</code> deelt bestanden tussen projecten, waardoor een project in OneDrive ook problemen kan veroorzaken in je <em>andere</em> projecten. <code>uv cache clean</code> ruimt dat op.</p>
 </div>
 </div>
 <div id="tip-naming" class="callout callout-style-default callout-tip callout-titled">
@@ -304,7 +304,7 @@ Tip&nbsp;1: Regels voor projectnamen
 <p>Er zijn vier manieren om in Positron met een nieuw project aan de slag te gaan. Welke je nodig hebt, hangt af van wat je hebt gekregen.</p>
 <div id="listing-opties" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1786955783485" data-listing-reading-time-sort="2" data-listing-word-count-sort="232">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1788273749743" data-listing-reading-time-sort="2" data-listing-word-count-sort="232">
 <a href="../../posts/nieuw-project-in-positron/leeg-project.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -317,7 +317,7 @@ Een leeg Python-project starten
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1786955783607" data-listing-reading-time-sort="2" data-listing-word-count-sort="294">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1788273749859" data-listing-reading-time-sort="2" data-listing-word-count-sort="294">
 <a href="../../posts/nieuw-project-in-positron/pyproject-downloaden.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -330,7 +330,7 @@ Starten met een <code>pyproject.toml</code>-bestand
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1786955783607" data-listing-reading-time-sort="3" data-listing-word-count-sort="598">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1788273749859" data-listing-reading-time-sort="3" data-listing-word-count-sort="598">
 <a href="../../posts/nieuw-project-in-positron/repository-clonen.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -343,7 +343,7 @@ Een <code>git</code> <em>repository</em> <em>clonen</em>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1786955783607" data-listing-reading-time-sort="1" data-listing-word-count-sort="170">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1788273749859" data-listing-reading-time-sort="1" data-listing-word-count-sort="170">
 <a href="../../posts/nieuw-project-in-positron/zip-bestand.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
