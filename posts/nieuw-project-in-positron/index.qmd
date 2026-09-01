@@ -32,13 +32,13 @@ Deze handleiding gaat er vanuit dat je `uv` en Positron hebt geïnstalleerd. Zie
 Het is een goede gewoonte voor elk onderzoek, vak, opdracht of stage een nieuw project aan te maken. Je project komt in een projectmap te staan. Zet deze op een logische locatie, bijvoorbeeld in een map `Studie` in de map van het gebruikersaccount op je computer. 
 
 Voor Windows-gebruikers is dit een goede beginlocatie:  
-`C:\Users\<gebruikersnaam>\Studie`
+`C:\Gebruikers\<gebruikersnaam>\Studie`
 
 Voor macOS-gebruikers is dit een goede beginlocatie:  
 `/Users/<gebruikersnaam>/Documenten/Studie`
 
 De projectmap komt in deze beginlocatie te staan, dus bijvoorbeeld:  
-`C:\Users\<gebruikersnaam>\Studie\ProjectA` of  
+`C:\Gebruikers\<gebruikersnaam>\Studie\ProjectA` of  
 `/Users/<gebruikersnaam>/Documenten/Studie/KT1355/opdracht_x`.
 
 ::: {.callout-warning #wrn-onedrive}
@@ -50,9 +50,9 @@ Zelfs als de bestanden wel op je computer staan, worden ze niet als normale best
 
 Dit kan ook gelden voor bestanden op bijvoorbeeld Dropbox.
 
-Zet je projectmap dus **nooit** in OneDrive. Een goede locatie is een map in `C:\Users\<gebruikersnaam>\` (maar **niet** `C:\Users\<gebruikersnaam>\Documenten`).
+Zet je projectmap dus **nooit** in OneDrive, en dus ook niet in je standaard 'Documenten'-locatie. Een goede locatie is een map in `C:\Gebruikers\<gebruikersnaam>\`, bijvoorbeeld `C:\Gebruikers\<gebruikersnaam>\Studie` (maar **niet** `C:\Gebruikers\<gebruikersnaam>\Documenten`).
 
-Heb je wel eerder een project in OneDrive gezet, draai dan `uv cache clean` in je Terminal/PowerShell. `uv` deelt bestanden tussen projecten, waardoor een project in OneDrive ook problemen kan veroorzaken in je *andere* projecten. `uv cache clean` ruimt dat op.
+Heb je wel eerder een project in OneDrive gezet, draai dan het commando `uv cache clean` in je Terminal/PowerShell. `uv` deelt bestanden tussen projecten, waardoor een project in OneDrive ook problemen kan veroorzaken in je *andere* projecten. `uv cache clean` ruimt dat op.
 :::
 
 ::: {.callout-tip #tip-naming}

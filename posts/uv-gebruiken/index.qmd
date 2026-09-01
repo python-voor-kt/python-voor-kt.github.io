@@ -50,7 +50,7 @@ Heb je je project al open in Positron, gebruik dan de ingebouwde terminal. Die s
 ## Windows
 
 1. Klik op het Windows-menu, type `PowerShell`, en klik op 'Windows PowerShell' of druk op de Enter-toets.
-2. Ga naar de map waar je wil werken met `cd`, waarbij je `<pad>` vervangt door de locatie van de map. Bijvoorbeeld: `cd C:\Users\voorbeeld\Studie\programmeren`.
+2. Ga naar de map waar je wil werken met `cd`, waarbij je `<pad>` vervangt door de locatie van de map. Bijvoorbeeld: `cd C:\Gebruikers\voorbeeld\Studie\programmeren`.
    ```bash
    cd <pad>
    ```
@@ -72,7 +72,7 @@ Zelfs als de bestanden wel op je computer staan, worden ze niet als normale best
 
 Dit kan ook gelden voor bestanden op bijvoorbeeld Dropbox.
 
-Een goede locatie is een map in `C:\Users\<gebruikersnaam>\` (maar **niet** `C:\Users\<gebruikersnaam>\Documenten`).
+Een goede locatie is een map in `C:\Gebruikers\<gebruikersnaam>\`, bijvoorbeeld `C:\Gebruikers\<gebruikersnaam>\Studie` (maar **niet** `C:\Gebruikers\<gebruikersnaam>\Documenten`).
 
 Heb je wel eerder een project in OneDrive gezet, draai dan `uv cache clean` in je Terminal/PowerShell. `uv` deelt bestanden tussen projecten, waardoor een project in OneDrive ook problemen kan veroorzaken in je *andere* projecten. `uv cache clean` ruimt dat op.
 :::
@@ -93,7 +93,7 @@ De naam van een projectmap moet aan bepaalde regels voldoen.
 
 ### Nieuw project
 
-1. [Open een Terminal/PowerShell](#terminal-openen) en ga naar de bovenliggende map waarin je je project wil maken. Als de projectmap `C:\Users\voorbeeld\Studie\programmeren\project-1` moet worden, ga je dus naar `C:\Users\voorbeeld\Studie\programmeren`.
+1. [Open een Terminal/PowerShell](#terminal-openen) en ga naar de bovenliggende map waarin je je project wil maken. Als de projectmap `C:\Gebruikers\<gebruikersnaam>\Studie\programmeren\project-1` moet worden, ga je dus naar `C:\Gebruikers\<gebruikersnaam>\Studie\programmeren`.
 2. Draai onderstaand commando, waarbij je `<projectnaam>` vervangt door de naam van je project — in het voorbeeld hierboven dus `uv init project-1`. De naam moet voldoen aan de [regels voor projectnamen](#tip-naming). Dit maakt een nieuwe map, en zet daar de benodigde bestanden in.
    ```bash
    uv init <projectnaam>
