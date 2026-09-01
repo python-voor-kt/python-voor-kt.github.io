@@ -45,6 +45,7 @@ Heb je geen GitHub-account, of gaat je vraag niet over de inhoud van deze site? 
 
 - **1 september 2026**
     - De tekst over de locatie van de projectmap is geüpdated.
+    - Expliciet toegevoegd dat een mapnaam geen spaties mag bevatten.
 - **17 augustus 2026**
     - De tekst over de locatie van de projectmap is geüpdated.
     - De regels over projectmapnamen zijn verbeterd. 

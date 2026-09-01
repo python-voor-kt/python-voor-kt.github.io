@@ -62,7 +62,8 @@ De naam van een projectmap moet aan bepaalde regels voldoen.
 
 - De naam moet beginnen met een letter.
 - De naam moet eindigen met een letter of cijfer.
-- De naam mag verder alleen letters, cijfers, _, - en . (*underscore*, streepje en punt) bevatten.
+- De naam mag verder alleen letters, cijfers, _, - en . (*underscore*, streepje en punt) bevatten. 
+- De naam mag dus *geen* spaties bevatten.
 :::
 
 ## Welke handleiding heb je nodig?
