@@ -44,7 +44,10 @@ Zorg dat je eerst `uv` hebt geïnstalleerd. Zie [deze handleiding](../uv-install
     - Vink "I accept the agreement" aan en klik dan op "Next".
     - Klik weer op "Next", en dan op "Install".
     - Als de installatie klaar is, klik op "Finish".
+4. Positron opstarten:
     - Om Positron op te starten, klik op het Windows-menu en type 'Positron'. Druk op Enter of klik op de gevonden applicatie.
+    - Het kan voorkomen dat Positron niet opstart. Eén van de oorzaken hiervan is dat Smart App Control op Windows dit programma kan blokkeren.
+    - Zoek in het startmenu op 'Smart App Control'. Schakel deze uit, klik bij de waarschuwing dat je het zeker weet, en probeer opnieuw Positron op te starten.
 
 ## macOS
 
